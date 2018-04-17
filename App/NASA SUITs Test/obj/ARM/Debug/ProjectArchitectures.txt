@@ -1,0 +1,2 @@
+C:\Users\Benha\Desktop\HolographicAcademy-Holograms-210-Gaze\NASA SUITs Test\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;arm
+C:\Users\Benha\Desktop\HolographicAcademy-Holograms-210-Gaze\NASA SUITs Test\App\NASA SUITs Test\NASA SUITs Test.csproj;arm
