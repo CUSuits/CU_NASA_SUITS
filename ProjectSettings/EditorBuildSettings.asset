@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Main_Vuforia_test.unity
     guid: f821f2b0d001ef74794617443e92d2c6
+  - enabled: 1
+    path: Assets/_Scenes/Main_wo_SpeechRecog.unity
+    guid: d19ea56b3522e314faab9f0b6d7269be
