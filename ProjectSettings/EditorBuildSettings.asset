@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/Main_Vuforia_test.unity
     guid: f821f2b0d001ef74794617443e92d2c6
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/Main_wo_SpeechRecog.unity
     guid: d19ea56b3522e314faab9f0b6d7269be
+  - enabled: 1
+    path: Assets/_Scenes/Main_current.unity
+    guid: 411f8dcfdafa99645b357e212d2a9fd2
