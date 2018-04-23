@@ -968,10 +968,30 @@ MonoBehaviour:
   PersistentKeywords: 0
   RecognizerStart: 0
   Keywords:
-  - Keyword: Basic on
-    KeyCode: 32
-  - Keyword: Basic off
-    KeyCode: 8
+  - Keyword: Open heart rate
+    KeyCode: 0
+  - Keyword: Show heart rate
+    KeyCode: 0
+  - Keyword: Display heart rate
+    KeyCode: 0
+  - Keyword: Close heart rate
+    KeyCode: 0
+  - Keyword: Hide heart rate
+    KeyCode: 0
+  - Keyword: Remove heart rate
+    KeyCode: 0
+  - Keyword: Open suit pressure
+    KeyCode: 0
+  - Keyword: Show suit pressure
+    KeyCode: 0
+  - Keyword: Display suit pressure
+    KeyCode: 0
+  - Keyword: Close suit pressure
+    KeyCode: 0
+  - Keyword: Hide suit pressure
+    KeyCode: 0
+  - Keyword: Remove suit pressure
+    KeyCode: 0
   recognitionConfidenceLevel: 1
 --- !u!1 &424913670
 GameObject:
@@ -3001,6 +3021,17 @@ GameObject:
   m_PrefabParentObject: {fileID: 1313978535408332, guid: 11208d3c424d4264e8253726c3b3e47d,
     type: 2}
   m_PrefabInternal: {fileID: 192988154}
+--- !u!114 &1374915810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1374915809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86f3bc6c91617c4ca7c44c02b19459c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1374915811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3010,17 +3041,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cae8f3c88e9704a4393cb8d904b62372, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1374915813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1374915809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5142e834a20564d40a8873e9311377de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1374915814
@@ -3034,41 +3054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Keywords:
-  - Keyword: Basic on
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1374915809}
-          m_MethodName: 
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Basic on
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Basic off
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1374915809}
-          m_MethodName: 
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Basic off
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+  Keywords: []
   IsGlobalListener: 1
   PersistentKeywords: 0
 --- !u!1001 &1377340621
@@ -3515,6 +3501,149 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1539701105 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1313978535408332, guid: 11208d3c424d4264e8253726c3b3e47d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1539701104}
+--- !u!114 &1539701106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539701105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Keywords:
+  - Keyword: Open suit pressure
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1539701107}
+          m_MethodName: ToggleObject
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Open suit pressure
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Display suit pressure
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1539701107}
+          m_MethodName: ToggleObject
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Display suit pressure
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Show suit pressure
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1539701107}
+          m_MethodName: ToggleObject
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Show suit pressure
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Close suit pressure
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1539701107}
+          m_MethodName: ToggleObject
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Close suit pressure
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Hide suit pressure
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1539701107}
+          m_MethodName: ToggleObject
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Hide suit pressure
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Remove suit pressure
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1539701107}
+          m_MethodName: ToggleObject
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Remove suit pressure
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  IsGlobalListener: 1
+  PersistentKeywords: 0
+--- !u!114 &1539701107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539701105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86f3bc6c91617c4ca7c44c02b19459c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1539701108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1539701105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae8f3c88e9704a4393cb8d904b62372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1579986196
 GameObject:
   m_ObjectHideFlags: 0

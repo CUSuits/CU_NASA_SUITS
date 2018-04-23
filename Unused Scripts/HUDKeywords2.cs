@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text;
+using HoloToolkit.Unity.InputModule;
 
-namespace HoloToolkit.Unity.InputModule.Tests
-{
-    public class HUDKeywords2 : MonoBehaviour, ISpeechHandler
+public class HUDKeywords2 : MonoBehaviour, ISpeechHandler
     {
 
         public void ToggleObject(string command)
@@ -26,4 +25,3 @@ namespace HoloToolkit.Unity.InputModule.Tests
         }
 
     }
-}
