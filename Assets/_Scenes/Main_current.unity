@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -692,6 +692,10 @@ Prefab:
       propertyPath: m_Name
       value: Overlay - Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 1369831019138986, guid: 609080f015c24da4fb64c737d7f766b9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 609080f015c24da4fb64c737d7f766b9, type: 2}
   m_IsPrefabParent: 0
@@ -991,6 +995,8 @@ MonoBehaviour:
   - Keyword: Hide suit pressure
     KeyCode: 0
   - Keyword: Remove suit pressure
+    KeyCode: 0
+  - Keyword: Display sub pressure
     KeyCode: 0
   recognitionConfidenceLevel: 1
 --- !u!1 &424913670
@@ -1490,6 +1496,10 @@ Prefab:
     - target: {fileID: 1313978535408332, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
       propertyPath: m_Name
       value: Sub Temperature
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313978535408332, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
@@ -2230,6 +2240,10 @@ Prefab:
     - target: {fileID: 1369831019138986, guid: 609080f015c24da4fb64c737d7f766b9, type: 2}
       propertyPath: m_Name
       value: Overlay - Task
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369831019138986, guid: 609080f015c24da4fb64c737d7f766b9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 609080f015c24da4fb64c737d7f766b9, type: 2}
@@ -4401,6 +4415,47 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224464300704668986, guid: 609080f015c24da4fb64c737d7f766b9,
     type: 2}
   m_PrefabInternal: {fileID: 1807565866}
+--- !u!1 &1815276582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1815276584}
+  - component: {fileID: 1815276583}
+  m_Layer: 0
+  m_Name: InstructionDispatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1815276583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1815276582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6023cafa6667f4bbe90666721dd16d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instManager: {fileID: 1967896774}
+--- !u!4 &1815276584
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1815276582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15423478, y: -0.46669066, z: 1.452322}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1864943836
 Prefab:
   m_ObjectHideFlags: 0
@@ -4616,9 +4671,59 @@ Prefab:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1313978535408332, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1967896773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1967896775}
+  - component: {fileID: 1967896774}
+  m_Layer: 0
+  m_Name: InstructionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1967896774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967896773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a07205c5da02542b3976b9de5dabc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InstructionList:
+  - {fileID: 11400000, guid: 52dda9138c2bf6f479360327cac3dda4, type: 2}
+  - {fileID: 11400000, guid: 3f10c93a7a6113047aeb20c58999be51, type: 2}
+  currentInstruction: {fileID: 0}
+  currentStep: 0
+  pausedInstruction: {fileID: 0}
+--- !u!4 &1967896775
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967896773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.15423478, y: -0.46669066, z: 1.452322}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &2005357816 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224464300704668986, guid: 609080f015c24da4fb64c737d7f766b9,
