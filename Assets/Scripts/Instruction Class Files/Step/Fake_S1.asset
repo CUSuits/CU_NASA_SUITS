@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Fake_S1
   m_EditorClassIdentifier: 
   taskListInfo: fakestep1
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: 11e4524f21fc6434abbbba83d70d0040, type: 3}
   hudStr: fake1
   recognizedObjects: []
   recognizedObjectsStr: []

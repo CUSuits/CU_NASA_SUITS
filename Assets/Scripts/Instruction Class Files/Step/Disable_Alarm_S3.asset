@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: 'Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS
     DOOR in an OPEN position. WARNING: Door can accidentally close. '
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: 7029cbbbce5f0ac4dbc4e93267bfddf4, type: 3}
   hudStr: Secure PAD
   recognizedObjects: []
   recognizedObjectsStr: []

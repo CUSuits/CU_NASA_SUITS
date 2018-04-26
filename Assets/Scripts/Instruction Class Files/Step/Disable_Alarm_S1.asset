@@ -14,6 +14,7 @@ MonoBehaviour:
   taskListInfo: 'On the RIGHT side of the EVA Kit, locate and use the PANEL ACCESS
     KEY to unlock the PANEL ACCESS DOOR LOCKS. CAUTION: The keys are on a tension-spring
     cable.'
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: bb8311ec76e0ba54c8237ad5642c1b23, type: 3}
   hudStr: Unlock PAD
-  recognizedObject: []
+  recognizedObjects: []
+  recognizedObjectsStr: []

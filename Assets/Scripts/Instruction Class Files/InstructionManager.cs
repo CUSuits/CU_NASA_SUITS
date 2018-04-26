@@ -2,22 +2,66 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Events;
+
+[System.Serializable]
+public class StepEvent : UnityEvent<Step> {
+    public Step newStep;
+}
 
 public class InstructionManager : MonoBehaviour {
     [SerializeField]
     public Dictionary<string,Instruction> Instructions = new Dictionary<string, Instruction>();
     public List<Instruction> InstructionList = new List<Instruction>();
 
+    public Dictionary<string, StepEvent> eventDictionary = new Dictionary<string, StepEvent>();
+    public Step s;
+
+    //Method to publish that Instruction/Step has updated....
+    void Awake () {
+        if (eventDictionary == null) {
+            eventDictionary = new Dictionary<string, StepEvent>();
+        }
+    }
+
+    public void StartListening(string eventName, UnityAction<Step> listener) {
+        StepEvent thisEvent = null;
+        if (eventDictionary.TryGetValue(eventName, out thisEvent)) {
+            thisEvent.AddListener(listener);
+            Debug.Log("Added to dictionary: " + eventName);
+
+        } else {
+            thisEvent = new StepEvent();
+            thisEvent.AddListener(listener);
+            eventDictionary.Add(eventName, thisEvent);
+            Debug.Log("Added to dictionary: " + eventName);
+        }
+    }
+
+    public void StopListening(string eventName, UnityAction<Step> listener) {
+        StepEvent thisEvent = null;
+        if (eventDictionary.TryGetValue(eventName, out thisEvent)) {
+            thisEvent.RemoveListener(listener);
+        }
+    }
+
+    public void TriggerEvent(string eventName) {
+        StepEvent thisEvent = null;
+        s = currentInstruction.StepList[currentStep];
+        if (eventDictionary.TryGetValue(eventName, out thisEvent)) {
+            //Step curStep = ;
+            thisEvent.newStep = currentInstruction.StepList[currentStep];
+            thisEvent.Invoke(s);
+        } else {
+            Debug.Log("cant find event in dictionary: " + eventName);
+        }
+    }
 
     public Instruction currentInstruction;
     public int currentStep;
 
     public Instruction pausedInstruction;
     public int pausedStep;
-
-
-    //Method to publish that Instruction/Step has updated....
-    //??
 
 	// Use this for initialization
 	void Start () {
@@ -41,8 +85,8 @@ public class InstructionManager : MonoBehaviour {
 
         //set index to 0
         currentStep = 0;
-
         Debug.Log(currentInstruction.StepList[currentStep].hudStr);
+        TriggerEvent("InstUpdate");
     }
 
     public void InterruptInstruction(int newInstruction) {
@@ -53,6 +97,7 @@ public class InstructionManager : MonoBehaviour {
         }
 
         QueueInstruction(newInstruction);
+        TriggerEvent("InstUpdate");
     }
 
     public void ResumePausedInstruction() {
@@ -69,6 +114,7 @@ public class InstructionManager : MonoBehaviour {
                 //Execute Current Instruction
                 Debug.Log(currentInstruction.StepList[currentStep].hudStr);
             }
+            TriggerEvent("InstUpdate");
         } catch (Exception e) {
             Debug.LogException(e, this);
         }
@@ -78,6 +124,7 @@ public class InstructionManager : MonoBehaviour {
         try {
             Debug.Log(currentInstruction.StepList[currentStep+1].hudStr);
             ++currentStep;
+            TriggerEvent("InstUpdate");
         }
         catch (Exception e) {
             Debug.LogException(e, this);
@@ -88,6 +135,7 @@ public class InstructionManager : MonoBehaviour {
         try {
             Debug.Log(currentInstruction.StepList[currentStep-1].hudStr);
             --currentStep;
+            TriggerEvent("InstUpdate");
         } catch (Exception e) {
             Debug.LogException(e, this);
         }
