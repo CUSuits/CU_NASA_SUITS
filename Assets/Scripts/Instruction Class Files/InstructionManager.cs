@@ -6,16 +6,18 @@ using UnityEngine.Events;
 
 [System.Serializable]
 public class StepEvent : UnityEvent<Step> {
-    public Step newStep;
 }
 
 public class InstructionManager : MonoBehaviour {
-    [SerializeField]
-    public Dictionary<string,Instruction> Instructions = new Dictionary<string, Instruction>();
     public List<Instruction> InstructionList = new List<Instruction>();
 
     public Dictionary<string, StepEvent> eventDictionary = new Dictionary<string, StepEvent>();
-    public Step s;
+
+    public Instruction currentInstruction;
+    public int currentStep;
+
+    public Instruction pausedInstruction;
+    public int pausedStep;
 
     //Method to publish that Instruction/Step has updated....
     void Awake () {
@@ -24,6 +26,7 @@ public class InstructionManager : MonoBehaviour {
         }
     }
 
+    #region UnityActions and Delegation
     public void StartListening(string eventName, UnityAction<Step> listener) {
         StepEvent thisEvent = null;
         if (eventDictionary.TryGetValue(eventName, out thisEvent)) {
@@ -47,27 +50,16 @@ public class InstructionManager : MonoBehaviour {
 
     public void TriggerEvent(string eventName) {
         StepEvent thisEvent = null;
-        s = currentInstruction.StepList[currentStep];
         if (eventDictionary.TryGetValue(eventName, out thisEvent)) {
-            //Step curStep = ;
-            thisEvent.newStep = currentInstruction.StepList[currentStep];
-            thisEvent.Invoke(s);
+            thisEvent.Invoke(currentInstruction.StepList[currentStep]);
         } else {
             Debug.Log("cant find event in dictionary: " + eventName);
         }
     }
 
-    public Instruction currentInstruction;
-    public int currentStep;
+    #endregion
 
-    public Instruction pausedInstruction;
-    public int pausedStep;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-
+    #region Instruction Methods
     /// <summary>
     /// Queue up a new instruction
     /// </summary>
@@ -140,4 +132,5 @@ public class InstructionManager : MonoBehaviour {
             Debug.LogException(e, this);
         }
     }
+    #endregion
 }

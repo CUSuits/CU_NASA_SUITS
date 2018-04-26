@@ -10,14 +10,7 @@ public class TaskListManager : InstUpdate, IUpdateText {
     public Image taskImage;
     public Text textField;
 
-    private UnityAction<Step> InstructionUpdateListener;
-
-    void Start() {
-        InstructionUpdateListener = new UnityAction<Step>(UpdateTaskList);
-    }
-
     public override void UpdateTaskList(Step step) {
-        Debug.Log("Triggered");
         UpdateText(step.taskListInfo);
         UpdateImage(step.taskListImg);
     }

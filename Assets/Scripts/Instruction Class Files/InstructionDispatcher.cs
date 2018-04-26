@@ -19,12 +19,6 @@ public class InstructionDispatcher : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.A)) {
             instManager.InterruptInstruction(0);
         }
-        if (Input.GetKeyDown(KeyCode.N)) {
-            instManager.NextStep();
-        }
-        if (Input.GetKeyDown(KeyCode.P)) {
-            instManager.PreviousStep();
-        }
         if (Input.GetKeyDown(KeyCode.S)) {
             instManager.ResumePausedInstruction();
         }

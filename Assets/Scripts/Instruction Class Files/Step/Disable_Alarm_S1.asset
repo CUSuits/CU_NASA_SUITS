@@ -15,6 +15,8 @@ MonoBehaviour:
     KEY to unlock the PANEL ACCESS DOOR LOCKS. CAUTION: The keys are on a tension-spring
     cable.'
   taskListImg: {fileID: 21300000, guid: bb8311ec76e0ba54c8237ad5642c1b23, type: 3}
+  prevHUDStr: 
   hudStr: Unlock PAD
+  nextHUDStr: Return key
   recognizedObjects: []
   recognizedObjectsStr: []

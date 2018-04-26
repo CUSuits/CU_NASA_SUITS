@@ -13,6 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: Carefully return keys to the side of the EVA kit.
   taskListImg: {fileID: 21300000, guid: 78c51dc3a8e50e84685f9c0e7929b0e6, type: 3}
+  prevHUDStr: Unlock PAD
   hudStr: Return key
+  nextHUDStr: Secure PAD
   recognizedObjects: []
   recognizedObjectsStr: []

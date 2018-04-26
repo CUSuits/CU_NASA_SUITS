@@ -5,15 +5,29 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HUDTaskManager : InstUpdate, IUpdateText {
-    public Text textField;
-  
+    public Text prevStepTextField;
+    public Text curStepTextField;
+    public Text nextStepTextField;
 
     public override void UpdateTaskList(Step step) {
-        Debug.Log("Triggered2");
         UpdateText(step.hudStr);
-   }
+        UpdateTextField(step.prevHUDStr, prevStepTextField);
+        UpdateTextField(step.nextHUDStr, nextStepTextField);
+    }
 
     public void UpdateText(string newText) {
-        textField.text = newText;
+        curStepTextField.text = newText;
     }
+
+    private void UpdateTextField(string newText, Text textField) {
+        Debug.Log(newText);
+        if (newText != "") {
+            textField.enabled = true;
+            textField.text = newText;
+        } else {
+            textField.enabled = false; 
+        }
+    }
+
+
 }
