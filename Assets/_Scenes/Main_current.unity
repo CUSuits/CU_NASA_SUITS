@@ -704,6 +704,11 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224464300704668986, guid: 609080f015c24da4fb64c737d7f766b9,
     type: 2}
   m_PrefabInternal: {fileID: 98770184}
+--- !u!224 &112861469 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+    type: 2}
+  m_PrefabInternal: {fileID: 733721487}
 --- !u!1 &139630080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,7 +1069,7 @@ MonoBehaviour:
   - Keyword: Remove heart rate
     KeyCode: 0
   - Keyword: Open suit pressure
-    KeyCode: 0
+    KeyCode: 54
   - Keyword: Show suit pressure
     KeyCode: 0
   - Keyword: Display suit pressure
@@ -1072,7 +1077,7 @@ MonoBehaviour:
   - Keyword: Close suit pressure
     KeyCode: 0
   - Keyword: Hide suit pressure
-    KeyCode: 0
+    KeyCode: 55
   - Keyword: Remove suit pressure
     KeyCode: 0
   - Keyword: Display sub pressure
@@ -1099,6 +1104,10 @@ MonoBehaviour:
     KeyCode: 40
   - Keyword: Hide task
     KeyCode: 41
+  - Keyword: Show Misc
+    KeyCode: 52
+  - Keyword: Hide Misc
+    KeyCode: 53
   recognitionConfidenceLevel: 1
 --- !u!1 &424913670
 GameObject:
@@ -1805,6 +1814,205 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 609080f015c24da4fb64c737d7f766b9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &733721487
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 862767375}
+    m_Modifications:
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.049
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114386482981287398, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: subMenuManager
+      value: 
+      objectReference: {fileID: 11400000, guid: 21caefbe091dafa418843da3e972a9f8,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 334b89173026a594f97cef58c1a96e58, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &733721488 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1530616975383494, guid: 334b89173026a594f97cef58c1a96e58,
+    type: 2}
+  m_PrefabInternal: {fileID: 733721487}
+--- !u!114 &733721489 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114386482981287398, guid: 334b89173026a594f97cef58c1a96e58,
+    type: 2}
+  m_PrefabInternal: {fileID: 733721487}
+  m_Script: {fileID: 11500000, guid: 9e1573694d772e04481b810d1d22f005, type: 3}
+--- !u!114 &733721490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733721488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Keywords:
+  - Keyword: Show Misc
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 733721489}
+          m_MethodName: Show
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Misc
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Open suit pressure
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 733721489}
+          m_MethodName: Show
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Int
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Hide Misc
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 733721489}
+          m_MethodName: Hide
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Misc
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Hide suit pressure
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 733721489}
+          m_MethodName: Hide
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Int
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  IsGlobalListener: 1
+  PersistentKeywords: 0
 --- !u!1 &764709581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,12 +2257,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 780685683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5dab9a9d68cec143ad97d9518d2d0f3, type: 3}
+  m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasComponent: {fileID: 0}
-  Keywords: []
-  IsGlobalListener: 0
+  Keywords:
+  - Keyword: Display heart rate
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 21caefbe091dafa418843da3e972a9f8, type: 2}
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  IsGlobalListener: 1
   PersistentKeywords: 0
 --- !u!1001 &788543321
 Prefab:
@@ -2477,6 +2701,7 @@ Transform:
   - {fileID: 447028642}
   - {fileID: 2005357816}
   - {fileID: 1214692448}
+  - {fileID: 112861469}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3551,8 +3776,6 @@ GameObject:
   - component: {fileID: 1539701109}
   - component: {fileID: 1539701111}
   - component: {fileID: 1539701110}
-  - component: {fileID: 1539701108}
-  - component: {fileID: 1539701106}
   m_Layer: 0
   m_Name: Internal Suit Pressure
   m_TagString: Untagged
@@ -3560,133 +3783,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1539701106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1539701105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Keywords:
-  - Keyword: Open suit pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: ToggleObject
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Open suit pressure
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Display suit pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: ToggleObject
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Display suit pressure
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Show suit pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: ToggleObject
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Show suit pressure
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close suit pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: ToggleObject
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Close suit pressure
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Hide suit pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: ToggleObject
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Hide suit pressure
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Remove suit pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_MethodName: ToggleObject
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Remove suit pressure
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  IsGlobalListener: 1
-  PersistentKeywords: 0
---- !u!114 &1539701108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1539701105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae8f3c88e9704a4393cb8d904b62372, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1539701109
 RectTransform:
   m_ObjectHideFlags: 0
