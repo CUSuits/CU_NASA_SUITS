@@ -43,11 +43,11 @@ namespace HoloToolkit.Unity
     /// Enables text to speech using the Windows 10 <see cref="SpeechSynthesizer"/> class.
     /// </summary>
     /// <remarks>
-    /// <see cref="SpeechSynthesizer"/> generates speech as a <see cref="SpeechSynthesisStream"/>. 
-    /// This class converts that stream into a Unity <see cref="AudioClip"/> and plays the clip using 
-    /// the <see cref="AudioSource"/> you supply in the inspector. This allows you to position the voice 
-    /// as desired in 3D space. One recommended approach is to place the AudioSource on an empty 
-    /// GameObject that is a child of Main Camera and position it approximately 0.6 units above the 
+    /// <see cref="SpeechSynthesizer"/> generates speech as a <see cref="SpeechSynthesisStream"/>.
+    /// This class converts that stream into a Unity <see cref="AudioClip"/> and plays the clip using
+    /// the <see cref="AudioSource"/> you supply in the inspector. This allows you to position the voice
+    /// as desired in 3D space. One recommended approach is to place the AudioSource on an empty
+    /// GameObject that is a child of Main Camera and position it approximately 0.6 units above the
     /// camera. This orientation will sound similar to Cortana's speech in the OS.
     /// </remarks>
     [RequireComponent(typeof(AudioSource))]
@@ -183,7 +183,7 @@ namespace HoloToolkit.Unity
         /// <param name="speakFunc">
         /// The actual function that will be executed to generate speech.
         /// </param>
-        private void PlaySpeech(string text, Func<IAsyncOperation<SpeechSynthesisStream>> speakFunc)
+        public void PlaySpeech(string text, Func<IAsyncOperation<SpeechSynthesisStream>> speakFunc)
         {
             // Make sure there's something to speak
             if (speakFunc == null) throw new ArgumentNullException(nameof(speakFunc));
