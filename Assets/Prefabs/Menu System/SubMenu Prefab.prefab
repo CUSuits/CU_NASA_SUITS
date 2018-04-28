@@ -74,11 +74,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e1573694d772e04481b810d1d22f005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subMenuManager: {fileID: 0}
   _subMenu: {fileID: 0}
+  defaultSubMenu: {fileID: 0}
   menuItems: []
   menuPrefab: {fileID: 114652492879411780, guid: d19c21570a316ae4b8992ad626a3325b,
     type: 2}
-  canvas: {fileID: 0}
   titleTextField: {fileID: 114528521092960258}
   MenuStatHolder: {fileID: 1716199999275750}
 --- !u!114 &114528521092960258
@@ -135,7 +136,7 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlHeight: 1
 --- !u!114 &114948407590853542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,7 +215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -34.1}
+  m_AnchoredPosition: {x: 60.9, y: -34.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224428937052454980

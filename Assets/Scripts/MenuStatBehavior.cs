@@ -38,6 +38,6 @@ public class MenuStatBehavior : MonoBehaviour {
         //Delay request to every 1 second?
         string requestParam = GetRequestParam();
         string newData = RequestNewData(requestParam);
-        UpdateText(newData);
+        UpdateText(menuStat.name+" : "+newData);
 	}
-}
+ }

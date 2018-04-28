@@ -7,17 +7,22 @@ public class SubMenuBehavior : MonoBehaviour {
     [SerializeField]
     public SubMenuManager subMenuManager;
     public SubMenu _subMenu;
+    public SubMenu defaultSubMenu;
     public List<MenuStatBehavior> menuItems;
     public MenuStatBehavior menuPrefab;
 
-       
-    public Canvas canvas;
+    protected Canvas canvas;
     public Text titleTextField;
     public GameObject MenuStatHolder;
 
 	// Use this for initialization
 	void Start () {
         canvas = GetComponent<Canvas>();
+        if(defaultSubMenu != null) {
+            _subMenu = defaultSubMenu;
+            InitializeSubMenu(_subMenu);
+        }
+
 	}
 
     public void Show(string subMenuName) {
@@ -28,7 +33,6 @@ public class SubMenuBehavior : MonoBehaviour {
             InitializeSubMenu(subMenu);
             canvas.enabled = true;
         }
-
     }
 
     public void Hide(string subMenuName) {
@@ -38,7 +42,7 @@ public class SubMenuBehavior : MonoBehaviour {
         }
     }
 
-    private SubMenu GetSubMenuFromManager(string subMenuName) {
+    protected SubMenu GetSubMenuFromManager(string subMenuName) {
         SubMenu subMenuFromManager = subMenuManager.subMenuDictionary[subMenuName];
         return subMenuFromManager;
     }
@@ -88,9 +92,15 @@ public class SubMenuBehavior : MonoBehaviour {
         menuStatBehavior.InitializeMenuStat(menuStat);
     } 
 
-    void CreateMenuStat() {
+    protected void CreateMenuStat() {
         MenuStatBehavior newMenuStat = Instantiate(menuPrefab, MenuStatHolder.transform);
         menuItems.Add(newMenuStat);
+    }
+
+    protected void CreateMenuStat(MenuStat menuStat) {
+        MenuStatBehavior newMenuStat = Instantiate(menuPrefab, MenuStatHolder.transform);
+        menuItems.Add(newMenuStat);
+        newMenuStat.InitializeMenuStat(menuStat);
     }
     
     public void Create() {
