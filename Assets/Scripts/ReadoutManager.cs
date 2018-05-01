@@ -8,7 +8,9 @@ namespace HoloToolkit.Unity.InputModule {
       var soundManager = GameObject.Find("Audio Manager");
       TextToSpeech textToSpeech = soundManager.GetComponent<TextToSpeech>();
       textToSpeech.Voice = TextToSpeechVoice.Mark;
+      #if !UNITY_EDITOR && UNITY_WSA
       textToSpeech.PlaySpeech("Hello Complicated World");
+      #endif
     }
 
     // Update is called once per frame
