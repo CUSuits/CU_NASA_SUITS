@@ -3468,8 +3468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e77565a9f9feb843879d12f43527c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url_data: 
-  url_switch: 
+  url_data: http://10.201.18.159:3000/api/suit/recent
+  url_switch: http://10.201.18.159:3000/api/suitswitch/recent
   suitData:
     heart_bpm: 
     p_suit: 
