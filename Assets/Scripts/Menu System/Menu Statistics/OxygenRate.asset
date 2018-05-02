@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: OxygenRate
   m_EditorClassIdentifier: 
   name: O2 Rate
-  dataRequestName: t_oxygen
+  dataRequestName: rate_o2

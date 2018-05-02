@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: InternalSuitPressure
   m_EditorClassIdentifier: 
   name: Internal Suit Pressure
-  dataRequestName: Internal
+  dataRequestName: p_suit

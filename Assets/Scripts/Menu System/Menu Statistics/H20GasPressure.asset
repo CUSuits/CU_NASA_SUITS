@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: H20GasPressure
   m_EditorClassIdentifier: 
   name: H20 Gas Pressure
-  dataRequestName: H20
+  dataRequestName: p_h2o_g

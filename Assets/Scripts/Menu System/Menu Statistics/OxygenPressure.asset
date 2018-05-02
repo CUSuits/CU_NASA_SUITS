@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: OxygenPressure
   m_EditorClassIdentifier: 
   name: Oxygen Pressure
-  dataRequestName: Oxygen
+  dataRequestName: p_o2

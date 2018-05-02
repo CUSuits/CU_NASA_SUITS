@@ -7,9 +7,13 @@ public class MenuStatBehavior : MonoBehaviour {
     public MenuStat menuStat;
     public Text statTextField;
 
+    public JSONReader json;
+    public SuitData telemetry_data;
+
 	// Use this for initialization
 	void Start () {
         statTextField = GetComponent<Text>();
+        json = GameObject.Find("Network Manager").GetComponent<JSONReader>();
 	}
 
     void UpdateText(string newValue) {
@@ -21,7 +25,15 @@ public class MenuStatBehavior : MonoBehaviour {
     }
 
     string RequestNewData(string requestParam) {
-        string newData = menuStat.name;
+        string newData;
+        if (requestParam == "--")
+        {
+            newData = "";
+        } else
+        { 
+        telemetry_data = json.suitData;
+        newData = telemetry_data.Request(requestParam).value;
+        };
         return newData;
     }
 
@@ -38,6 +50,13 @@ public class MenuStatBehavior : MonoBehaviour {
         //Delay request to every 1 second?
         string requestParam = GetRequestParam();
         string newData = RequestNewData(requestParam);
-        UpdateText(menuStat.name+" : "+newData);
-	}
+        if (requestParam == "--")
+        {
+            UpdateText(menuStat.name);
+        }
+        else
+        {
+            UpdateText(menuStat.name + " : " + newData);
+        };
+    }
  }

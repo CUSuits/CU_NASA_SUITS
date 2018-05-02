@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: SOP Pressure
   m_EditorClassIdentifier: 
   name: SOP Pressure
-  dataRequestName: SOP Pressure
+  dataRequestName: p_sop

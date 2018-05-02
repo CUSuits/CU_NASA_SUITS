@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: SOP Rate
   m_EditorClassIdentifier: 
   name: SOP Rate
-  dataRequestName: SOP Rate
+  dataRequestName: rate_sop
