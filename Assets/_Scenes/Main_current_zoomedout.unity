@@ -133,7 +133,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.85
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -254,12 +254,21 @@ Prefab:
     - target: {fileID: 114528521092960258, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_Text
-      value: Default
+      value: Menus
+      objectReference: {fileID: 0}
+    - target: {fileID: 1530616975383494, guid: 334b89173026a594f97cef58c1a96e58, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224428937052454980, guid: 334b89173026a594f97cef58c1a96e58,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -155
       objectReference: {fileID: 0}
     - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 219
+      value: 212
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 334b89173026a594f97cef58c1a96e58, type: 2}
@@ -750,686 +759,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Open suit pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open oxygen pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open o2 pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open o2 rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open oxygen rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open oxygen time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close suit pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close oxygen pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close o2 pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close oxygen rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close o2 rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close oxygen time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close o2 time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open o2 time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Int
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open secondary o2 pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SOP
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open secondary oxygen pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SOP
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open secondary oxygen rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SOP
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open secondary o2 rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SOP
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close secondary oxygen pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SOP
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close secondary o2 pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SOP
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close secondary oxygen rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SOP
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close secondary o2 rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: SOP
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open sublimator pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Sub
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open sublimator temperature
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Sub
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close sublimator pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Sub
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close sublimator temperature
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Sub
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open battery capacity
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Misc
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open battery time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Misc
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open fan
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Misc
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close battery capacity
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Misc
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close battery time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Misc
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close fan
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Misc
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open water gas
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: H2O
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open water liquid
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: H2O
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open h2o time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: H2O
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close water gas
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: H2O
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open water time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Show
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: H2O
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close water liquid
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: H2O
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close water time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: H2O
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close h2o time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 301104}
-          m_MethodName: Hide
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: H2O
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
   IsGlobalListener: 1
   PersistentKeywords: 0
 --- !u!1001 &56530087
@@ -1573,74 +902,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &75074413
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 75074414}
-  - component: {fileID: 75074416}
-  - component: {fileID: 75074415}
-  m_Layer: 0
-  m_Name: BGColor (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &75074414
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 75074413}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1714184401}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -182, y: -19.698448}
-  m_SizeDelta: {x: 103.1, y: 101.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &75074415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 75074413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.61878246, g: 0.6959492, b: 0.77205884, a: 0.494}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &75074416
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 75074413}
 --- !u!1001 &98770184
 Prefab:
   m_ObjectHideFlags: 0
@@ -1661,7 +922,7 @@ Prefab:
     - target: {fileID: 224464300704668986, guid: 609080f015c24da4fb64c737d7f766b9,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.85
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224464300704668986, guid: 609080f015c24da4fb64c737d7f766b9,
         type: 2}
@@ -1766,11 +1027,6 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.0004670261
       objectReference: {fileID: 0}
-    - target: {fileID: 223825966598157372, guid: 609080f015c24da4fb64c737d7f766b9,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 609080f015c24da4fb64c737d7f766b9, type: 2}
   m_IsPrefabParent: 0
@@ -1872,7 +1128,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.85
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -1902,7 +1158,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.056
+      value: -0.0619
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -1998,12 +1254,12 @@ Prefab:
     - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 580
+      value: 575
       objectReference: {fileID: 0}
     - target: {fileID: 223647191791432522, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224428937052454980, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -2289,7 +1545,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 255958350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.85}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 0.00047, y: 0.00047, z: 0.00047}
   m_Children:
   - {fileID: 809344724}
@@ -2319,40 +1575,6 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 255958352}
-          m_MethodName: HideCanvas
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close keywords
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 255958352}
-          m_MethodName: HideCanvas
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open full phrase list
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 255958352}
           m_MethodName: ShowCanvas
           m_Mode: 1
           m_Arguments:
@@ -2365,75 +1587,7 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Close full phrase list
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 255958352}
-          m_MethodName: HideCanvas
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open All
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 255958352}
-          m_MethodName: HideCanvas
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close All
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 255958352}
-          m_MethodName: HideCanvas
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Open home
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 255958352}
-          m_MethodName: HideCanvas
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Close home
+  - Keyword: Close keywords
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -2602,229 +1756,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &321194084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 321194085}
-  - component: {fileID: 321194087}
-  - component: {fileID: 321194086}
-  m_Layer: 0
-  m_Name: BGColor (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &321194085
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 321194084}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0063678, y: 1.0063678, z: 1.0063678}
-  m_Children: []
-  m_Father: {fileID: 112861469}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -177, y: -19.823881}
-  m_SizeDelta: {x: 103.1, y: 101.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &321194086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 321194084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.61878246, g: 0.6959492, b: 0.77205884, a: 0.494}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &321194087
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 321194084}
---- !u!1001 &328888991
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1464424438}
-    m_Modifications:
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 169
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 49
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_Text
-      value: Need More?  "Open full phrase list"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_FontData.m_Alignment
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1313978535408332, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
-      propertyPath: m_Name
-      value: Basic Text (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_FontData.m_FontStyle
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 54ae52e8079d0804f8028ced0bc3b763,
-        type: 3}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
-  m_IsPrefabParent: 0
---- !u!224 &328888992 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
-    type: 2}
-  m_PrefabInternal: {fileID: 328888991}
 --- !u!1 &375951931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2868,6 +1799,12 @@ MonoBehaviour:
   PersistentKeywords: 0
   RecognizerStart: 0
   Keywords:
+  - Keyword: Open heart rate
+    KeyCode: 0
+  - Keyword: Open suit pressure
+    KeyCode: 54
+  - Keyword: Open sub pressure
+    KeyCode: 0
   - Keyword: Next Step
     KeyCode: 110
   - Keyword: Previous Step
@@ -2939,166 +1876,6 @@ MonoBehaviour:
   - Keyword: Close task
     KeyCode: 0
   - Keyword: Close heart rate
-    KeyCode: 0
-  - Keyword: Push sublimator pressure
-    KeyCode: 0
-  - Keyword: Clear sublimator pressure
-    KeyCode: 0
-  - Keyword: Push sublimator temperature
-    KeyCode: 0
-  - Keyword: Clear sublimator temperature
-    KeyCode: 0
-  - Keyword: Push oxygen pressure
-    KeyCode: 0
-  - Keyword: Clear oxygen pressure
-    KeyCode: 0
-  - Keyword: Push o2 pressure
-    KeyCode: 0
-  - Keyword: Clear o2 pressure
-    KeyCode: 0
-  - Keyword: Push oxygen rate
-    KeyCode: 0
-  - Keyword: Clear oxygen rate
-    KeyCode: 0
-  - Keyword: Push o2 rate
-    KeyCode: 0
-  - Keyword: Clear o2 rate
-    KeyCode: 0
-  - Keyword: Push battery capacity
-    KeyCode: 0
-  - Keyword: Clear battery capacity
-    KeyCode: 0
-  - Keyword: Push water pressure
-    KeyCode: 0
-  - Keyword: Clear water pressure
-    KeyCode: 0
-  - Keyword: Push water gas
-    KeyCode: 0
-  - Keyword: Clear water gas
-    KeyCode: 0
-  - Keyword: Push water liquid
-    KeyCode: 0
-  - Keyword: Clear water liquid
-    KeyCode: 0
-  - Keyword: Push water vapor
-    KeyCode: 0
-  - Keyword: Clear water vapor
-    KeyCode: 0
-  - Keyword: Push secondary oxygen pressure
-    KeyCode: 0
-  - Keyword: Clear secondary oxygen pressure
-    KeyCode: 0
-  - Keyword: Push secondary o2 pressure
-    KeyCode: 0
-  - Keyword: Clear secondary o2 pressure
-    KeyCode: 0
-  - Keyword: Push secondary oxygen rate
-    KeyCode: 0
-  - Keyword: Clear secondary oxygen rate
-    KeyCode: 0
-  - Keyword: Push secondary o2 rate
-    KeyCode: 0
-  - Keyword: Clear secondary o2 rate
-    KeyCode: 0
-  - Keyword: Push battery time
-    KeyCode: 0
-  - Keyword: Clear battery time
-    KeyCode: 0
-  - Keyword: Push oxygen time
-    KeyCode: 0
-  - Keyword: Clear oxygen time
-    KeyCode: 0
-  - Keyword: Push o2 time
-    KeyCode: 0
-  - Keyword: Clear o2 time
-    KeyCode: 0
-  - Keyword: Push water time
-    KeyCode: 0
-  - Keyword: Clear water time
-    KeyCode: 0
-  - Keyword: Open full phrase list
-    KeyCode: 0
-  - Keyword: Close full phrase list
-    KeyCode: 0
-  - Keyword: Open suit pressure
-    KeyCode: 0
-  - Keyword: Close suit pressure
-    KeyCode: 0
-  - Keyword: Open sublimator pressure
-    KeyCode: 0
-  - Keyword: Close sublimator pressure
-    KeyCode: 0
-  - Keyword: Open sublimator temperature
-    KeyCode: 0
-  - Keyword: Close sublimator temperature
-    KeyCode: 0
-  - Keyword: Open fan
-    KeyCode: 0
-  - Keyword: Close fan
-    KeyCode: 0
-  - Keyword: Open oxygen pressure
-    KeyCode: 0
-  - Keyword: Close oxygen pressure
-    KeyCode: 0
-  - Keyword: Open o2 pressure
-    KeyCode: 0
-  - Keyword: Close o2 pressure
-    KeyCode: 0
-  - Keyword: Open o2 rate
-    KeyCode: 0
-  - Keyword: Close o2 rate
-    KeyCode: 0
-  - Keyword: Open battery capacity
-    KeyCode: 0
-  - Keyword: Close battery capacity
-    KeyCode: 0
-  - Keyword: Open water gas
-    KeyCode: 0
-  - Keyword: Close water gas
-    KeyCode: 0
-  - Keyword: Open water liquid
-    KeyCode: 0
-  - Keyword: Close water liquid
-    KeyCode: 0
-  - Keyword: Open secondary oxygen pressure
-    KeyCode: 0
-  - Keyword: Close secondary oxygen pressure
-    KeyCode: 0
-  - Keyword: Open secondary o2 pressure
-    KeyCode: 0
-  - Keyword: Close secondary o2 pressure
-    KeyCode: 0
-  - Keyword: Open secondary oxygen rate
-    KeyCode: 0
-  - Keyword: Close secondary oxygen rate
-    KeyCode: 0
-  - Keyword: Open secondary o2 rate
-    KeyCode: 0
-  - Keyword: Close secondary o2 rate
-    KeyCode: 0
-  - Keyword: Open battery time
-    KeyCode: 0
-  - Keyword: Close battery time
-    KeyCode: 0
-  - Keyword: Open oxygen time
-    KeyCode: 0
-  - Keyword: Close oxygen time
-    KeyCode: 0
-  - Keyword: Open o2 time
-    KeyCode: 0
-  - Keyword: Close o2 time
-    KeyCode: 0
-  - Keyword: Open water time
-    KeyCode: 0
-  - Keyword: Close water time
-    KeyCode: 0
-  - Keyword: Open h2o time
-    KeyCode: 0
-  - Keyword: Close h2o time
-    KeyCode: 0
-  - Keyword: Open oxygen rate
-    KeyCode: 0
-  - Keyword: Close oxygen rate
     KeyCode: 0
   recognitionConfidenceLevel: 1
 --- !u!1 &424913670
@@ -3175,7 +1952,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.85
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -3205,7 +1982,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0583
+      value: 0.046
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -3297,16 +2074,6 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: Miscellaneous
-      objectReference: {fileID: 0}
-    - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 218
-      objectReference: {fileID: 0}
-    - target: {fileID: 223647191791432522, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 334b89173026a594f97cef58c1a96e58, type: 2}
@@ -3951,7 +2718,7 @@ MonoBehaviour:
     Response:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 857201154}
+        - m_Target: {fileID: 857201150}
           m_MethodName: set_enabled
           m_Mode: 6
           m_Arguments:
@@ -3960,7 +2727,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
+            m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -3968,7 +2735,7 @@ MonoBehaviour:
     Response:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 857201154}
+        - m_Target: {fileID: 857201150}
           m_MethodName: set_enabled
           m_Mode: 6
           m_Arguments:
@@ -4015,607 +2782,8 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  - Keyword: Push sublimator pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 588f1779c2bfdf24abc28a7b33ab2fa7,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear sublimator pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 588f1779c2bfdf24abc28a7b33ab2fa7,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push sublimator temperature
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 90cfe9bc63b026a4db166e2226554fe4,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear sublimator temperature
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 90cfe9bc63b026a4db166e2226554fe4,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push oxygen pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 04865c6f5c5c9e44fb654b2a4569e36f,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push o2 pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 04865c6f5c5c9e44fb654b2a4569e36f,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear oxygen pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 04865c6f5c5c9e44fb654b2a4569e36f,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear o2 pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 04865c6f5c5c9e44fb654b2a4569e36f,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push oxygen rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 99ab950f66a9f574ba43440c1e78a354,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push o2 rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 99ab950f66a9f574ba43440c1e78a354,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear oxygen rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 99ab950f66a9f574ba43440c1e78a354,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear o2 rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 99ab950f66a9f574ba43440c1e78a354,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push battery capacity
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 2ee3d50b61e37cd4eb966a3c336e7ed9,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear battery capacity
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 2ee3d50b61e37cd4eb966a3c336e7ed9,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push water gas
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 4c8917d3e6e74524daafe8c81217f442,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear water gas
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 4c8917d3e6e74524daafe8c81217f442,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push water liquid
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 7ec56a8fff2861a4d948c60211d6cfb8,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear water liquid
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 7ec56a8fff2861a4d948c60211d6cfb8,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push secondary oxygen pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 3cb0bad748abd9b4f9a6db65e1f7de28,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear secondary oxygen pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 3cb0bad748abd9b4f9a6db65e1f7de28,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push secondary o2 pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 3cb0bad748abd9b4f9a6db65e1f7de28,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear secondary o2 pressure
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 3cb0bad748abd9b4f9a6db65e1f7de28,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push secondary oxygen rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: d1a24aeb14caf3649964b5d9bf0fd2f9,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear secondary oxygen rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: d1a24aeb14caf3649964b5d9bf0fd2f9,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push secondary o2 rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: d1a24aeb14caf3649964b5d9bf0fd2f9,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear secondary o2 rate
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: d1a24aeb14caf3649964b5d9bf0fd2f9,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push battery time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 2ec0a9be0808d7e44ab8f15aae7b6768,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear battery time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 2ec0a9be0808d7e44ab8f15aae7b6768,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push oxygen time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 77c05b2e9f3319c409e9132239e2cf6c,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear oxygen time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 77c05b2e9f3319c409e9132239e2cf6c,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Push water time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Push
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 98537efbed4634e40adc524ee765a9cc,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: Clear water time
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 857201150}
-          m_MethodName: Clear
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 98537efbed4634e40adc524ee765a9cc,
-              type: 2}
-            m_ObjectArgumentAssemblyTypeName: MenuStat, Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
   IsGlobalListener: 1
   PersistentKeywords: 0
---- !u!223 &857201154 stripped
-Canvas:
-  m_PrefabParentObject: {fileID: 223825966598157372, guid: 609080f015c24da4fb64c737d7f766b9,
-    type: 2}
-  m_PrefabInternal: {fileID: 98770184}
---- !u!114 &857201155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 857201149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e1573694d772e04481b810d1d22f005, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  subMenuManager: {fileID: 0}
-  _subMenu: {fileID: 0}
-  defaultSubMenu: {fileID: 0}
-  menuItems: []
-  menuPrefab: {fileID: 0}
-  titleTextField: {fileID: 0}
-  MenuStatHolder: {fileID: 0}
 --- !u!1 &862767371
 GameObject:
   m_ObjectHideFlags: 0
@@ -4716,7 +2884,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2140055673}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.85}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 0.0004670261, y: 0.0004670261, z: 0.0004670261}
   m_Children:
   - {fileID: 1859535301}
@@ -4727,7 +2895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.0317, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 792, y: 542}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &906092010
@@ -4738,7 +2906,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 764709581}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.85}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 0.0004670261, y: 0.0004670261, z: 0.0004670261}
   m_Children:
   - {fileID: 1374915812}
@@ -4770,7 +2938,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.85
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -4800,7 +2968,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0493
+      value: -0.0511
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -4901,7 +3069,7 @@ Prefab:
     - target: {fileID: 223647191791432522, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114528521092960258, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -5060,7 +3228,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.85
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -5090,7 +3258,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0.2275
+      value: 0.2299
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -5192,16 +3360,6 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: H2O
-      objectReference: {fileID: 0}
-    - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 221
-      objectReference: {fileID: 0}
-    - target: {fileID: 223647191791432522, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 334b89173026a594f97cef58c1a96e58, type: 2}
@@ -5462,11 +3620,10 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1464424439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.85}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 0.00047, y: 0.00047, z: 0.00047}
   m_Children:
   - {fileID: 2035622012}
-  - {fileID: 328888992}
   m_Father: {fileID: 862767375}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5524,7 +3681,7 @@ Canvas:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1464424439}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -6048,8 +4205,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 184.55, y: -19.7}
-  m_SizeDelta: {x: 103.1, y: 101.3}
+  m_AnchoredPosition: {x: 184, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612917506
 MonoBehaviour:
@@ -6063,7 +4220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.61878246, g: 0.6959492, b: 0.77205884, a: 0.494}
+  m_Color: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 0.203}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6146,7 +4303,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.85
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -6268,21 +4425,6 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: Internal
-      objectReference: {fileID: 0}
-    - target: {fileID: 224428937052454980, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -153
-      objectReference: {fileID: 0}
-    - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 214
-      objectReference: {fileID: 0}
-    - target: {fileID: 223647191791432522, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 334b89173026a594f97cef58c1a96e58, type: 2}
@@ -6563,7 +4705,7 @@ Prefab:
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.85
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224444149142281954, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -6679,7 +4821,7 @@ Prefab:
     - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 93
+      value: 41.9
       objectReference: {fileID: 0}
     - target: {fileID: 114665199682792678, guid: 334b89173026a594f97cef58c1a96e58,
         type: 2}
@@ -6695,26 +4837,6 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: BPM
-      objectReference: {fileID: 0}
-    - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 248.99998
-      objectReference: {fileID: 0}
-    - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 224120788866251274, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 223647191791432522, guid: 334b89173026a594f97cef58c1a96e58,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 334b89173026a594f97cef58c1a96e58, type: 2}
@@ -6875,74 +4997,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1828941273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1828941274}
-  - component: {fileID: 1828941276}
-  - component: {fileID: 1828941275}
-  m_Layer: 0
-  m_Name: BGColor (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1828941274
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1828941273}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1138690494}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -176, y: 55}
-  m_SizeDelta: {x: 103.1, y: 101.3}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1828941275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1828941273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.61878246, g: 0.6959492, b: 0.77205884, a: 0.494}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1828941276
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1828941273}
 --- !u!1 &1840067215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6951,15 +5005,13 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1840067216}
-  - component: {fileID: 1840067218}
-  - component: {fileID: 1840067217}
   m_Layer: 0
   m_Name: Text_speechTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1840067216
 Transform:
   m_ObjectHideFlags: 0
@@ -6973,99 +5025,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1840067217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1840067215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca6f3b91ea1f9634db308846d1cdfb7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 2043651032}
-  voice: 0
---- !u!82 &1840067218
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1840067215}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!224 &1859535301 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
@@ -7127,7 +5086,7 @@ Prefab:
     - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 236
+      value: 168
       objectReference: {fileID: 0}
     - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
@@ -7181,12 +5140,12 @@ Prefab:
     - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
       propertyPath: m_FontData.m_Alignment
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
       propertyPath: m_Text
-      value: ScratchPad
+      value: Pad
       objectReference: {fileID: 0}
     - target: {fileID: 1313978535408332, guid: 11208d3c424d4264e8253726c3b3e47d, type: 2}
       propertyPath: m_IsActive
@@ -7291,7 +5250,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1953222061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.806}
+  m_LocalPosition: {x: 0, y: 0, z: 0.3}
   m_LocalScale: {x: 0.0004670261, y: 0.00046702623, z: 0.00046702623}
   m_Children:
   - {fileID: 769189175}
@@ -7576,12 +5535,12 @@ Prefab:
     - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 154
+      value: 276.8
       objectReference: {fileID: 0}
     - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 114
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 224046128846043840, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
@@ -7626,16 +5585,13 @@ Prefab:
     - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
       propertyPath: m_Text
-      value: 'SubMenus:   "Open/Close/Read   [menu/stat]"
-
-        SratchPad:   "Push/Clear [stat]"  ||  "Clear pad"
-
-        HUD preset:  "Open/Close All/Home"'
+      value: "\"Open/Close/Push/Read  [menu/stat]\" \n\"Open/Close All\"   |  \"Open/Close
+        Home\"\n\"Clear scratchpad\"  |  \"Open full phrase list\""
       objectReference: {fileID: 0}
     - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
       propertyPath: m_FontData.m_Alignment
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114737862527667918, guid: 11208d3c424d4264e8253726c3b3e47d,
         type: 2}
@@ -7791,8 +5747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 290, y: -20.299995}
-  m_SizeDelta: {x: 100, y: 104.6}
+  m_AnchoredPosition: {x: 290.4, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2110270901
 MonoBehaviour:
@@ -7806,7 +5762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.61878246, g: 0.6959492, b: 0.77205884, a: 0.494}
+  m_Color: {r: 0.7058823, g: 0.7058823, b: 0.7058823, a: 0.203}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7843,7 +5799,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2121820664
 MonoBehaviour:
   m_ObjectHideFlags: 0
