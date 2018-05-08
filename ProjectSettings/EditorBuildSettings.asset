@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/1_Main_current.unity
     guid: 449a427d713924e41ad4a314345449c5
+  - enabled: 0
+    path: Assets/_Scenes/1_Main_current_Text2Speech.unity
+    guid: ef383bb1f29540d4589345d90b6686fe

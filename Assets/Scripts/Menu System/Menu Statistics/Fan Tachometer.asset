@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde745117a17a8542b919284617f9eff, type: 3}
   m_Name: Fan Tachometer
   m_EditorClassIdentifier: 
-  name: Fan Tachometer
+  name: Fan Tach
   dataRequestName: v_fan

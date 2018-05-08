@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde745117a17a8542b919284617f9eff, type: 3}
   m_Name: SOP Pressure
   m_EditorClassIdentifier: 
-  name: SOP Pressure
+  name: SOP press
   dataRequestName: p_sop

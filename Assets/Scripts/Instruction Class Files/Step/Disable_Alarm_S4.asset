@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: Disable_Alarm_S4
+  m_EditorClassIdentifier: 
+  taskListInfo: 'Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE. CAUTION:
+    Rock the ALARM FUSE with the FUSE PULLER when pulling up.'
+  taskListImg: {fileID: 21300000, guid: 91929bfc02b0b884e9eb2b20dec98619, type: 3}
+  prevHUDStr: Locate BLUE FUSE PULLER
+  hudStr: Remove ALARM
+  nextHUDStr: Return fuse and pullers to storage
+  recognizedObjects: []
+  recognizedObjectsStr: []
