@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Events;
-
+using HoloToolkit.Unity;
 [System.Serializable]
 public class StepEvent : UnityEvent<Step> {
 }
@@ -18,6 +18,9 @@ public class InstructionManager : MonoBehaviour {
 
     public Instruction pausedInstruction;
     public int pausedStep;
+
+    public TextToSpeech textToSpeechService;
+    public bool isReadingOut;
 
     //Method to publish that Instruction/Step has updated....
     void Awake () {
@@ -79,6 +82,7 @@ public class InstructionManager : MonoBehaviour {
         currentStep = 0;
         Debug.Log(currentInstruction.StepList[currentStep].hudStr);
         TriggerEvent("InstUpdate");
+        ReadOutStep();
     }
 
     public void InterruptInstruction(int newInstruction) {
@@ -90,6 +94,7 @@ public class InstructionManager : MonoBehaviour {
 
         QueueInstruction(newInstruction);
         TriggerEvent("InstUpdate");
+        ReadOutStep();
     }
 
     public void ResumePausedInstruction() {
@@ -107,6 +112,7 @@ public class InstructionManager : MonoBehaviour {
                 Debug.Log(currentInstruction.StepList[currentStep].hudStr);
             }
             TriggerEvent("InstUpdate");
+            ReadOutStep();
         } catch (Exception e) {
             Debug.LogException(e, this);
         }
@@ -117,6 +123,7 @@ public class InstructionManager : MonoBehaviour {
             Debug.Log(currentInstruction.StepList[currentStep+1].hudStr);
             ++currentStep;
             TriggerEvent("InstUpdate");
+            ReadOutStep();
         }
         catch (Exception e) {
             Debug.LogException(e, this);
@@ -128,9 +135,30 @@ public class InstructionManager : MonoBehaviour {
             Debug.Log(currentInstruction.StepList[currentStep-1].hudStr);
             --currentStep;
             TriggerEvent("InstUpdate");
+            ReadOutStep();
         } catch (Exception e) {
             Debug.LogException(e, this);
         }
+    }
+
+    public void SetIsReadOut(bool state) {
+        if (state) { 
+            textToSpeechService.StartSpeaking("Enabling step readout");
+        } else {
+            textToSpeechService.StartSpeaking("Disabling step readout");
+        }
+        isReadingOut = state;
+    }
+
+    public void ReadOutStep() {
+        if (isReadingOut) {
+            Debug.Log(currentInstruction.StepList[currentStep].taskListInfo);
+            textToSpeechService.StartSpeaking(currentInstruction.StepList[currentStep].taskListInfo);
+        }
+    }
+
+    public void RepeatStep() {
+        textToSpeechService.StartSpeaking(currentInstruction.StepList[currentStep].taskListInfo);
     }
     #endregion
 }

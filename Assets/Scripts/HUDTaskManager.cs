@@ -20,7 +20,6 @@ public class HUDTaskManager : InstUpdate, IUpdateText {
     }
 
     private void UpdateTextField(string newText, Text textField) {
-        Debug.Log(newText);
         if (newText != "") {
             textField.enabled = true;
             textField.text = newText;
