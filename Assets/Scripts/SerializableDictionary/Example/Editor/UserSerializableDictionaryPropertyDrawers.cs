@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 
+[CustomPropertyDrawer(typeof(StringGameObjectDict))]
 [CustomPropertyDrawer(typeof(StringSubMenuDict))]
 [CustomPropertyDrawer(typeof(StringStringDictionary))]
 [CustomPropertyDrawer(typeof(ObjectColorDictionary))]

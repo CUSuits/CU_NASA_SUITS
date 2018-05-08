@@ -19,4 +19,7 @@ MonoBehaviour:
   hudStr: Unlock PAD
   nextHUDStr: Return key
   recognizedObjects: []
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - cat
+  - dog
+  - bear

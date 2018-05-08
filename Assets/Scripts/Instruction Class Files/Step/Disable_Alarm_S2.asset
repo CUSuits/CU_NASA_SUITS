@@ -17,4 +17,6 @@ MonoBehaviour:
   hudStr: Return key
   nextHUDStr: Secure PAD
   recognizedObjects: []
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - apple
+  - oranges

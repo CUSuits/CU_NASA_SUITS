@@ -18,4 +18,6 @@ MonoBehaviour:
   hudStr: Secure PAD
   nextHUDStr: 
   recognizedObjects: []
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - car
+  - truck
