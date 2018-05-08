@@ -3261,6 +3261,12 @@ MonoBehaviour:
     KeyCode: 0
   - Keyword: Close oxygen rate
     KeyCode: 0
+  - Keyword: Enable read out
+    KeyCode: 0
+  - Keyword: Disable read out
+    KeyCode: 0
+  - Keyword: Repeat step
+    KeyCode: 0
   recognitionConfidenceLevel: 1
 --- !u!1 &424913670
 GameObject:
@@ -5618,7 +5624,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2bd83391639248f98eb2aafd9dc47242, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6ae585e4c32940b48c30d9952ce63ba4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -8474,7 +8480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Keywords:
-  - Keyword: hello
+  - Keyword: show me tee water stat
     Response:
       m_PersistentCalls:
         m_Calls:
@@ -8536,7 +8542,7 @@ MonoBehaviour:
   PersistentKeywords: 0
   RecognizerStart: 0
   Keywords:
-  - Keyword: hello
+  - Keyword: show me tee water stat
     KeyCode: 8
   recognitionConfidenceLevel: 1
 --- !u!224 &1859535301 stripped
@@ -8924,7 +8930,7 @@ MonoBehaviour:
   pausedInstruction: {fileID: 0}
   pausedStep: 0
   textToSpeechService: {fileID: 1840067217}
-  isReadingOut: 1
+  isReadingOut: 0
 --- !u!4 &1967896775
 Transform:
   m_ObjectHideFlags: 0
@@ -9024,6 +9030,57 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1967896774}
           m_MethodName: ResumePausedInstruction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Enable read out
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1967896774}
+          m_MethodName: SetIsReadOut
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Disable read out
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1967896774}
+          m_MethodName: SetIsReadOut
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Repeat step
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1967896774}
+          m_MethodName: RepeatStep
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9407,8 +9464,6 @@ GameObject:
   - component: {fileID: 2121820666}
   - component: {fileID: 2121820665}
   - component: {fileID: 2121820664}
-  - component: {fileID: 2121820667}
-  - component: {fileID: 2121820668}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -9523,49 +9578,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2121820667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2121820663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f77f796c56592504dabae378a68d0b47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textToSpeech: {fileID: 2121820664}
---- !u!114 &2121820668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2121820663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Keywords:
-  - Keyword: Open All
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2121820667}
-          m_MethodName: PlayAudio
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  IsGlobalListener: 1
-  PersistentKeywords: 0
 --- !u!1 &2140055673
 GameObject:
   m_ObjectHideFlags: 0
