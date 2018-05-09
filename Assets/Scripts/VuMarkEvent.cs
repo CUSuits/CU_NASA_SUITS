@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
-
+using HoloToolkit.Unity;
 
 [Serializable]
 public class StringGameObjectDict : SerializableDictionary<string, GameObject> { }
@@ -18,6 +18,7 @@ public class VuMarkEvent : InstUpdate {
     public StringGameObjectDict recognizedObjDict;
     public List<string> trackedTargets;
 
+    public TextToSpeech textToSpeechService;
     void Start() {
         // Set VuMarkManager
         vuMarkManager = TrackerManager.Instance.GetStateManager().GetVuMarkManager();
@@ -60,6 +61,7 @@ public class VuMarkEvent : InstUpdate {
 
     public void onVuMarkDetected(VuMarkTarget target) {
         Debug.Log("Detected ID: " + getVuMarkID(target));
+        textToSpeechService.StartSpeaking(getVuMarkID(target));
         // Find and activate model by VuMark ID
         string objStr = getVuMarkID(target);
         if (recognizedObjDict.ContainsKey(objStr))
