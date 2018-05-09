@@ -2414,7 +2414,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 49d7328d8ed5d71d6b28d82498508fdd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 786bc8a6eef779db4992bb4571ab6ade, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -3605,6 +3605,7 @@ GameObject:
   - component: {fileID: 764709583}
   - component: {fileID: 764709582}
   - component: {fileID: 764709585}
+  - component: {fileID: 764709586}
   m_Layer: 0
   m_Name: Overlay - Clock
   m_TagString: Untagged
@@ -3806,6 +3807,17 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
   IsGlobalListener: 1
   PersistentKeywords: 0
+--- !u!114 &764709586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764709581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d848fd36ecc7f459033880d86ba86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &769189174
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,7 +6241,7 @@ MonoBehaviour:
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/EVA_Tools.xml
-  mExtendedTracking: 0
+  mExtendedTracking: 1
   mInitializeSmartTerrain: 0
   mReconstructionToInitialize: {fileID: 0}
   mSmartTerrainOccluderBoundsMin: {x: 0, y: 0, z: 0}
@@ -6294,6 +6306,7 @@ MonoBehaviour:
     - {fileID: 1127924132}
     - {fileID: 1540697749}
   trackedTargets: []
+  textToSpeechService: {fileID: 1840067217}
 --- !u!1001 &1312951512
 Prefab:
   m_ObjectHideFlags: 0
@@ -9385,6 +9398,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2121820666}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2083943737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2083943739}
+  - component: {fileID: 2083943738}
+  m_Layer: 0
+  m_Name: GrammarRecognizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2083943738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083943737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24444100c2048ec42856f36d5936992b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2083943739
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2083943737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.28158528, y: -0.020694673, z: 0.6425127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2110270899
 GameObject:
