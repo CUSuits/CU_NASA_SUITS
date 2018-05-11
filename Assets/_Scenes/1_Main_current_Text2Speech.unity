@@ -3102,17 +3102,17 @@ MonoBehaviour:
   - Keyword: Close heart rate
     KeyCode: 0
   - Keyword: Push sublimator pressure
-    KeyCode: 0
+    KeyCode: 49
   - Keyword: Clear sublimator pressure
-    KeyCode: 0
+    KeyCode: 52
   - Keyword: Push sublimator temperature
     KeyCode: 0
   - Keyword: Clear sublimator temperature
     KeyCode: 0
   - Keyword: Push oxygen pressure
-    KeyCode: 0
+    KeyCode: 50
   - Keyword: Clear oxygen pressure
-    KeyCode: 0
+    KeyCode: 53
   - Keyword: Push o2 pressure
     KeyCode: 0
   - Keyword: Clear o2 pressure
@@ -3170,9 +3170,9 @@ MonoBehaviour:
   - Keyword: Clear oxygen time
     KeyCode: 0
   - Keyword: Push o2 time
-    KeyCode: 0
+    KeyCode: 51
   - Keyword: Clear o2 time
-    KeyCode: 0
+    KeyCode: 54
   - Keyword: Push water time
     KeyCode: 0
   - Keyword: Clear water time
@@ -9426,6 +9426,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24444100c2048ec42856f36d5936992b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textToSpeechService: {fileID: 1840067217}
+  mainSubMenu: {fileID: 301104}
+  padSubMenu: {fileID: 857201150}
+  intStats:
+  - suit pressure
+  - oxygen pressure
+  - oxygen rate
+  miscStats:
+  - battery capacity
+  subStats:
+  - sublimator temperature
+  - sublimator pressure
+  h20Stats:
+  - a
+  - b
+  sopStats:
+  - secondary oxgygen pressure
+  - secondary oxygen rate
 --- !u!4 &2083943739
 Transform:
   m_ObjectHideFlags: 0

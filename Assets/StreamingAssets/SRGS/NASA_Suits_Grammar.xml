@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="toplevel"
+xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="toplevel" scope="public">
+    <one-of>
+      <item> <ruleref uri="#PlayCard"/> <tag> out.Submenu = rules.PlayCard; </tag> </item>
+      <item> <ruleref uri="#MoveCard"/> <tag> out.Submenu = rules.MoveCard; </tag> </item>
+    </one-of>
+  </rule>
+
+  <rule id="PlayCard" scope="public">
+    <example> open int  </example>
+    <example> show misc </example>
+    <example> display sop </example>
+  
+    <one-of>
+      <item> open </item>
+      <item> show </item>
+      <item> display </item>
+    </one-of>
+    <ruleref uri="#Submenu"/>
+    <tag> out = rules.Submenu; </tag>
+  </rule>
+
+
+  <rule id="MoveCard" scope="public">
+    
+    <example> close misc  </example>
+    <example> hide sop </example>
+    
+    <one-of>
+      <item> close </item>
+      <item> hide </item>
+    </one-of>
+    <ruleref uri="#Submenu"/>
+    <tag> out = rules.Submenu; </tag>
+  </rule>
+
+  <!-- Names of all stat values Opened, Closed, Pushed, Read -->
+  <rule id="Stat">
+    <one-of>
+      <item> suit pressure <tag> out = "suit pressure"; </tag> </item>
+      <item> fan tachometer <tag> out = "fan tachometer"; </tag> </item>
+      <item> internal <tag> out = "internal"; </tag> </item>
+      <item> h20 <tag> out = "h20"; </tag> </item>
+      <item> sublimator pressure <tag> out = "sublimator pressure"; </tag> </item>
+      <item> sublimator temperature <tag> out = "sublimator temperature"; </tag> </item>
+      <item> oxygen pressure <tag> out = "oxygen pressure"; </tag> </item>
+      <item> oxygen rate <tag> out = "oxygen rate"; </tag> </item>
+      <item> battery capacity <tag> out = "battery capacity"; </tag> </item>
+      <item> water pressure <tag> out = "water pressure"; </tag> </item>
+      <item> water gas <tag> out = "water gas"; </tag> </item>
+      <item> water liquid <tag> out = "water liquid"; </tag> </item>
+      <item> water vapor <tag> out = "water vapor"; </tag> </item>
+
+      <item> secondary oxygen rate <tag> out = "secondary oxygen rate"; </tag> </item>
+      <item> secondary oxygen pressure <tag> out = "secondary oxygen pressure"; </tag> </item>
+    </one-of>
+  </rule>
+
+
+
+  <!-- Names of all submenus to be Opened,Closed -->
+  <rule id="Submenu">
+    <one-of>
+      <item> int <tag> out = Int; </tag> </item>
+      <item> misc <tag> out = Misc; </tag> </item>
+      <item> sub <tag> out = Sub; </tag> </item>
+      <item> sop <tag> out = SOP; </tag> </item>
+      <item> h20 <tag> out = H20; </tag> </item>
+      <item> default <tag> out = Default; </tag> </item>
+      <item> keywords <tag> out = Keywords; </tag> </item>
+    </one-of>
+  </rule>
+</grammar>
