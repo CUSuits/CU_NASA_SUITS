@@ -15,7 +15,7 @@ public class StatSpeechToText : MonoBehaviour {
     }
 
     public void ReadOutStat(string statRequestName) {
-        Debug.Log(statRequestName);
+        Debug.Log("Reading out: "+statRequestName);
         telemetry_data = json.suitData;
         string newData = telemetry_data.Request(statRequestName).value;
         textToSpeechService.StartSpeaking(statRequestName+" is currently "+ newData);

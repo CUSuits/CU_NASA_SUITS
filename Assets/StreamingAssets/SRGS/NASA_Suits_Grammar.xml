@@ -3,12 +3,14 @@
 xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
   <rule id="toplevel" scope="public">
     <one-of>
-      <item> <ruleref uri="#PlayCard"/> <tag> out.Submenu = rules.PlayCard; </tag> </item>
-      <item> <ruleref uri="#MoveCard"/> <tag> out.Submenu = rules.MoveCard; </tag> </item>
+      <item> <ruleref uri="#OpenCommand"/> <tag> out.Submenu = rules.OpenCommand; </tag> </item>
+      <item> <ruleref uri="#CloseCommand"/> <tag> out.Submenu = rules.CloseCommand; </tag> </item>
+      <item> <ruleref uri="#PushCommand"/> <tag> out.Stat = rules.PushCommand; </tag> </item>
+      <item> <ruleref uri="#ReadCommand"/> <tag> out.Stat = rules.ReadCommand; </tag> </item>
     </one-of>
   </rule>
 
-  <rule id="PlayCard" scope="public">
+  <rule id="OpenCommand" scope="public">
     <example> open int  </example>
     <example> show misc </example>
     <example> display sop </example>
@@ -18,12 +20,23 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       <item> show </item>
       <item> display </item>
     </one-of>
-    <ruleref uri="#Submenu"/>
-    <tag> out = rules.Submenu; </tag>
+      
+
+    <one-of>
+      <item> 
+        <ruleref uri="#Submenu"/>
+        <tag> out.submenu = rules.Submenu; </tag> 
+      </item>
+      <item> 
+        <ruleref uri="#Stat"/>
+        <tag> out.stat = rules.Stat; </tag> 
+
+      </item>
+    </one-of>
   </rule>
 
 
-  <rule id="MoveCard" scope="public">
+  <rule id="CloseCommand" scope="public">
     
     <example> close misc  </example>
     <example> hide sop </example>
@@ -32,8 +45,47 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       <item> close </item>
       <item> hide </item>
     </one-of>
-    <ruleref uri="#Submenu"/>
-    <tag> out = rules.Submenu; </tag>
+    <one-of>
+      <item> 
+        <ruleref uri="#Submenu"/>
+        <tag> out.submenu = rules.Submenu; </tag> 
+      </item>
+      <item> 
+        <ruleref uri="#Stat"/>
+        <tag> out.stat = rules.Stat; </tag> 
+
+      </item>
+    </one-of>
+  </rule>
+
+  <rule id="PushCommand" scope="public">
+    <example> Push suit pressure  </example>
+    
+    <item>
+      push
+      <item>
+          <ruleref uri="#Stat"/>
+          <tag> out.stat = rules.Stat; </tag> 
+      </item>
+    </item>
+  </rule>
+
+  <rule id="ReadCommand" scope="public">
+    <example> Read suit pressure  </example>
+    <example> What is my suit pressure  </example>
+
+    <item>
+      <one-of>
+        <item> what is my </item>
+        <item> what is the  </item>
+        <item> read </item>
+        <item> read out </item>
+      </one-of>
+      <item>
+          <ruleref uri="#Stat"/>
+          <tag> out.stat = rules.Stat; </tag> 
+      </item>
+    </item>
   </rule>
 
   <!-- Names of all stat values Opened, Closed, Pushed, Read -->
@@ -48,7 +100,7 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       <item> oxygen pressure <tag> out = "oxygen pressure"; </tag> </item>
       <item> oxygen rate <tag> out = "oxygen rate"; </tag> </item>
       <item> battery capacity <tag> out = "battery capacity"; </tag> </item>
-      <item> water pressure <tag> out = "water pressure"; </tag> </item>
+      <item> water pressure <tag> ouOt = "water pressure"; </tag> </item>
       <item> water gas <tag> out = "water gas"; </tag> </item>
       <item> water liquid <tag> out = "water liquid"; </tag> </item>
       <item> water vapor <tag> out = "water vapor"; </tag> </item>
@@ -61,15 +113,15 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
 
 
   <!-- Names of all submenus to be Opened,Closed -->
-  <rule id="Submenu">
-    <one-of>
-      <item> int <tag> out = Int; </tag> </item>
-      <item> misc <tag> out = Misc; </tag> </item>
-      <item> sub <tag> out = Sub; </tag> </item>
-      <item> sop <tag> out = SOP; </tag> </item>
-      <item> h20 <tag> out = H20; </tag> </item>
-      <item> default <tag> out = Default; </tag> </item>
-      <item> keywords <tag> out = Keywords; </tag> </item>
-    </one-of>
-  </rule>
+    <rule id="Submenu">
+        <one-of>
+          <item> int <tag> out = "Int"; </tag> </item>
+          <item> misc <tag> out = "Misc"; </tag> </item>
+          <item> sub <tag> out = "Sub"; </tag> </item>
+          <item> sop <tag> out = "SOP"; </tag> </item>
+          <item> h20 <tag> out = "H20"; </tag> </item>
+          <item> default <tag> out = "Default"; </tag> </item>
+          <item> keywords <tag> out = "Keywords"; </tag> </item>
+        </one-of>
+    </rule>
 </grammar>

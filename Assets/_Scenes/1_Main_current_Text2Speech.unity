@@ -9427,8 +9427,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToSpeechService: {fileID: 1840067217}
+  statToTextSevice: {fileID: 1840067220}
   mainSubMenu: {fileID: 301104}
   padSubMenu: {fileID: 857201150}
+  menuStatManager: {fileID: 11400000, guid: 6ec81e138122cb341a73715fdcc84f9f, type: 2}
   intStats:
   - suit pressure
   - oxygen pressure
