@@ -7,6 +7,7 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       <item> <ruleref uri="#CloseCommand"/> <tag> out.Submenu = rules.CloseCommand; </tag> </item>
       <item> <ruleref uri="#PushCommand"/> <tag> out.Stat = rules.PushCommand; </tag> </item>
       <item> <ruleref uri="#ReadCommand"/> <tag> out.Stat = rules.ReadCommand; </tag> </item>
+      <item> <ruleref uri="#ClearCommand"/> <tag> out.Stat = rules.ClearCommand; </tag> </item>
     </one-of>
   </rule>
 
@@ -81,6 +82,18 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
         <item> read </item>
         <item> read out </item>
       </one-of>
+      <item>
+          <ruleref uri="#Stat"/>
+          <tag> out.stat = rules.Stat; </tag> 
+      </item>
+    </item>
+  </rule>
+
+  <rule id="ClearCommand" scope="public">
+    <example> Clear suit pressure  </example>
+
+    <item>
+      clear
       <item>
           <ruleref uri="#Stat"/>
           <tag> out.stat = rules.Stat; </tag> 

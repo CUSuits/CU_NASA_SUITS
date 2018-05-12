@@ -44,6 +44,7 @@ public class GrammarManager : MonoBehaviour {
         SemanticMeaning[] meanings = args.semanticMeanings;
         string spokenWords = args.text.ToLower();
         Debug.Log(spokenWords);
+
         foreach (SemanticMeaning sm in meanings) {
             Debug.Log(sm.key+":"+sm.values[0]);
         }
@@ -62,8 +63,12 @@ public class GrammarManager : MonoBehaviour {
         //Check  if Read command
         else if (spokenWords.Contains("read") || spokenWords.Contains("what is")) {
             HandleReadCommand(meanings);
+        }
+        //Check  if Clear command
+        else if (spokenWords.Contains("clear")) {
+            HandleClearCommand(meanings);
         } else {
-            Debug.Log("Dont recognize command");
+        Debug.Log("Dont recognize command");
         }
     }
 
@@ -138,6 +143,23 @@ public class GrammarManager : MonoBehaviour {
                 try {
                     MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
                     statToTextSevice.ReadOutStat(menuStat.dataRequestName);
+                } catch {
+                    PleaseRepeatCommand();
+                }
+            } else {
+                PleaseRepeatCommand();
+            }
+        }
+    }
+
+    private void HandleClearCommand(SemanticMeaning[] meanings) {
+
+        foreach (SemanticMeaning sm in meanings) {
+            if (sm.key == "stat") {
+                Debug.Log("clear: " + sm.values[0]);
+                try {
+                    MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
+                    padSubMenu.Clear(menuStat);
                 } catch {
                     PleaseRepeatCommand();
                 }
