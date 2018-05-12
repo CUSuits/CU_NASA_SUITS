@@ -1,162 +1,154 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License. See LICENSE in the project root for license information.
-
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Windows.Speech;
+using HoloToolkit.Unity;
 
-namespace Academy
-{
-    public class GrammarManager : MonoBehaviour
-    {
-        [Tooltip("The file name (including filetype) of the SRGS file to use for recognition. This file must be in the StreamingAssets folder.")]
-        public string SRGSFileName;
+public class GrammarManager : MonoBehaviour {
+    [Tooltip("The file name (including filetype) of the SRGS file to use for recognition. This file must be in the StreamingAssets/SRGS folder.")]
+    public string SRGSFileName;
 
-        [Tooltip("The circle GameObject to change based on the user's input.")]
-        public GameObject Circle;
-        [Tooltip("The triangle GameObject to change based on the user's input.")]
-        public GameObject Triangle;
-        [Tooltip("The square GameObject to change based on the user's input.")]
-        public GameObject Square;
+    private GrammarRecognizer grammarRecognizer;
+    public TextToSpeech textToSpeechService;
+    public StatSpeechToText statToTextSevice;
+    public SubMenuBehavior mainSubMenu;
+    public SubMenuPadBehavior padSubMenu;
+    public MenuStatManager menuStatManager;
 
-        [Tooltip("The Text field to display the recognition text.")]
-        public Text MessageToUser;
+    [Tooltip("Dictionary of stats associated with each SubMenu")]
+    public List<string> intStats = new List<string> { "suit pressure", "oxygen pressure", "oxygen rate" };
+    public List<string> miscStats = new List<string> { "battery capacity" };
+    public List<string> subStats = new List<string> { "sublimator temperature", "sublimator pressure" };
+    public List<string> h20Stats = new List<string> { "a", "b" };
+    public List<string> sopStats = new List<string> { "secondary oxgygen pressure", "secondary oxygen rate" };
 
-        // The GrammarRecognizer to use in this sample.
-        private GrammarRecognizer grammarRecognizer;
-
-        // This Dictionary is used to map color names to a representation usable by Unity.
-        private Dictionary<string, Color> colorLookup = new Dictionary<string, Color>
-    {
-        {"red", Color.red }, {"blue", Color.blue }, {"black", Color.black},
-        {"brown", new Color(0.65f, 0.16f, 0.16f)}, {"green", Color.green}, {"cyan", Color.cyan},
-        {"purple", new Color(0.5f, 0.0f, 0.5f)}, {"yellow", Color.yellow}, {"white", Color.white},
-        {"orange", new Color(1.0f, 0.65f, 0.0f)}, {"gray", Color.gray}, {"magenta", Color.magenta}
-    };
-
-        void Start()
-        {
-            if (string.IsNullOrEmpty(SRGSFileName) || Circle == null || Triangle == null || Square == null || MessageToUser == null)
-            {
-                Debug.LogError("Please specify an SRGS file name in GrammarManager.cs on " + name + ".");
-                Debug.LogError("Please check your GameObject settings in GrammarManager.cs on " + name + ".");
-                return;
-            }
-
-            // Instantiate the GrammarRecognizer, passing in the path to the SRGS file in the StreamingAssets folder.
-            try
-            {
-                grammarRecognizer = new GrammarRecognizer(Path.Combine(Application.streamingAssetsPath, SRGSFileName));
-                grammarRecognizer.OnPhraseRecognized += GrammarRecognizer_OnPhraseRecognized;
-                grammarRecognizer.Start();
-            }
-            catch
-            {
-                // If the file specified to the GrammarRecognizer doesn't exist, let the user know.
-                MessageToUser.text = "Check the SRGS file name in the Inspector on GrammarManager.cs and that the file's in the StreamingAssets folder.";
-                MessageToUser.fontSize = 12;
-            }
+    // Use this for initialization
+    void Start () {
+        if (string.IsNullOrEmpty(SRGSFileName)) {
+            Debug.LogError("Please specify an SRGS file name in GrammarManager.cs on " + this.name + " GameObject.");
+            return;
         }
+        // Instantiate the GrammarRecognizer, passing in the path to the SRGS file in the StreamingAssets folder.
+        try {
+            grammarRecognizer = new GrammarRecognizer(Application.streamingAssetsPath + "/SRGS/"+ SRGSFileName);
+            grammarRecognizer.OnPhraseRecognized += Grammar_OnPhraseRecognized;
+            grammarRecognizer.Start();
+        }
+        catch {
+            // If the file specified to the GrammarManager doesn't exist, let the user know.
+            Debug.LogError("Check the SRGS file name in the Inspector on GrammarManager.cs and that the file's in the StreamingAssets folder.");
+        }
+    }
 
-        private void GrammarRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args)
-        {
-            // We'll use this to build up the recognized message from each rule.
-            StringBuilder messageHeard = new StringBuilder();
+    private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args) {
+        SemanticMeaning[] meanings = args.semanticMeanings;
+        string spokenWords = args.text.ToLower();
+        Debug.Log(spokenWords);
+        foreach (SemanticMeaning sm in meanings) {
+            Debug.Log(sm.key+":"+sm.values[0]);
+        }
+        //Check if Open,Show,Display Command
+        if (spokenWords.Contains("open") || spokenWords.Contains("show") || spokenWords.Contains("display")) {
+            HandleOpenCommand(meanings);
+        }
+        //Check if Close, Hide Command
+        else if (spokenWords.Contains("close") || spokenWords.Contains("hide")) {
+            HandleCloseCommand(meanings);
+        }
+        //Check if Push Command
+        else if (spokenWords.Contains("push")) {
+            HandlePushCommand(meanings);
+        }
+        //Check  if Read command
+        else if (spokenWords.Contains("read") || spokenWords.Contains("what is")) {
+            HandleReadCommand(meanings);
+        } else {
+            Debug.Log("Dont recognize command");
+        }
+    }
 
-            // This array contains the results of the SRGS rules the recognizer heard.
-            // In this case, we'll iterate through and get the colors associated with each of the three shapes.
-            SemanticMeaning[] meanings = args.semanticMeanings;
-
-            foreach (SemanticMeaning meaning in meanings)
-            {
-                // From our rules, each key (the shape) can only have one corresponding value (a color).
-                // If a shape wasn't heard, it won't appear in our SemanticMeaning array.
-                string shape = meaning.key.Trim();
-                string color = meaning.values[0].Trim();
-
-                messageHeard.Append(color + " " + shape + " ");
-
-                // Query the Unity Color from our recognized string, then set the alpha to 0.25f to match our theme.
-                Color newColor = GetColor(color.ToLower());
-                newColor.a = 0.25f;
-
-                Debug.Log(shape + ":" + color);
-
-
-                // Each shape corresponds to a different GameObject in our scene.
-                switch (shape.ToLower())
-                {
-                    case "circle":
-                        Renderer circleRenderer = Circle.GetComponent<Renderer>();
-                        circleRenderer.material.SetColor("_fillColor", newColor);
-                        circleRenderer.material.SetColor("_fillShadingColor", newColor);
-                        break;
-                    case "triangle":
-                        Renderer triangleRenderer = Triangle.GetComponent<Renderer>();
-                        triangleRenderer.material.SetColor("_fillColor", newColor);
-                        triangleRenderer.material.SetColor("_fillShadingColor", newColor);
-                        break;
-                    case "square":
-                        Renderer squareRenderer = Square.GetComponent<Renderer>();
-                        squareRenderer.material.SetColor("_fillColor", newColor);
-                        squareRenderer.material.SetColor("_fillShadingColor", newColor);
-                        break;
+    private void HandleOpenCommand(SemanticMeaning[] meanings) {
+        foreach (SemanticMeaning sm in meanings) {
+            if (sm.key == "stat") {
+                if (intStats.Contains(sm.values[0])) {
+                    mainSubMenu.Show("Int");
+                } else if (miscStats.Contains(sm.values[0])) {
+                    mainSubMenu.Show("Misc");
+                } else if (subStats.Contains(sm.values[0])) {
+                    mainSubMenu.Show("Sub");
+                } else if (sopStats.Contains(sm.values[0])) {
+                    mainSubMenu.Show("SOP");
+                } else if (h20Stats.Contains(sm.values[0])) {
+                    mainSubMenu.Show("H20");
+                } else {
+                    PleaseRepeatCommand();
                 }
-            }
-
-            // Let the user know the message that was heard. The recognizer may not return the shapes in the same order they were spoken.
-            MessageToUser.text = "Heard: " + messageHeard.ToString();
-        }
-
-        void OnDestroy()
-        {
-            if (grammarRecognizer != null)
-            {
-                StopGrammarRecognizer();
-                grammarRecognizer.OnPhraseRecognized -= GrammarRecognizer_OnPhraseRecognized;
-                grammarRecognizer.Dispose();
+            } else if (sm.key == "submenu") {
+                mainSubMenu.Show(sm.values[0]);
+            } else {
+                PleaseRepeatCommand();
             }
         }
+    }
 
-        /// <summary>
-        /// Makes sure the GrammarRecognizer isn't running, then starts it if it isn't.
-        /// </summary>
-        public void StartGrammarRecognizer()
-        {
-            if (grammarRecognizer != null && !grammarRecognizer.IsRunning)
-            {
-                grammarRecognizer.Start();
+    private void HandleCloseCommand(SemanticMeaning[] meanings) {
+        foreach (SemanticMeaning sm in meanings) {
+            if (sm.key == "stat") {
+                if (intStats.Contains(sm.values[0])) {
+                    mainSubMenu.Hide("Int");
+                } else if (miscStats.Contains(sm.values[0])) {
+                    mainSubMenu.Hide("Misc");
+                } else if (subStats.Contains(sm.values[0])) {
+                    mainSubMenu.Hide("Sub");
+                } else if (sopStats.Contains(sm.values[0])) {
+                    mainSubMenu.Hide("SOP");
+                } else if (h20Stats.Contains(sm.values[0])) {
+                    mainSubMenu.Hide("H20");
+                } else {
+                    PleaseRepeatCommand();
+                }
+            } else if (sm.key == "submenu") {
+                mainSubMenu.Hide(sm.values[0]);
+            } else {
+                PleaseRepeatCommand();
             }
         }
+    }
 
-        /// <summary>
-        /// Makes sure the GrammarRecognizer is running, then stops it if it is.
-        /// </summary>
-        public void StopGrammarRecognizer()
-        {
-            if (grammarRecognizer != null && grammarRecognizer.IsRunning)
-            {
-                grammarRecognizer.Stop();
+    private void HandlePushCommand(SemanticMeaning[] meanings) {
+        foreach (SemanticMeaning sm in meanings) {
+            if (sm.key == "stat") {
+                Debug.Log("push: "+sm.values[0]);
+                try {
+                    MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
+                    padSubMenu.Push(menuStat);
+                } catch {
+                    PleaseRepeatCommand();
+                }
+            } else {
+                PleaseRepeatCommand();
             }
         }
+    }
 
-        /// <summary>
-        /// Creates a color object from the passed in string.
-        /// </summary>
-        /// <param name="colorString">The name of the color as a string.</param>
-        private Color GetColor(string colorString)
-        {
-            Color newColor = Color.clear;
-
-            if (colorLookup.ContainsKey(colorString.ToLower()))
-            {
-                newColor = colorLookup[colorString.ToLower()];
+    private void HandleReadCommand(SemanticMeaning[] meanings) {
+        foreach (SemanticMeaning sm in meanings) {
+            if (sm.key == "stat") {
+                Debug.Log("read: " + sm.values[0]);
+                try {
+                    MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
+                    statToTextSevice.ReadOutStat(menuStat.dataRequestName);
+                } catch {
+                    PleaseRepeatCommand();
+                }
+            } else {
+                PleaseRepeatCommand();
             }
-
-            return newColor;
         }
+    }
+
+    private void PleaseRepeatCommand() {
+        Debug.Log("Could not parse command");
+        textToSpeechService.StartSpeaking("Sorry please repeat your command");
     }
 }

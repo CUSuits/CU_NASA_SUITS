@@ -9426,6 +9426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24444100c2048ec42856f36d5936992b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SRGSFileName: NASA_Suits_Grammar.xml
   textToSpeechService: {fileID: 1840067217}
   statToTextSevice: {fileID: 1840067220}
   mainSubMenu: {fileID: 301104}

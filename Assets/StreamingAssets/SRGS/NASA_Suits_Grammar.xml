@@ -93,7 +93,6 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
     <one-of>
       <item> suit pressure <tag> out = "suit pressure"; </tag> </item>
       <item> fan tachometer <tag> out = "fan tachometer"; </tag> </item>
-      <item> internal <tag> out = "internal"; </tag> </item>
       <item> h20 <tag> out = "h20"; </tag> </item>
       <item> sublimator pressure <tag> out = "sublimator pressure"; </tag> </item>
       <item> sublimator temperature <tag> out = "sublimator temperature"; </tag> </item>
