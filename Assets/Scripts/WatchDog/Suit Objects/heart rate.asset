@@ -14,3 +14,5 @@ MonoBehaviour:
   reference: heart_bpm
   min: 50
   max: 120
+  cautionMin: 60
+  cautionMax: 100

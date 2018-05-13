@@ -14,3 +14,5 @@ MonoBehaviour:
   reference: p_suit
   min: 2
   max: 4
+  cautionMin: 2.2
+  cautionMax: 3.8

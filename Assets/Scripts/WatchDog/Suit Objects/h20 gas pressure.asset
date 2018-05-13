@@ -14,3 +14,5 @@ MonoBehaviour:
   reference: p_h2o_g
   min: 14
   max: 16
+  cautionMin: 14.2
+  cautionMax: 15.8

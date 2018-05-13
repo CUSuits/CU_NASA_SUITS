@@ -14,3 +14,5 @@ MonoBehaviour:
   reference: rate_o2
   min: 0.5
   max: 1
+  cautionMin: 0.6
+  cautionMax: 0.9

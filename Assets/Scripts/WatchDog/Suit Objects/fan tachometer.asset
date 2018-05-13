@@ -14,3 +14,5 @@ MonoBehaviour:
   reference: v_fan
   min: 10000
   max: 40000
+  cautionMin: 11000
+  cautionMax: 39000
