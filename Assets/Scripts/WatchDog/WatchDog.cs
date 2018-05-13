@@ -46,16 +46,9 @@ public class WatchDog : MonoBehaviour{
 				}else{
 					current_val = telemetry_suit.Request (range.reference).value; // define telemetry value 
 				}
-				if(Convert.ToDouble(current_val) > range.max || Convert.ToDouble(current_val) < range.min) // check ranges
-				{
-                    // push menu stat to pad...
-                    try {
 
-                       padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[range.reference]);
-                    } catch {
-                        Debug.LogError("cant find menu stat from DataRange reference name");
-                    }
-				}
+				// check if warning is triggered
+				CheckSuitWarnings(range, current_val);
 			}
 		}
 		//----------------------------------------
@@ -66,25 +59,51 @@ public class WatchDog : MonoBehaviour{
 			if (telemetry_switch.Request (nominal.reference).value != "") // if telemetry value exists
 			{
 				current_switch = telemetry_switch.Request (nominal.reference).value; // define telemetry value 
-				if (nominal.nominal != current_switch) // check nominal
-				{
-                    // push menu stat to pad...
-                    try {
-
-                       padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[nominal.reference]);
-                    } catch {
-                        Debug.LogError("cant find switch stat from DataRange reference name");
-                    }
-                }
+				// check if switch is not nominal
+				CheckSwitchWarnings (nominal, current_switch);
 			}
 		}
 	}
-	// make some type of count so that if things are not bad the pad is cleared...
 
+	//------------------------------------
+	// Supporting Functions --------------
+	//------------------------------------
+
+	// make some type of count so that if things are not bad the pad is cleared...
 	public string Time2Value(string time)
 	{
 		string[] parts = time.Split (':');
 		string hour = parts [0];
 		return hour;
 	}
+		
+	// check if suit data is out of range
+	void CheckSuitWarnings(DataRange range, string current_val)
+	{
+		if(Convert.ToDouble(current_val) > range.max || Convert.ToDouble(current_val) < range.min) // check ranges
+		{
+			// push menu stat to pad...
+			try {
+				padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[range.reference]);
+			} catch {
+				Debug.LogError("cant find menu stat from DataRange reference name");
+			}
+		}
+	}
+
+	// check if switch is triggered
+	void CheckSwitchWarnings(SwitchStats nominal, string current_swtich)
+	{
+		if (nominal.nominal != current_switch) // check nominal
+		{
+			// push menu stat to pad...
+			try {
+				padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[nominal.reference]);
+			} catch {
+				Debug.LogError("cant find switch stat from DataRange reference name");
+			}
+		}	
+	}
+		
+
 } 

@@ -141,8 +141,10 @@ public class GrammarManager : MonoBehaviour {
             if (sm.key == "stat") {
                 Debug.Log("read: " + sm.values[0]);
                 try {
+					
                     MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
-                    statToTextSevice.ReadOutStat(menuStat.readoutName);
+                    statToTextSevice.ReadOutStat(menuStat.dataRequestName);
+
                 } catch {
                     PleaseRepeatCommand();
                 }
