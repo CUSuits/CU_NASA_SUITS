@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: O2 Rate
   dataRequestName: rate_o2
+  readoutName: primary oxygen rate

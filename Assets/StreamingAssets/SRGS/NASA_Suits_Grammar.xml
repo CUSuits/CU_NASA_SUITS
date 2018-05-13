@@ -123,7 +123,6 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       <item> secondary oxygen <tag> out = "sop"; </tag> </item>
       <item> secondary oxygen pressure <tag> out = "p_sop"; </tag> </item>
       <item> secondary oxygen rate <tag> out = "rate_sop"; </tag> </item>
-      <item>  <tag> out = "sub"; </tag> </item>
     </one-of>
   </rule>
 

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: O2 press
   dataRequestName: p_o2
+  readoutName: primary oxygen pressure

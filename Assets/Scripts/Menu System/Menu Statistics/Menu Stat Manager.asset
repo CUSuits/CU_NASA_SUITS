@@ -13,16 +13,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subMenuDictionary:
     m_keys:
-    - battery capacity
-    - fan tachometer
-    - h20
-    - water liquid
-    - water gas
-    - oxygen pressure
-    - oxygen rate
-    - oxygen
-    - sublimator pressure
-    - sublimator temperature
+    - cap_battery
+    - v_fan
+    - h2o
+    - p_h2o_l
+    - p_h2o_g
+    - p_o2
+    - rate_o2
+    - p_sub
+    - t_sub
+    - t_battery
+    - t_water
+    - heart_bpm
+    - int
+    - p_suit
+    - misc
+    - t_oxygen
+    - sop
+    - p_sop
+    - rate_sop
+    - sub
     m_values:
     - {fileID: 11400000, guid: 2ee3d50b61e37cd4eb966a3c336e7ed9, type: 2}
     - {fileID: 11400000, guid: 8e7c0e387a3a4c9418589ecc6ef080a6, type: 2}
@@ -31,6 +41,16 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c93af524a7e3b11459d359a722a3af4b, type: 2}
     - {fileID: 11400000, guid: 04865c6f5c5c9e44fb654b2a4569e36f, type: 2}
     - {fileID: 11400000, guid: 99ab950f66a9f574ba43440c1e78a354, type: 2}
-    - {fileID: 11400000, guid: 99ab950f66a9f574ba43440c1e78a354, type: 2}
     - {fileID: 11400000, guid: 588f1779c2bfdf24abc28a7b33ab2fa7, type: 2}
     - {fileID: 11400000, guid: 90cfe9bc63b026a4db166e2226554fe4, type: 2}
+    - {fileID: 11400000, guid: 2ec0a9be0808d7e44ab8f15aae7b6768, type: 2}
+    - {fileID: 11400000, guid: 98537efbed4634e40adc524ee765a9cc, type: 2}
+    - {fileID: 11400000, guid: eec1b232106020d44acd45c87f45f310, type: 2}
+    - {fileID: 11400000, guid: 6d5fe591fb7703a49a9a8fa3c159ca2f, type: 2}
+    - {fileID: 11400000, guid: 1d8e4a255dabe2e44be3f0afddc9b944, type: 2}
+    - {fileID: 11400000, guid: 07daed9001772b84ab5cd082759d3e42, type: 2}
+    - {fileID: 11400000, guid: 77c05b2e9f3319c409e9132239e2cf6c, type: 2}
+    - {fileID: 11400000, guid: 5b69f0c8c3382d348b9bbdee56780299, type: 2}
+    - {fileID: 11400000, guid: 3cb0bad748abd9b4f9a6db65e1f7de28, type: 2}
+    - {fileID: 11400000, guid: d1a24aeb14caf3649964b5d9bf0fd2f9, type: 2}
+    - {fileID: 11400000, guid: 52c0638b1cd8494419d8b74b0e35710d, type: 2}

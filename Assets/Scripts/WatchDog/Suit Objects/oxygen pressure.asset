@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 123ac5d160f5ba241827234a55124151, type: 3}
   m_Name: oxygen pressure
   m_EditorClassIdentifier: 
-  reference: p_02
+  reference: p_o2
   min: 750
   max: 950

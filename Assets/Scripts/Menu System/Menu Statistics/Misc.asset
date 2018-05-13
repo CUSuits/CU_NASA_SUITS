@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Misc.
   dataRequestName: --
+  readoutName: --

@@ -8,12 +8,16 @@ public class MenuStatBehavior : MonoBehaviour {
     public Text statTextField;
 
     public JSONReader json;
-    public SuitData telemetry_data;
+    private SuitData telemetry_data;
+    private SwitchData telemetry_switch;
+
+    public WatchDog watchDog;
 
 	// Use this for initialization
 	void Start () {
         statTextField = GetComponent<Text>();
         json = GameObject.Find("Network Manager").GetComponent<JSONReader>();
+        watchDog = GameObject.Find("WatchDog").GetComponent<WatchDog>();
 	}
 
     void UpdateText(string newValue) {
@@ -58,5 +62,11 @@ public class MenuStatBehavior : MonoBehaviour {
         {
             UpdateText(menuStat.name + " : " + newData);
         };
+
+        //watchdog
+        telemetry_data = json.suitData;
+        telemetry_switch = json.switchData;
+
+        watchDog.DeployWatchDog(telemetry_data, telemetry_switch);
     }
  }

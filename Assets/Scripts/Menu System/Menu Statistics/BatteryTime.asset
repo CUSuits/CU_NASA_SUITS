@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Batt Time
   dataRequestName: t_battery
+  readoutName: battery time remaining

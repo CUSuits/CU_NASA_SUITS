@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: heart rate
   m_EditorClassIdentifier: 
   reference: heart_bpm
-  min: 0
-  max: 0
+  min: 50
+  max: 120

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: H2O Time
   dataRequestName: t_water
+  readoutName: water time remaining

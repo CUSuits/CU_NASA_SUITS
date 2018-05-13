@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Keyword List
   dataRequestName: --
+  readoutName: --

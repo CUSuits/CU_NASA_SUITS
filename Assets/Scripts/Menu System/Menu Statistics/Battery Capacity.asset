@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Batt Capacity
   dataRequestName: cap_battery
+  readoutName: battery capacity

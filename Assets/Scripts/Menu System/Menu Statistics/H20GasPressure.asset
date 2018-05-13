@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: H20 Gas Pressure
   dataRequestName: p_h2o_g
+  readoutName: water vapor pressure

@@ -8358,14 +8358,18 @@ MonoBehaviour:
   - suit pressure
   - oxygen pressure
   - oxygen rate
+  - oxygen time
   miscStats:
   - battery capacity
+  - battery time
+  - fan tachometer
   subStats:
   - sublimator temperature
   - sublimator pressure
   h20Stats:
-  - a
-  - b
+  - h2o gas pressure
+  - h20 liquid pressure
+  - h2o time
   sopStats:
   - secondary oxgygen pressure
   - secondary oxygen rate

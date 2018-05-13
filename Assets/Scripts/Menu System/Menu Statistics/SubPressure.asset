@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sub press
   dataRequestName: p_sub
+  readoutName: sublimator pressure

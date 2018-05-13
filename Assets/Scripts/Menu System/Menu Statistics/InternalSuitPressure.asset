@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Suit press
   dataRequestName: p_suit
+  readoutName: internal suit pressure

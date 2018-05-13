@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: SOP Rate
   dataRequestName: rate_sop
+  readoutName: secondary oxygen rate

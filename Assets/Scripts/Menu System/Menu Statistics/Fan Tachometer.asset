@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fan Tach
   dataRequestName: v_fan
+  readoutName: fan tachometer speed

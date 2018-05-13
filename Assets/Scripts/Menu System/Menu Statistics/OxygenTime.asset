@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: O2 Time
   dataRequestName: t_oxygen
+  readoutName: oxygen time remaining

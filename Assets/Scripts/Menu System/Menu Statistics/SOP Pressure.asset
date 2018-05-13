@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: SOP press
   dataRequestName: p_sop
+  readoutName: secondary oxygen pressure

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Heart Rate
   dataRequestName: heart_bpm
+  readoutName: heart rate
