@@ -97,13 +97,14 @@ public class SubMenuBehavior : MonoBehaviour {
         menuItems.Add(newMenuStat);
     }
 
-    protected void CreateMenuStat(MenuStat menuStat) {
+    protected MenuStatBehavior CreateMenuStat(MenuStat menuStat) {
         MenuStatBehavior newMenuStat = Instantiate(menuPrefab, MenuStatHolder.transform);
         //Move new stat to the top of the menu
         newMenuStat.transform.SetAsFirstSibling(); 
         menuItems.Insert(0, newMenuStat);
         //menuItems.Add(newMenuStat);
         newMenuStat.InitializeMenuStat(menuStat);
+        return newMenuStat;
     }
     
     public void Create() {

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class SubMenuPadBehavior : SubMenuBehavior {
     public void Push(MenuStat menuStat) {
         //SubMenu subMenu = GetSubMenuFromManager(subMenuName);
@@ -15,6 +15,29 @@ public class SubMenuPadBehavior : SubMenuBehavior {
         }
         canvas.enabled = true;
         CreateMenuStat(menuStat);
+    }
+
+    public void PushEmergencyStat(MenuStat menuStat) {
+        foreach (MenuStatBehavior menuStatBehav in menuItems) {
+            if (menuStatBehav.menuStat == menuStat) {
+                Text textObj = menuStatBehav.gameObject.GetComponent<Text>();
+                textObj.color = Color.red;
+                textObj.fontSize = 20;
+                textObj.fontStyle = FontStyle.Bold;
+                return;
+            } else {
+                continue;
+            }
+        }
+        canvas.enabled = true;
+
+        //Create new stat and turn it bold,red,
+        MenuStatBehavior createdEmergencyMenuStat = CreateMenuStat(menuStat);
+        Text emergencyText = createdEmergencyMenuStat.gameObject.GetComponent<Text>();
+        emergencyText.color = Color.red;
+        emergencyText.fontSize = 20;
+        emergencyText.fontStyle = FontStyle.Bold;
+
     }
 
     public void Clear(MenuStat menuStat) {
