@@ -60,7 +60,7 @@ public class SuitData {
             case "rate_o2": return storeSuitInfo[selected];
             case "cap_battery": return storeSuitInfo[selected];
             case "p_h2o_g": return storeSuitInfo[selected];
-            case "p_h20_l": return storeSuitInfo[selected];
+            case "p_h2o_l": return storeSuitInfo[selected];
             case "p_sop": return storeSuitInfo[selected];
             case "rate_sop": return storeSuitInfo[selected];
             case "t_battery": return storeSuitInfo[selected];
@@ -69,6 +69,6 @@ public class SuitData {
         }
         return null;
     }
-    
-    
+
+
 }

@@ -15,22 +15,22 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
     <example> open int  </example>
     <example> show misc </example>
     <example> display sop </example>
-  
+
     <one-of>
       <item> open </item>
       <item> show </item>
       <item> display </item>
     </one-of>
-      
+
 
     <one-of>
-      <item> 
+      <item>
         <ruleref uri="#Submenu"/>
-        <tag> out.submenu = rules.Submenu; </tag> 
+        <tag> out.submenu = rules.Submenu; </tag>
       </item>
-      <item> 
+      <item>
         <ruleref uri="#Stat"/>
-        <tag> out.stat = rules.Stat; </tag> 
+        <tag> out.stat = rules.Stat; </tag>
 
       </item>
     </one-of>
@@ -38,22 +38,22 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
 
 
   <rule id="CloseCommand" scope="public">
-    
+
     <example> close misc  </example>
     <example> hide sop </example>
-    
+
     <one-of>
       <item> close </item>
       <item> hide </item>
     </one-of>
     <one-of>
-      <item> 
+      <item>
         <ruleref uri="#Submenu"/>
-        <tag> out.submenu = rules.Submenu; </tag> 
+        <tag> out.submenu = rules.Submenu; </tag>
       </item>
-      <item> 
+      <item>
         <ruleref uri="#Stat"/>
-        <tag> out.stat = rules.Stat; </tag> 
+        <tag> out.stat = rules.Stat; </tag>
 
       </item>
     </one-of>
@@ -61,12 +61,12 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
 
   <rule id="PushCommand" scope="public">
     <example> Push suit pressure  </example>
-    
+
     <item>
       push
       <item>
           <ruleref uri="#Stat"/>
-          <tag> out.stat = rules.Stat; </tag> 
+          <tag> out.stat = rules.Stat; </tag>
       </item>
     </item>
   </rule>
@@ -84,7 +84,7 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       </one-of>
       <item>
           <ruleref uri="#Stat"/>
-          <tag> out.stat = rules.Stat; </tag> 
+          <tag> out.stat = rules.Stat; </tag>
       </item>
     </item>
   </rule>
@@ -96,7 +96,7 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       clear
       <item>
           <ruleref uri="#Stat"/>
-          <tag> out.stat = rules.Stat; </tag> 
+          <tag> out.stat = rules.Stat; </tag>
       </item>
     </item>
   </rule>
@@ -104,21 +104,26 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
   <!-- Names of all stat values Opened, Closed, Pushed, Read -->
   <rule id="Stat">
     <one-of>
-      <item> suit pressure <tag> out = "suit pressure"; </tag> </item>
-      <item> fan tachometer <tag> out = "fan tachometer"; </tag> </item>
-      <item> h20 <tag> out = "h20"; </tag> </item>
-      <item> sublimator pressure <tag> out = "sublimator pressure"; </tag> </item>
-      <item> sublimator temperature <tag> out = "sublimator temperature"; </tag> </item>
-      <item> oxygen pressure <tag> out = "oxygen pressure"; </tag> </item>
-      <item> oxygen rate <tag> out = "oxygen rate"; </tag> </item>
-      <item> battery capacity <tag> out = "battery capacity"; </tag> </item>
-      <item> water pressure <tag> ouOt = "water pressure"; </tag> </item>
-      <item> water gas <tag> out = "water gas"; </tag> </item>
-      <item> water liquid <tag> out = "water liquid"; </tag> </item>
-      <item> water vapor <tag> out = "water vapor"; </tag> </item>
-
-      <item> secondary oxygen rate <tag> out = "secondary oxygen rate"; </tag> </item>
-      <item> secondary oxygen pressure <tag> out = "secondary oxygen pressure"; </tag> </item>
+      <item> battery capacity <tag> out = "cap_battery"; </tag> </item>
+      <item> fan tachometer <tag> out = "v_fan"; </tag> </item>
+      <item> h2o <tag> out = "h2o"; </tag> </item>
+      <item> water gas <tag> out = "p_h2o_g"; </tag> </item>
+      <item> water liquid <tag> out = "p_h2o_l"; </tag> </item>
+      <item> oxygen pressure <tag> out = "p_o2"; </tag> </item>
+      <item> oxygen rate <tag> out = "rate_o2"; </tag> </item>
+      <item> sublimator pressure <tag> out = "p_sub"; </tag> </item>
+      <item> sublimator temperature <tag> out = "t_sub"; </tag> </item>
+      <item> battery time <tag> out = "t_battery"; </tag> </item>
+      <item> water time <tag> out = "t_water"; </tag> </item>
+      <item> heart rate <tag> out = "heart_bpm"; </tag> </item>
+      <item> internal <tag> out = "int"; </tag> </item>
+      <item> suit pressure <tag> out = "p_suit"; </tag> </item>
+      <item> miscellaneous <tag> out = "misc"; </tag> </item>
+      <item> oxygen time <tag> out = "t_oxygen"; </tag> </item>
+      <item> secondary oxygen <tag> out = "sop"; </tag> </item>
+      <item> secondary oxygen pressure <tag> out = "p_sop"; </tag> </item>
+      <item> secondary oxygen rate <tag> out = "rate_sop"; </tag> </item>
+      <item>  <tag> out = "sub"; </tag> </item>
     </one-of>
   </rule>
 

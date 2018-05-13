@@ -16,10 +16,10 @@ public class GrammarManager : MonoBehaviour {
     public MenuStatManager menuStatManager;
 
     [Tooltip("Dictionary of stats associated with each SubMenu")]
-    public List<string> intStats = new List<string> { "suit pressure", "oxygen pressure", "oxygen rate" };
-    public List<string> miscStats = new List<string> { "battery capacity" };
+    public List<string> intStats = new List<string> { "suit pressure", "oxygen pressure", "oxygen rate", "oxygen time" };
+    public List<string> miscStats = new List<string> { "battery capacity", "battery time", "fan tachometer", };
     public List<string> subStats = new List<string> { "sublimator temperature", "sublimator pressure" };
-    public List<string> h20Stats = new List<string> { "a", "b" };
+    public List<string> h20Stats = new List<string> { "h2o gas pressure", "h2o liquid pressure", "h2o time" };
     public List<string> sopStats = new List<string> { "secondary oxgygen pressure", "secondary oxygen rate" };
 
     // Use this for initialization
@@ -142,7 +142,7 @@ public class GrammarManager : MonoBehaviour {
                 Debug.Log("read: " + sm.values[0]);
                 try {
                     MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
-                    statToTextSevice.ReadOutStat(menuStat.dataRequestName);
+                    statToTextSevice.ReadOutStat(menuStat.readoutName);
                 } catch {
                     PleaseRepeatCommand();
                 }

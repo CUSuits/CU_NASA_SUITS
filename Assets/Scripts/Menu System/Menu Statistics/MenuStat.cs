@@ -10,4 +10,6 @@ public class MenuStat : ScriptableObject {
     public string name;
     [Tooltip("Short hand name used to request data from server")]
     public string dataRequestName;
+    [Tooltip("Name used in stat label")]
+    public string readoutName;
 }
