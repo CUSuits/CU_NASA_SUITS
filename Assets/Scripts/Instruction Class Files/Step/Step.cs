@@ -18,7 +18,7 @@ public class Step : ScriptableObject {
     public string nextHUDStr;
 
     [Header("Objects Recognized")]
-    public List<GameObject> recognizedObjects;
-
+    //public List<GameObject> recognizedObjects;
+    
     public List<string> recognizedObjectsStr;
 }

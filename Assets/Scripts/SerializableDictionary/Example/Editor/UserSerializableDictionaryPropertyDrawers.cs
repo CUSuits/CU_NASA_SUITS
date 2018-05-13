@@ -9,4 +9,5 @@ using UnityEditor;
 [CustomPropertyDrawer(typeof(StringMenuStatDict))]
 [CustomPropertyDrawer(typeof(StringStringDictionary))]
 [CustomPropertyDrawer(typeof(ObjectColorDictionary))]
+[CustomPropertyDrawer(typeof(StringMarkerDict))]
 public class AnySerializableDictionaryPropertyDrawer : SerializableDictionaryPropertyDrawer {}

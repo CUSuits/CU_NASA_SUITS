@@ -19,5 +19,5 @@ MonoBehaviour:
   nextHUDStr: 
   recognizedObjects: []
   recognizedObjectsStr:
-  - car
-  - truck
+  - hammer
+  - nail

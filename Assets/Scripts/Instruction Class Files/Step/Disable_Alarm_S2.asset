@@ -18,5 +18,4 @@ MonoBehaviour:
   nextHUDStr: Secure PAD
   recognizedObjects: []
   recognizedObjectsStr:
-  - apple
-  - oranges
+  - screwdriver

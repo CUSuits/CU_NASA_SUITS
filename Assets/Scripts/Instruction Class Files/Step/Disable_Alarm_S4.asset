@@ -18,4 +18,5 @@ MonoBehaviour:
   hudStr: Remove ALARM
   nextHUDStr: Return fuse and pullers to storage
   recognizedObjects: []
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

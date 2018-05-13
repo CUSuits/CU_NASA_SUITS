@@ -10,8 +10,8 @@ public class Instruction : ScriptableObject {
     [Header("Info on Task List")]
     public List<Step> StepList;
     
-    public List<GameObject> GetRecognizedObject(int stepIndex) {
-        return StepList[stepIndex].recognizedObjects;
-    }
+    //public List<GameObject> GetRecognizedObject(int stepIndex) {
+    //    return StepList[stepIndex].recognizedObjects;
+    //}
 
 }

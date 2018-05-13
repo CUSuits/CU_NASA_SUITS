@@ -20,6 +20,4 @@ MonoBehaviour:
   nextHUDStr: Return key
   recognizedObjects: []
   recognizedObjectsStr:
-  - cat
-  - dog
-  - bear
+  - hammer
