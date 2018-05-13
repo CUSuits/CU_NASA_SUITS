@@ -268,7 +268,7 @@ PlayerSettings:
   - m_BuildTarget: Standalone
     m_Enabled: 1
   - m_BuildTarget: Metro
-    m_Enabled: 0
+    m_Enabled: 1
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   m_TemplateCustomTags: {}
@@ -565,16 +565,16 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Speech2TextSuitsTesting
+  metroPackageName: 051318
   metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
   metroCertificateNotAfter: 00b497707db8d401
-  metroApplicationDescription: SpatialLayout
+  metroApplicationDescription: 051318
   wsaImages: {}
-  metroTileShortName: Speech2Text_Suits_Testing
+  metroTileShortName: 053118
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 0
