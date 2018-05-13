@@ -15779,12 +15779,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Benha\\Desktop\\HolographicAcademy-Holograms-210-Gaze\\NASA SUITs Test\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectUniqueName": "C:\\Users\\Benha\\OneDrive\\Desktop\\NASA SUITS Repository\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "C:\\Users\\Benha\\Desktop\\HolographicAcademy-Holograms-210-Gaze\\NASA SUITs Test\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
-      "projectJsonPath": "C:\\Users\\Benha\\Desktop\\HolographicAcademy-Holograms-210-Gaze\\NASA SUITs Test\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
+      "projectPath": "C:\\Users\\Benha\\OneDrive\\Desktop\\NASA SUITS Repository\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectJsonPath": "C:\\Users\\Benha\\OneDrive\\Desktop\\NASA SUITS Repository\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
       "packagesPath": "C:\\Users\\Benha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Benha\\Desktop\\HolographicAcademy-Holograms-210-Gaze\\NASA SUITs Test\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\x86\\Release\\",
+      "outputPath": "C:\\Users\\Benha\\OneDrive\\Desktop\\NASA SUITS Repository\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\x86\\Release\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"

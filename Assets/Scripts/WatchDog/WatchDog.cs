@@ -51,7 +51,7 @@ public class WatchDog : MonoBehaviour{
                     // push menu stat to pad...
                     try {
 
-                        padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[range.reference]);
+                       padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[range.reference]);
                     } catch {
                         Debug.LogError("cant find menu stat from DataRange reference name");
                     }
@@ -71,7 +71,7 @@ public class WatchDog : MonoBehaviour{
                     // push menu stat to pad...
                     try {
 
-                        padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[nominal.reference]);
+                       padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[nominal.reference]);
                     } catch {
                         Debug.LogError("cant find switch stat from DataRange reference name");
                     }

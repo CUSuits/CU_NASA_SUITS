@@ -1,8 +1,8 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <UnityWSASolutionName>NASA SUITs Test</UnityWSASolutionName>
-        <UnityWSASolutionDir>C:\Users\Benha\OneDrive\Desktop\NASA_SUITs\unity_code\NASA SUITs Test\App\</UnityWSASolutionDir>
-        <UnityProjectDir>C:\Users\Benha\OneDrive\Desktop\NASA_SUITs\unity_code\NASA SUITs Test\</UnityProjectDir>
+        <UnityWSASolutionName>051318</UnityWSASolutionName>
+        <UnityWSASolutionDir>C:\Users\Benha\OneDrive\Desktop\NASA SUITS Repository\App\</UnityWSASolutionDir>
+        <UnityProjectDir>C:\Users\Benha\OneDrive\Desktop\NASA SUITS Repository\</UnityProjectDir>
         <UnityWSAPlayerDir>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
         <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
     </PropertyGroup>

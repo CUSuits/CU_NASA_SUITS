@@ -23,6 +23,7 @@ public class SubMenuBehavior : MonoBehaviour {
             InitializeSubMenu(_subMenu);
         }
 
+		SetOnStartDisplay ();
 	}
 
     public void Show(string subMenuName) {
@@ -122,5 +123,18 @@ public class SubMenuBehavior : MonoBehaviour {
     void Hide() {
         canvas.enabled = false;
     }
+
+	// Run in Start() - only show base display at start of application
+	void SetOnStartDisplay()
+	{
+		GameObject.Find ("Overlay - Pad").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Master - Internal").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Master - Misc").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Master - SOP").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Master - Sub").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Master - H2O").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Overlay - Task").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Overlay - Heart Rate").GetComponent<Canvas> ().enabled = false;
+	}
 
 }
