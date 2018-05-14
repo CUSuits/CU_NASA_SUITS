@@ -16,11 +16,11 @@ public class GrammarManager : MonoBehaviour {
     public MenuStatManager menuStatManager;
 
     [Tooltip("Dictionary of stats associated with each SubMenu")]
-    public List<string> intStats = new List<string> { "suit pressure", "oxygen pressure", "oxygen rate", "oxygen time" };
-    public List<string> miscStats = new List<string> { "battery capacity", "battery time", "fan tachometer", };
-    public List<string> subStats = new List<string> { "sublimator temperature", "sublimator pressure" };
-    public List<string> h20Stats = new List<string> { "h2o gas pressure", "h2o liquid pressure", "h2o time" };
-    public List<string> sopStats = new List<string> { "secondary oxgygen pressure", "secondary oxygen rate" };
+    public List<string> intStats = new List<string> { "suit pressure", "internal pressure", "internal suit pressure", "oxygen pressure","o2 pressure", "oxygen rate", "o2 rate", "oxygen time", "o2 time" };
+    public List<string> miscStats = new List<string> { "battery capacity", "battery", "battery time", "fan tachometer", "fan speed", "heart rate" };
+    public List<string> subStats = new List<string> { "sublimator temperature", "sub temp", "sublimator pressure", "sub pressure" };
+    public List<string> h20Stats = new List<string> { "h2o gas pressure","h2o vapor pressure","h2o gas", "water gas", "water gas pressure", "water vapor pressure", "water liquid", "water liquid temperature", "h2o liquid", "h2o liquid pressure", "h2o time", "water time" };
+    public List<string> sopStats = new List<string> { "secondary oxgygen pressure", "secondary o2 pressure", "sop pressure", "secondary oxygen rate", "secondary o2 rate", "sop rate" };
 
     // Use this for initialization
     void Start () {
@@ -141,7 +141,7 @@ public class GrammarManager : MonoBehaviour {
             if (sm.key == "stat") {
                 Debug.Log("read: " + sm.values[0]);
                 try {
-					
+
                     MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
 					statToTextSevice.ReadOutStat(menuStat.dataRequestName, menuStat.readoutName, menuStat.readOutUnits);
 
