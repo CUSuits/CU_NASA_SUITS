@@ -14,3 +14,4 @@ MonoBehaviour:
   name: Heart Rate
   dataRequestName: heart_bpm
   readoutName: heart rate
+  readOutUnits: Beats Per Minute

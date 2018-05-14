@@ -143,7 +143,7 @@ public class GrammarManager : MonoBehaviour {
                 try {
 					
                     MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
-                    statToTextSevice.ReadOutStat(menuStat.dataRequestName);
+					statToTextSevice.ReadOutStat(menuStat.dataRequestName, menuStat.readoutName, menuStat.readOutUnits);
 
                 } catch {
                     PleaseRepeatCommand();

@@ -14,3 +14,4 @@ MonoBehaviour:
   name: H2O Time
   dataRequestName: t_water
   readoutName: water time remaining
+  readOutUnits: na

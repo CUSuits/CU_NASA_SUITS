@@ -14,3 +14,4 @@ MonoBehaviour:
   name: Sub press
   dataRequestName: p_sub
   readoutName: sublimator pressure
+  readOutUnits: p s i a

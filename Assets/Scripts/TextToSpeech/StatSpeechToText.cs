@@ -14,11 +14,18 @@ public class StatSpeechToText : MonoBehaviour {
         json = GameObject.Find("Network Manager").GetComponent<JSONReader>(); 
     }
 
-    public void ReadOutStat(string statRequestName) {
-        Debug.Log("Reading out: "+statRequestName);
+	public void ReadOutStat(string statRequestName, string readOutName, string units) {
+		Debug.Log("Reading out: "+ readOutName);
         telemetry_data = json.suitData;
         string newData = telemetry_data.Request(statRequestName).value;
-        textToSpeechService.StartSpeaking(statRequestName+" is currently "+ newData);
+		if (units != "na") {
+			textToSpeechService.StartSpeaking (readOutName + " is currently " + newData + units);
+		} else {
+			// have read hour min sec...
+			string[] parts = newData.Split(':');
+			string timeReadOut = parts [0] + " hours " + parts [1] + " minutes and " + parts [2] + " seconds";
+			textToSpeechService.StartSpeaking (readOutName + " is currently " + timeReadOut);
+		}
     }
 }
 

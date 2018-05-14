@@ -14,3 +14,4 @@ MonoBehaviour:
   name: Fan Tach
   dataRequestName: v_fan
   readoutName: fan tachometer speed
+  readOutUnits: revolutions per minute

@@ -14,3 +14,4 @@ MonoBehaviour:
   name: H2O liq_press
   dataRequestName: p_h2o_l
   readoutName: water liquid pressure
+  readOutUnits: p s i a

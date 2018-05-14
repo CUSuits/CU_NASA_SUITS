@@ -14,3 +14,4 @@ MonoBehaviour:
   name: SOP press
   dataRequestName: p_sop
   readoutName: secondary oxygen pressure
+  readOutUnits: p s i a

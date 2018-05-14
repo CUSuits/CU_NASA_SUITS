@@ -14,3 +14,4 @@ MonoBehaviour:
   name: O2 Rate
   dataRequestName: rate_o2
   readoutName: primary oxygen rate
+  readOutUnits: p s i a per minute
