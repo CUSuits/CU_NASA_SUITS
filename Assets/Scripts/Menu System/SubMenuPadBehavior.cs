@@ -60,8 +60,11 @@ public class SubMenuPadBehavior : SubMenuBehavior {
 
 
     public void ClearAll() {
-        for (int i = 0; i <= menuItems.Count; i++) {
+        int numMenuToClear = menuItems.Count;
+        for (int i = 0; i < numMenuToClear; i++) {
+                
             MenuStatBehavior menuItemToBeDeleted = menuItems[0];
+
             menuItems.Remove(menuItemToBeDeleted);
 
             // Destroy object.
