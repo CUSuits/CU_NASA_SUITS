@@ -16,8 +16,7 @@ MonoBehaviour:
   taskListImg: {fileID: 21300000, guid: 7029cbbbce5f0ac4dbc4e93267bfddf4, type: 3}
   prevHUDStr: Return key
   hudStr: Secure PAD
-  nextHUDStr: 
-  recognizedObjects: []
+  nextHUDStr: Tether self to TC
   recognizedObjectsStr:
   - hammer
   - nail

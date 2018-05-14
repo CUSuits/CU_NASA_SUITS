@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
-  m_Name: Disable_Alarm_S5
+  m_Name: Disable_Alarm_S16
   m_EditorClassIdentifier: 
-  taskListInfo: Locate the E-STOP button and gently press down to temporarily disable
-    the alarm.
+  taskListInfo: '"Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE. CAUTION:
+    Rock the ALARM FUSE with the FUSE PULLER when pulling up."'
   taskListImg: {fileID: 0}
-  prevHUDStr: Tether self to TC
-  hudStr: Press E-stop to disable
-  nextHUDStr: 'Tether, Remove, Store BC '
+  prevHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
+  hudStr: 'Tether, Remove, Store AF to TC using BFP   '
+  nextHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
   recognizedObjectsStr: []
