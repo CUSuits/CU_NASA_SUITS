@@ -14,6 +14,10 @@ MonoBehaviour:
   taskListInfo: 'On your belt, use the BLUE CARABINEER to securely tether to the TETHER
     CABLE inside the STORAGE. CAUTION: Notice the TETHER CABLE is adjustable'
   taskListImg: {fileID: 0}
+  prevStepStr: Disable Alarm step 3
+  prevStepImg: {fileID: 0}
+  nextStepStr: Disable Alarm step 5
+  nextStepImg: {fileID: 0}
   prevHUDStr: Secure PAD
   hudStr: Tether self to TC
   nextHUDStr: Press E-stop to disable

@@ -26,13 +26,13 @@ public class TaskListManager : InstUpdate, IUpdateText {
         if (step.nextStepImg != null) {
             nextImg.sprite = step.nextStepImg;
         } else {
-            //nextImg.sprite = null;
+            nextImg.sprite = null;
         }
 
         if (step.prevStepImg != null) {
             prevImg.sprite = step.nextStepImg;
         } else {
-            //prevImg.sprite = null;
+            prevImg.sprite = null;
         }
 
         if (step.nextStepStr != "") {
@@ -42,11 +42,11 @@ public class TaskListManager : InstUpdate, IUpdateText {
         }
 
 
-        //if (step.prevStepStr != "") {
-        //    prevStepStr.text = step.prevStepStr;
-        //} else {
-        //    prevStepStr.text = "";
-        //}
+        if (step.prevStepStr != "") {
+            prevStepStr.text = step.prevStepStr;
+        } else {
+            prevStepStr.text = "";
+        }
 
 
         UpdateText(step.taskListInfo);
