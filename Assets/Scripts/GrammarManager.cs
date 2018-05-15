@@ -16,12 +16,12 @@ public class GrammarManager : MonoBehaviour {
     public MenuStatManager menuStatManager;
 
     [Tooltip("Dictionary of stats associated with each SubMenu")]
-    public List<string> defaultStats = new List<string> {"home", "default", "submenu list", "menu list"};
-    public List<string> intStats = new List<string> { "int", "internal", "suit pressure", "internal pressure", "internal suit pressure", "oxygen pressure","o2 pressure", "oxygen rate", "o2 rate", "oxygen time", "o2 time" };
-    public List<string> miscStats = new List<string> { "miscellaneous", "misc", "battery capacity", "battery", "battery time", "fan tachometer", "fan speed" };
-    public List<string> subStats = new List<string> { "sublimator", "sub", "sublimator temperature", "sub temp", "sublimator pressure", "sub pressure" };
-    public List<string> h20Stats = new List<string> { "water", "h2o", "h2o gas pressure","h2o vapor pressure","h2o gas", "water gas", "water gas pressure", "water vapor pressure", "water liquid", "water liquid temperature", "h2o liquid", "h2o liquid pressure", "h2o time", "water time" };
-    public List<string> sopStats = new List<string> { "secondary oxygen", "sop", "secondary oxgygen pressure", "secondary o2 pressure", "sop pressure", "secondary oxygen rate", "secondary o2 rate", "sop rate" };
+    public List<string> defaultStats = new List<string> {"def_def", "menulist_def"};
+    public List<string> intStats = new List<string> { "int", "p_suit", "p_o2", "rate_o2", "t_oxygen" };
+    public List<string> miscStats = new List<string> { "misc", "cap_battery", "t_battery", "v_fan"};
+    public List<string> subStats = new List<string> { "sub", "t_sub", "p_sub" };
+    public List<string> h20Stats = new List<string> { "h2o", "p_h2o_g", "p_h2o_l", "t_water"};
+    public List<string> sopStats = new List<string> { "sop", "p_sop", "rate_sop" };
 
     // Use this for initialization
     void Start () {
@@ -43,6 +43,13 @@ public class GrammarManager : MonoBehaviour {
 
     private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args) {
         SemanticMeaning[] meanings = args.semanticMeanings;
+        //PhraseRecognizedEventArgs.confidence = high;
+        // Debug.Log("Recognition result summary:");
+        // Debug.Log(
+        // "  Recognized phrase: {0}\n" +
+        // "  Confidence score {1}\n" +
+        // "  Grammar used: {2}\n",
+        // args.Result.Text, args.Result.Confidence, args.Result.Grammar.Name);
         string spokenWords = args.text.ToLower();
         Debug.Log(spokenWords);
 
@@ -106,6 +113,8 @@ public class GrammarManager : MonoBehaviour {
                     mainSubMenu.Hide("Int");
                 } else if (miscStats.Contains(sm.values[0])) {
                     mainSubMenu.Hide("Misc");
+                } else if (defaultStats.Contains(sm.values[0])) {
+                    mainSubMenu.Hide("Default");
                 } else if (subStats.Contains(sm.values[0])) {
                     mainSubMenu.Hide("Sub");
                 } else if (sopStats.Contains(sm.values[0])) {
