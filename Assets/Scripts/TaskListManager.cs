@@ -30,7 +30,7 @@ public class TaskListManager : InstUpdate, IUpdateText {
         }
 
         if (step.prevStepImg != null) {
-            prevImg.sprite = step.nextStepImg;
+            prevImg.sprite = step.prevStepImg;
         } else {
             prevImg.sprite = null;
         }

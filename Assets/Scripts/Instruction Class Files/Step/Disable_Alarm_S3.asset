@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: 'Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS
     DOOR in an OPEN position. WARNING: Door can accidentally close. '
-  taskListImg: {fileID: 21300000, guid: 7029cbbbce5f0ac4dbc4e93267bfddf4, type: 3}
+  taskListImg: {fileID: 21300000, guid: f07936bf85e069b489ca10f7954c6e74, type: 3}
   prevStepStr: Disable Alarm step 2
-  prevStepImg: {fileID: 0}
+  prevStepImg: {fileID: 21300000, guid: 7e16e6e850441d944bf1f8ea48c45da3, type: 3}
   nextStepStr: Disable Alarm step 4
-  nextStepImg: {fileID: 0}
+  nextStepImg: {fileID: 21300000, guid: 78c51dc3a8e50e84685f9c0e7929b0e6, type: 3}
   prevHUDStr: Return key
   hudStr: Secure PAD
   nextHUDStr: Tether self to TC
   recognizedObjectsStr:
   - hammer
-  - nail
+  - task list
