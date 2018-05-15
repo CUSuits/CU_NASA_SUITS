@@ -14,6 +14,6 @@ public class MenuStat : ScriptableObject {
     public string readoutName;
 	[Tooltip("Used as stat units")]
 	public string readOutUnits;
-
-
+	[Tooltip("Used as stat units")]
+	public string units;
 }

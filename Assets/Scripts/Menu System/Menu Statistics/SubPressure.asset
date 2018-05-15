@@ -15,3 +15,4 @@ MonoBehaviour:
   dataRequestName: p_sub
   readoutName: sublimator pressure
   readOutUnits: p s i a
+  units: psia

@@ -33,13 +33,19 @@ public class MenuStatBehavior : MonoBehaviour {
         if (requestParam == "--")
         {
             newData = "";
-        } else
-        { 
+        } else { 
         telemetry_data = json.suitData;
         newData = telemetry_data.Request(requestParam).value;
         };
         return newData;
     }
+
+	string RequestNewSwitch(string requestParam)
+	{
+		telemetry_switch = json.switchData;
+		return telemetry_switch.Request (requestParam).value;
+
+	}
 
     string GetRequestParam() {
         if (menuStat != null) {
@@ -50,7 +56,7 @@ public class MenuStatBehavior : MonoBehaviour {
         }
     }
     
-    void Update () {
+	public virtual void Update () {
         //Delay request to every 1 second?
         string requestParam = GetRequestParam();
         string newData = RequestNewData(requestParam);
@@ -60,7 +66,7 @@ public class MenuStatBehavior : MonoBehaviour {
         }
         else
         {
-            UpdateText(menuStat.name + " : " + newData);
+			UpdateText(menuStat.name + " : " + newData + " " + menuStat.units);
         };
 
         //watchdog

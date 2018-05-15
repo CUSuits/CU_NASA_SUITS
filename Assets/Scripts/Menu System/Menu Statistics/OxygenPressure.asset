@@ -15,3 +15,4 @@ MonoBehaviour:
   dataRequestName: p_o2
   readoutName: primary oxygen pressure
   readOutUnits: p s i a
+  units: psia

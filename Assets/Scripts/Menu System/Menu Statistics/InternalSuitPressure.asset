@@ -15,3 +15,4 @@ MonoBehaviour:
   dataRequestName: p_suit
   readoutName: internal suit pressure
   readOutUnits: p s i a
+  units: psia

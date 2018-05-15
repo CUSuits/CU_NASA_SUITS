@@ -15,3 +15,4 @@ MonoBehaviour:
   dataRequestName: t_sub
   readoutName: sublimator temperature
   readOutUnits: Degrees Fahrenheit
+  units: F

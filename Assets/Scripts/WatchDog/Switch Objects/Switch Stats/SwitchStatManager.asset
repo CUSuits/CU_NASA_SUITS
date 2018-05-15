@@ -13,18 +13,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchDictionary:
     m_keys:
-    - fan_error
-    - h2o_off
-    - o2_off
     - sop_on
-    - vehicle_power
-    - vent_error
     - sspe
+    - fan_error
+    - vent_error
+    - o2_off
+    - h2o_off
+    - vehicle_power
     m_values:
-    - {fileID: 11400000, guid: ed9ec238d3c899342a5e8fdb6c51de09, type: 2}
-    - {fileID: 11400000, guid: b7213ae39a648674486fe12603ad966b, type: 2}
-    - {fileID: 11400000, guid: eee84c431a207a048a4e85ff32b3cb89, type: 2}
     - {fileID: 11400000, guid: 85055268d2cada444906126a0de58aa8, type: 2}
-    - {fileID: 11400000, guid: 9220e21f75ef45e48993970cd8217a14, type: 2}
-    - {fileID: 11400000, guid: f9c804cf659952e49a539f15f759700f, type: 2}
     - {fileID: 11400000, guid: 43490ee5052ebc34f965f6a046231e6d, type: 2}
+    - {fileID: 11400000, guid: ed9ec238d3c899342a5e8fdb6c51de09, type: 2}
+    - {fileID: 11400000, guid: f9c804cf659952e49a539f15f759700f, type: 2}
+    - {fileID: 11400000, guid: eee84c431a207a048a4e85ff32b3cb89, type: 2}
+    - {fileID: 11400000, guid: b7213ae39a648674486fe12603ad966b, type: 2}
+    - {fileID: 11400000, guid: 9220e21f75ef45e48993970cd8217a14, type: 2}

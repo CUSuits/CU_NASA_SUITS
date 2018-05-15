@@ -15,3 +15,4 @@ MonoBehaviour:
   dataRequestName: rate_sop
   readoutName: secondary oxygen rate
   readOutUnits: p s i a per minute
+  units: psia/m

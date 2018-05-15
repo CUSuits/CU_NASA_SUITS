@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class SubMenuPadBehavior : SubMenuBehavior {
 	public void Push(MenuStat menuStat) {
         //SubMenu subMenu = GetSubMenuFromManager(subMenuName);
@@ -15,7 +16,8 @@ public class SubMenuPadBehavior : SubMenuBehavior {
         }
         canvas.enabled = true;
         CreateMenuStat(menuStat);
-    }
+    }	
+
 
 	public void PushEmergencyStat(MenuStat menuStat) {
 
@@ -30,7 +32,7 @@ public class SubMenuPadBehavior : SubMenuBehavior {
                 continue;
             }
         }
-        canvas.enabled = true;
+		canvas.enabled = true;
 
         //Create new stat and turn it bold,red,
         MenuStatBehavior createdEmergencyMenuStat = CreateMenuStat(menuStat);
@@ -38,7 +40,6 @@ public class SubMenuPadBehavior : SubMenuBehavior {
 		emergencyText.color = Color.red;
         emergencyText.fontSize = 20;
         emergencyText.fontStyle = FontStyle.Bold;
-
     }
 		
 
@@ -71,4 +72,7 @@ public class SubMenuPadBehavior : SubMenuBehavior {
             Destroy(menuItemToBeDeleted.gameObject);
         }
     }
+
+
+
 }

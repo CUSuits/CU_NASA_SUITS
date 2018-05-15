@@ -138,4 +138,13 @@ public class SubMenuBehavior : MonoBehaviour {
 		GameObject.Find ("Overlay - Full Phrase List").GetComponent<Canvas> ().enabled = false;
 	}
 
+	public bool CheckStatOnPad(MenuStat menuStat){
+		foreach (MenuStatBehavior menuBehavior in menuItems) {
+			if (menuBehavior.menuStat == menuStat) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 }

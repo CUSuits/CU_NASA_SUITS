@@ -8,6 +8,7 @@ public class WatchDog : MonoBehaviour{
 	public WatchDogStats watchDogStats;
 	// import public dictionary of all menu stats - menu stat dictionary
 	public MenuStatManager menuStatDictionary;
+	public SwitchStatManager switchStatDictionary;
 	// store nominal ranges
 	private List<DataRange> dataRanges;
 	private List<SwitchStats> switchNom;
@@ -18,12 +19,20 @@ public class WatchDog : MonoBehaviour{
 	private string hour;
 	// pad manager
 	public SubMenuPadBehavior padManager;
+	// warnings manager
+	public WarningsHandler warningManager;
 
+	public string userInput;
+
+		
 	void Start()
 	{
-	
+		if (padManager == null || warningManager == null) 
+		{
+			Debug.LogError ("Missing Pad Manager or Warning Manager Script");
+		}
 	}
-		
+
 	/// <summary>
 	/// check suit and switch telemetry values againts nominal ranges, update pad with warnings
 	/// </summary>
@@ -38,6 +47,7 @@ public class WatchDog : MonoBehaviour{
 		//----------------------------------------
 		foreach (DataRange range in dataRanges)
 		{
+			
 			if(telemetry_suit.Request(range.reference).value != "") // if telemetry value exists
 			{
 				// componsate for time syntax
@@ -80,29 +90,50 @@ public class WatchDog : MonoBehaviour{
 	// check if suit data is out of range
 	void CheckSuitWarnings(DataRange range, string current_val)
 	{
-		if(Convert.ToDouble(current_val) > range.max || Convert.ToDouble(current_val) < range.min) // check ranges
-		{
+		if (Convert.ToDouble (current_val) > range.max || Convert.ToDouble (current_val) < range.min) { // check ranges
 			// push menu stat to pad...
 			try {
-				padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[range.reference]); // add canvas input to specify which canvas to push to!
+				warningManager.PushWarningStat (menuStatDictionary.subMenuDictionary [range.reference]); 
 			} catch {
-				Debug.LogError("cant find menu stat from DataRange reference name");
+				Debug.LogError ("cant find menu stat from DataRange reference name");
+			}
+		} else {
+			MenuStat removeStat = menuStatDictionary.subMenuDictionary [range.reference];
+			bool isStatOnPad = warningManager.CheckStatOnPad(removeStat);
+			if (isStatOnPad) {
+				warningManager.Clear (removeStat);
 			}
 		}
 	}
 
 	// check if switch is triggered
-	void CheckSwitchWarnings(SwitchStats nominal, string current_swtich)
+	void CheckSwitchWarnings(SwitchStats nominal, string current_switch)
 	{
-		if (nominal.nominal != current_switch) // check nominal
-		{
+		
+		if (nominal.nominal != current_switch) { // check nominal
+			SwitchStat newSwitchStat = null;
 			// push menu stat to pad...
 			try {
-				padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[nominal.reference]);
+				//padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[nominal.reference]);
+				newSwitchStat = switchStatDictionary.switchDictionary [nominal.reference]; 
 			} catch {
-				Debug.LogError("cant find switch stat from DataRange reference name");
+				Debug.LogError ("cant find switch stat from DataRange reference name: " + nominal.reference);
 			}
-		}	
+			try {
+				warningManager.PushWarningSwitch (newSwitchStat);
+			} catch {
+				Debug.LogError ("Could not push warning for switch");
+			}
+		} else {
+			SwitchStat removeSwitchStat = switchStatDictionary.switchDictionary [nominal.reference];
+			bool isStatOnPad = warningManager.CheckStatOnPad(removeSwitchStat);
+			if (isStatOnPad) {
+				warningManager.Clear (removeSwitchStat);
+			}
+		}
+	}
+
+	void RemoveStatFromPad(){
 	}
 		
 
