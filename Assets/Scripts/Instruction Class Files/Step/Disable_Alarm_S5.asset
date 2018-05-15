@@ -14,7 +14,12 @@ MonoBehaviour:
   taskListInfo: Locate the E-STOP button and gently press down to temporarily disable
     the alarm.
   taskListImg: {fileID: 0}
+  prevStepStr: 
+  prevStepImg: {fileID: 0}
+  nextStepStr: 
+  nextStepImg: {fileID: 0}
   prevHUDStr: Tether self to TC
   hudStr: Press E-stop to disable
   nextHUDStr: 'Tether, Remove, Store BC '
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - screwdriver

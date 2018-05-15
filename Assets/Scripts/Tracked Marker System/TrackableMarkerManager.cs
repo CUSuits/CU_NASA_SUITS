@@ -11,7 +11,7 @@ public class StringMarkerDict : SerializableDictionary<string, TrackableMarker> 
 public class TrackableMarkerManager : InstUpdate {
     public List<TrackableMarker> trackableMarkerList;
     public StringMarkerDict recognizedMarkerDict;
-    public List<string> trackedTargets;
+    public List<TrackableMarker> trackedTargets;
 
     private void Start() {
         //Hide all tracked objects on start
@@ -28,7 +28,7 @@ public class TrackableMarkerManager : InstUpdate {
     public virtual void UpdateTrackState(TrackableMarker trackableMarker, bool isTracked) {
         //if marker tracked and is currently a recognized object, turn on rendering
         if (isTracked) {
-            if (recognizedMarkerDict.ContainsValue(trackableMarker))
+            if (trackedTargets.Contains(trackableMarker))
                 trackableMarker.ShowRenderGameObject(true);
         } else {
             trackableMarker.ShowRenderGameObject(false);
@@ -59,6 +59,6 @@ public class TrackableMarkerManager : InstUpdate {
         //for each target in List hide
         trackedTargets.Clear();
         foreach (string target in targetList)
-            trackedTargets.Add(target);
+            trackedTargets.Add(recognizedMarkerDict[target]);
     }
 }
