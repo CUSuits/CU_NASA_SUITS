@@ -135,6 +135,7 @@ public class SubMenuBehavior : MonoBehaviour {
 		GameObject.Find ("Master - H2O").GetComponent<Canvas> ().enabled = false;
 		GameObject.Find ("Overlay - Task").GetComponent<Canvas> ().enabled = false;
 		GameObject.Find ("Overlay - Heart Rate").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Overlay - Full Phrase List").GetComponent<Canvas> ().enabled = false;
 	}
 
 }

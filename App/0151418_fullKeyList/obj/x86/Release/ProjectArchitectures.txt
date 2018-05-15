@@ -1,0 +1,2 @@
+C:\Users\Benha\OneDrive\Desktop\NASA SUITS Repository\App\0151418_fullKeyList\0151418_fullKeyList.csproj;x86
+C:\Users\Benha\OneDrive\Desktop\NASA SUITS Repository\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86

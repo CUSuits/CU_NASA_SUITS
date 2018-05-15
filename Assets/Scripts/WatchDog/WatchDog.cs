@@ -84,7 +84,7 @@ public class WatchDog : MonoBehaviour{
 		{
 			// push menu stat to pad...
 			try {
-				padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[range.reference]);
+				padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[range.reference]); // add canvas input to specify which canvas to push to!
 			} catch {
 				Debug.LogError("cant find menu stat from DataRange reference name");
 			}
