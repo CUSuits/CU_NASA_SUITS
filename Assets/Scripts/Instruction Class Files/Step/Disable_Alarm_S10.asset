@@ -14,8 +14,13 @@ MonoBehaviour:
   taskListInfo: 'Remove the DISCONNECT and place it in STORAGE. CAUTION: Pull up with
     the index and middle fingers while pushing down on the FUSE ACCESS PANEL with
     the thumb.'
-  taskListImg: {fileID: 0}
-  prevHUDStr: 'Tether, Remove, Store BD to TC '
+  taskListImg: {fileID: 21300000, guid: 1b9dcf951f54ee3408f0c8242876b239, type: 3}
+  prevStepStr: Locate the BLACK DISCONNECT and tether it to the TETHER CABLE.
+  prevStepImg: {fileID: 0}
+  nextStepStr: Tether the FUSE ACCESS PANEL to the TETHER CABLE.
+  nextStepImg: {fileID: 0}
+  prevHUDStr: Open FB
   hudStr: 'Tether, Remove, Store BD to TC '
   nextHUDStr: 'Tether, Remove, Store FAP to TC  '
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

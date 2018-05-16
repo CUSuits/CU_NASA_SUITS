@@ -13,8 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: In STORAGE, locate the FUSE ACCESS PANEL and reinstall it into the
     FUSIBLE DISCONNECT box.
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: b079efc2a90a11e45bc94fa0c5f55481, type: 3}
+  prevStepStr: Return the ALARM FUSE and the FUSE PULLER to STORAGE.
+  prevStepImg: {fileID: 0}
+  nextStepStr: '"Remove the FUSE ACCESS PANEL tether from the TETHER CABLE and stow
+    inside. WARNING: All tethers are under spring tension and can retract quickly."'
+  nextStepImg: {fileID: 0}
   prevHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
   hudStr: 'Reinstall FAP.  '
-  nextHUDStr: 'Reinstall FAP.  '
-  recognizedObjectsStr: []
+  nextHUDStr: 'Reinstall BD '
+  recognizedObjectsStr:
+  - task list

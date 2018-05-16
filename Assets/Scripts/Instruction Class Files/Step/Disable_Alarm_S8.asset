@@ -14,8 +14,14 @@ MonoBehaviour:
   taskListInfo: '"Open the FUSIBLE DISCONNECT box and secure the lid in the open position.
     CAUTION: Pull the locking tab toward STORAGE with the index finger while lifting
     the cover with the thumb."'
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: 46971455c2ad6e04b9408b80dd3476c6, type: 3}
+  prevStepStr: Remove the BLUE CARABINEER from the FUSIBLE DISCONNECT box and transfer
+    it to STORAGE.
+  prevStepImg: {fileID: 21300000, guid: 2acaf98ec01aa364282a824abad23f7a, type: 3}
+  nextStepStr: Locate the BLACK DISCONNECT and tether it to the TETHER CABLE.
+  nextStepImg: {fileID: 0}
   prevHUDStr: 'Tether, Remove, Store BC '
   hudStr: Open FB
   nextHUDStr: 'Tether, Remove, Store BD to TC '
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

@@ -14,7 +14,14 @@ MonoBehaviour:
   taskListInfo: "Locate the AUX. POWER SWITCH on the POWER IN box and switch it to
     the \u201CON\u201D position."
   taskListImg: {fileID: 0}
+  prevStepStr: Remove the KEY and place it in STORAGE.
+  prevStepImg: {fileID: 21300000, guid: b7c57d4ad7ec22e4680734a5806da1d6, type: 3}
+  nextStepStr: Can you please confirm YES or NO that the SYSTEM GO indicator light
+    is GREEN?
+  nextStepImg: {fileID: 21300000, guid: 44bd8447159772f4d89a54ffc6c4bbfe, type: 3}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
+  - power switch

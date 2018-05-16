@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Name: RP_S25
   m_EditorClassIdentifier: 
   taskListInfo: Conduct a Gentle PULL TEST on each cable.
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: 4975c35b618da0d44982e6043d66631b, type: 3}
+  prevStepStr: '"Insert the BLACK 110 VOLT PLUG LEAD into the RIGHT BLACK BUS opening.
+    CAUTION: DO NOT over tighten the thumbscrew."'
+  prevStepImg: {fileID: 21300000, guid: b931a6d369990bb4099cb184af06d405, type: 3}
+  nextStepStr: In STORAGE, locate the E-STOP KEY.
+  nextStepImg: {fileID: 21300000, guid: 2f338509c2a1a25408fbb0a02208f7ea, type: 3}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

@@ -13,8 +13,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: '"Insert the BLACK 110 VOLT PLUG LEAD into the RIGHT BLACK BUS opening.
     CAUTION: DO NOT over tighten the thumbscrew."'
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: b931a6d369990bb4099cb184af06d405, type: 3}
+  prevStepStr: '"Insert the GREEN 110 VOLT PLUG LEAD into the RIGHT GREEN BUS opening.
+    CAUTION: DO NOT over tighten the thumbscrew."'
+  prevStepImg: {fileID: 21300000, guid: cae5dc4eab918904e9d54ff2e8a7d1c5, type: 3}
+  nextStepStr: Conduct a Gentle PULL TEST on each cable.
+  nextStepImg: {fileID: 21300000, guid: 4975c35b618da0d44982e6043d66631b, type: 3}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
+  - black bus

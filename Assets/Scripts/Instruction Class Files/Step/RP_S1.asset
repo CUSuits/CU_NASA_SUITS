@@ -13,7 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: Locate the Aux. Power Input
   taskListImg: {fileID: 0}
+  prevStepStr: --
+  prevStepImg: {fileID: 0}
+  nextStepStr: '"Locate BATTERY PACK and tether to TETHER CABLE."'
+  nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

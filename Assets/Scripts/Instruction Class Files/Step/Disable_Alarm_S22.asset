@@ -13,7 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: Close the FUSIBLE DISCONNECT box cover.
   taskListImg: {fileID: 0}
+  prevStepStr: '"Remove the DISCONNECT tether from the TETHER CABLE. WARNING: All
+    tethers are under spring tension and can retract quickly."'
+  prevStepImg: {fileID: 0}
+  nextStepStr: '"In STORAGE, use the BLUE CARABINEER to clip and lock the FUSIBLE
+    DISCONNECT box cover."'
+  nextStepImg: {fileID: 21300000, guid: 883b0d02c74baa74abbb775b2c9ebcda, type: 3}
   prevHUDStr: 'Reinstall BD '
   hudStr: 'Close, Lock FB   '
-  nextHUDStr: 'Close, Lock FB   '
-  recognizedObjectsStr: []
+  nextHUDStr: --
+  recognizedObjectsStr:
+  - task list

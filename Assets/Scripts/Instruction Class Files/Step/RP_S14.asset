@@ -14,7 +14,13 @@ MonoBehaviour:
   taskListInfo: 'Install it into the POWER OUT. CAUTION: Outlet and plug mate are
     stiff, ensure the full engagement of the plug into the outlet.'
   taskListImg: {fileID: 0}
+  prevStepStr: In STORAGE, locate the GRAY 220 Volt PLUG.
+  prevStepImg: {fileID: 0}
+  nextStepStr: Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE
+    BUSSES, each with 2 openings.
+  nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

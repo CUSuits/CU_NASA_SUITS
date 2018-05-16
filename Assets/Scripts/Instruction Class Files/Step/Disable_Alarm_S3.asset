@@ -11,16 +11,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S3
   m_EditorClassIdentifier: 
-  taskListInfo: 'Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS
-    DOOR in an OPEN position. WARNING: Door can accidentally close. '
-  taskListImg: {fileID: 21300000, guid: f07936bf85e069b489ca10f7954c6e74, type: 3}
-  prevStepStr: Disable Alarm step 2
-  prevStepImg: {fileID: 21300000, guid: 7e16e6e850441d944bf1f8ea48c45da3, type: 3}
-  nextStepStr: Disable Alarm step 4
-  nextStepImg: {fileID: 21300000, guid: 78c51dc3a8e50e84685f9c0e7929b0e6, type: 3}
+  taskListInfo: '"Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS
+    DOOR in an OPEN position. WARNING: Door can accidentally close. "'
+  taskListImg: {fileID: 21300000, guid: 88287496fbf148a48a6178ae2b74e047, type: 3}
+  prevStepStr: Carefully return keys to the side of the EVA kit.
+  prevStepImg: {fileID: 0}
+  nextStepStr: 'On your belt, use the BLUE CARABINEER to securely tether to the TETHER
+    CABLE inside the STORAGE. CAUTION: Notice the TETHER CABLE is adjustable'
+  nextStepImg: {fileID: 21300000, guid: f358c7c072835a24aa84bc8997c5415c, type: 3}
   prevHUDStr: Return key
   hudStr: Secure PAD
   nextHUDStr: Tether self to TC
   recognizedObjectsStr:
-  - hammer
   - task list

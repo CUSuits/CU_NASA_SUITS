@@ -14,7 +14,14 @@ MonoBehaviour:
   taskListInfo: Insert the KEY into the E-STOP and TURN to the RIGHT and the button
     will pop up.
   taskListImg: {fileID: 0}
+  prevStepStr: In STORAGE, locate the E-STOP KEY.
+  prevStepImg: {fileID: 21300000, guid: 2f338509c2a1a25408fbb0a02208f7ea, type: 3}
+  nextStepStr: Remove the KEY and place it in STORAGE.
+  nextStepImg: {fileID: 21300000, guid: b7c57d4ad7ec22e4680734a5806da1d6, type: 3}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
+  - estop
+  - estop key

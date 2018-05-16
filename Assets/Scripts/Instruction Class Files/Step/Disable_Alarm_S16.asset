@@ -13,8 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: '"Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE. CAUTION:
     Rock the ALARM FUSE with the FUSE PULLER when pulling up."'
-  taskListImg: {fileID: 0}
-  prevHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
+  taskListImg: {fileID: 21300000, guid: b8244e4e9fd1a3d48ba74c357a5a96db, type: 3}
+  prevStepStr: In Storage, locate the BLUE FUSE PULLER.
+  prevStepImg: {fileID: 0}
+  nextStepStr: Return the ALARM FUSE and the FUSE PULLER to STORAGE.
+  nextStepImg: {fileID: 0}
+  prevHUDStr: 'Tether, Remove, Store FAP to TC  '
   hudStr: 'Tether, Remove, Store AF to TC using BFP   '
-  nextHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
-  recognizedObjectsStr: []
+  nextHUDStr: 'Reinstall FAP.  '
+  recognizedObjectsStr:
+  - task list
+  - fuse puller

@@ -13,7 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: Tether the FUSE ACCESS PANEL to the TETHER CABLE.
   taskListImg: {fileID: 0}
+  prevStepStr: 'Remove the DISCONNECT and place it in STORAGE. CAUTION: Pull up with
+    the index and middle fingers while pushing down on the FUSE ACCESS PANEL with
+    the thumb.'
+  prevStepImg: {fileID: 21300000, guid: 1b9dcf951f54ee3408f0c8242876b239, type: 3}
+  nextStepStr: '"Remove the FUSE ACCESS PANEL by pulling straight up."'
+  nextStepImg: {fileID: 21300000, guid: f3207e184937e044d9b508b7ddffad44, type: 3}
   prevHUDStr: 'Tether, Remove, Store BD to TC '
   hudStr: 'Tether, Remove, Store FAP to TC  '
-  nextHUDStr: 'Tether, Remove, Store FAP to TC  '
-  recognizedObjectsStr: []
+  nextHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
+  recognizedObjectsStr:
+  - task list

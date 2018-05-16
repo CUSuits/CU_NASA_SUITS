@@ -13,8 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: '"Remove the BATTERY PACK tether from the TETHER CABLE. WARNING: All
     tethers are under spring tension and can retract quickly."'
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: 62ff4540fad65aa40831353da6a5ffc3, type: 3}
+  prevStepStr: Conduct a GENTLE PULL TEST on the wires.
+  prevStepImg: {fileID: 0}
+  nextStepStr: In STORAGE, locate the GRAY 220 Volt PLUG.
+  nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

@@ -14,7 +14,14 @@ MonoBehaviour:
   taskListInfo: Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE
     BUSSES, each with 2 openings.
   taskListImg: {fileID: 0}
+  prevStepStr: 'Install it into the POWER OUT. CAUTION: Outlet and plug mate are stiff,
+    ensure the full engagement of the plug into the outlet.'
+  prevStepImg: {fileID: 0}
+  nextStepStr: '"Insert the WHITE 220 VOLT LEAD into the LEFT WHITE BUSS opening and
+    GENTLY TIGHTEN the thumbscrew. CAUTION: DO NOT over tighten the thumbscrew."'
+  nextStepImg: {fileID: 21300000, guid: ac8ba4ed9fe01b34dba4c790d392892b, type: 3}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

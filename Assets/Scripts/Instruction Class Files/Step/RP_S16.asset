@@ -13,8 +13,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: '"Insert the WHITE 220 VOLT LEAD into the LEFT WHITE BUSS opening
     and GENTLY TIGHTEN the thumbscrew. CAUTION: DO NOT over tighten the thumbscrew."'
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: ac8ba4ed9fe01b34dba4c790d392892b, type: 3}
+  prevStepStr: Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE
+    BUSSES, each with 2 openings.
+  prevStepImg: {fileID: 0}
+  nextStepStr: '"Insert the GREEN 220 VOLT LEAD into the LEFT GREEN BUS opening. CAUTION:
+    DO NOT over tighten the thumbscrew."'
+  nextStepImg: {fileID: 21300000, guid: 4128ee450e6a9eb488cb06dc33fb95d8, type: 3}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
+  - white bus

@@ -14,7 +14,14 @@ MonoBehaviour:
   taskListInfo: '"Locate the ON/OFF switch on the back of the BATTERY PACK and switch
     it to the ON position."'
   taskListImg: {fileID: 0}
+  prevStepStr: '"In STORAGE, find the replacement BATTERY PACK."'
+  prevStepImg: {fileID: 0}
+  nextStepStr: '"Attach the replacement BATTERY PACK onto the AUX. POWER INPUT by
+    the Velcro."'
+  nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
+  - batt pack

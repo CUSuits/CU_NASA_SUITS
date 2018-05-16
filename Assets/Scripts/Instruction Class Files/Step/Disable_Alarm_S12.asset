@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Name: Disable_Alarm_S12
   m_EditorClassIdentifier: 
   taskListInfo: '"Remove the FUSE ACCESS PANEL by pulling straight up."'
-  taskListImg: {fileID: 0}
-  prevHUDStr: 'Tether, Remove, Store FAP to TC  '
+  taskListImg: {fileID: 21300000, guid: f3207e184937e044d9b508b7ddffad44, type: 3}
+  prevStepStr: Tether the FUSE ACCESS PANEL to the TETHER CABLE.
+  prevStepImg: {fileID: 0}
+  nextStepStr: ' Place the FUSE ACCESS PANEL into STORAGE.'
+  nextStepImg: {fileID: 0}
+  prevHUDStr: 'Tether, Remove, Store BD to TC '
   hudStr: 'Tether, Remove, Store FAP to TC  '
-  nextHUDStr: 'Tether, Remove, Store FAP to TC  '
-  recognizedObjectsStr: []
+  nextHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
+  recognizedObjectsStr:
+  - task list

@@ -15,7 +15,14 @@ MonoBehaviour:
     Depress the red and black plastic hammers on the side of the AUX. POWER INPUT
     and push leads straight into their ports."'
   taskListImg: {fileID: 0}
+  prevStepStr: '"Attach the replacement BATTERY PACK onto the AUX. POWER INPUT by
+    the Velcro."'
+  prevStepImg: {fileID: 0}
+  nextStepStr: Conduct a GENTLE PULL TEST on the wires.
+  nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
+  - batt pack

@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Name: RP_S28
   m_EditorClassIdentifier: 
   taskListInfo: Remove the KEY and place it in STORAGE.
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: b7c57d4ad7ec22e4680734a5806da1d6, type: 3}
+  prevStepStr: Insert the KEY into the E-STOP and TURN to the RIGHT and the button
+    will pop up.
+  prevStepImg: {fileID: 0}
+  nextStepStr: "Locate the AUX. POWER SWITCH on the POWER IN box and switch it to
+    the \u201CON\u201D position."
+  nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

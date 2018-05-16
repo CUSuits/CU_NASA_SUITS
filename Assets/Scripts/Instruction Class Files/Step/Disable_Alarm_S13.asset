@@ -13,7 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: ' Place the FUSE ACCESS PANEL into STORAGE.'
   taskListImg: {fileID: 0}
-  prevHUDStr: 'Tether, Remove, Store FAP to TC  '
+  prevStepStr: '"Remove the FUSE ACCESS PANEL by pulling straight up."'
+  prevStepImg: {fileID: 21300000, guid: f3207e184937e044d9b508b7ddffad44, type: 3}
+  nextStepStr: Tether the ALARM FUSE to the TETHER CABLE.
+  nextStepImg: {fileID: 0}
+  prevHUDStr: 'Tether, Remove, Store BD to TC '
   hudStr: 'Tether, Remove, Store FAP to TC  '
   nextHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list

@@ -14,12 +14,15 @@ MonoBehaviour:
   taskListInfo: Locate the FUSIBLE DISCONNECT box and tether the BLUE CARABINEER to
     the TETHER CABLE.
   taskListImg: {fileID: 0}
-  prevStepStr: 
-  prevStepImg: {fileID: 0}
-  nextStepStr: 
-  nextStepImg: {fileID: 0}
+  prevStepStr: Locate the E-STOP button and gently press down to temporarily disable
+    the alarm.
+  prevStepImg: {fileID: 21300000, guid: 18eed34dd14e11a40b08c0b2a2697343, type: 3}
+  nextStepStr: Remove the BLUE CARABINEER from the FUSIBLE DISCONNECT box and transfer
+    it to STORAGE.
+  nextStepImg: {fileID: 21300000, guid: 2acaf98ec01aa364282a824abad23f7a, type: 3}
   prevHUDStr: Press E-stop to disable
   hudStr: 'Tether, Remove, Store BC '
-  nextHUDStr: 'Tether, Remove, Store BC '
+  nextHUDStr: Open FB
   recognizedObjectsStr:
-  - 
+  - task list
+  - fuse disconnect

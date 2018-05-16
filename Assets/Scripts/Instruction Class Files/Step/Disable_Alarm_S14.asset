@@ -13,7 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: Tether the ALARM FUSE to the TETHER CABLE.
   taskListImg: {fileID: 0}
+  prevStepStr: ' Place the FUSE ACCESS PANEL into STORAGE.'
+  prevStepImg: {fileID: 0}
+  nextStepStr: In Storage, locate the BLUE FUSE PULLER.
+  nextStepImg: {fileID: 0}
   prevHUDStr: 'Tether, Remove, Store FAP to TC  '
   hudStr: 'Tether, Remove, Store AF to TC using BFP   '
-  nextHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
-  recognizedObjectsStr: []
+  nextHUDStr: 'Reinstall FAP.  '
+  recognizedObjectsStr:
+  - task list
+  - fuse puller

@@ -13,11 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: 'On your belt, use the BLUE CARABINEER to securely tether to the TETHER
     CABLE inside the STORAGE. CAUTION: Notice the TETHER CABLE is adjustable'
-  taskListImg: {fileID: 0}
-  prevStepStr: Disable Alarm step 3
-  prevStepImg: {fileID: 0}
-  nextStepStr: Disable Alarm step 5
-  nextStepImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: f358c7c072835a24aa84bc8997c5415c, type: 3}
+  prevStepStr: '"Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS
+    DOOR in an OPEN position. WARNING: Door can accidentally close. "'
+  prevStepImg: {fileID: 21300000, guid: 88287496fbf148a48a6178ae2b74e047, type: 3}
+  nextStepStr: Locate the E-STOP button and gently press down to temporarily disable
+    the alarm.
+  nextStepImg: {fileID: 21300000, guid: 18eed34dd14e11a40b08c0b2a2697343, type: 3}
   prevHUDStr: Secure PAD
   hudStr: Tether self to TC
   nextHUDStr: Press E-stop to disable

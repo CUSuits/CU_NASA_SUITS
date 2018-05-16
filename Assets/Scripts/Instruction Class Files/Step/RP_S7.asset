@@ -13,7 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskListInfo: '"In STORAGE, find the replacement BATTERY PACK."'
   taskListImg: {fileID: 0}
+  prevStepStr: Place the BATTERY PACK into STORAGE.
+  prevStepImg: {fileID: 0}
+  nextStepStr: '"Locate the ON/OFF switch on the back of the BATTERY PACK and switch
+    it to the ON position."'
+  nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
+  - batt pack

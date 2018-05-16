@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Name: RP_S26
   m_EditorClassIdentifier: 
   taskListInfo: In STORAGE, locate the E-STOP KEY.
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: 2f338509c2a1a25408fbb0a02208f7ea, type: 3}
+  prevStepStr: Conduct a Gentle PULL TEST on each cable.
+  prevStepImg: {fileID: 21300000, guid: 4975c35b618da0d44982e6043d66631b, type: 3}
+  nextStepStr: Insert the KEY into the E-STOP and TURN to the RIGHT and the button
+    will pop up.
+  nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
+  - estop
+  - estop key

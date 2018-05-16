@@ -14,8 +14,14 @@ MonoBehaviour:
   taskListInfo: '"In STORAGE, locate the 110 VOLT PLUG and install it into POWER IN.
     CAUTION: Lift cover with one hand while installing PLUG into the outlet with the
     other. The lid is spring-loaded."'
-  taskListImg: {fileID: 0}
+  taskListImg: {fileID: 21300000, guid: 70ba84ce09456684ba0767f2772b32fa, type: 3}
+  prevStepStr: Conduct a Gentle PULL TEST on each cable.
+  prevStepImg: {fileID: 0}
+  nextStepStr: '"Insert the WHITE 110 VOLT PLUG LEAD into the RIGHT WHITE BUS opening.
+    CAUTION: DO NOT over tighten the thumbscrew."'
+  nextStepImg: {fileID: 21300000, guid: 81ba7f8bbd20e5d48bc5d96e437c7938, type: 3}
   prevHUDStr: 
   hudStr: 
   nextHUDStr: 
-  recognizedObjectsStr: []
+  recognizedObjectsStr:
+  - task list
