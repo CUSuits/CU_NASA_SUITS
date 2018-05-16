@@ -94,7 +94,7 @@ public class GrammarManager : MonoBehaviour {
                 } else if (sopStats.Contains(sm.values[0])) {
                     mainSubMenu.Show("SOP");
                 } else if (h20Stats.Contains(sm.values[0])) {
-                    mainSubMenu.Show("H20");
+                    mainSubMenu.Show("H2O");
                 } else {
                     PleaseRepeatCommand();
                 }
@@ -120,7 +120,7 @@ public class GrammarManager : MonoBehaviour {
                 } else if (sopStats.Contains(sm.values[0])) {
                     mainSubMenu.Hide("SOP");
                 } else if (h20Stats.Contains(sm.values[0])) {
-                    mainSubMenu.Hide("H20");
+                    mainSubMenu.Hide("H2O");
                 } else {
                     PleaseRepeatCommand();
                 }
