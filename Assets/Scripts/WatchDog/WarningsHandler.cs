@@ -19,6 +19,7 @@ public class WarningsHandler : SubMenuBehavior {
 				continue;
 			}
 		}
+
 		canvas.enabled = true;
 
 		//Create new stat and turn it bold,red,
@@ -62,6 +63,9 @@ public class WarningsHandler : SubMenuBehavior {
 		emegerncyText.fontStyle = FontStyle.Bold;
 		emegerncyText.text = menuStat.warning;
 	}
+
+
+
 
 	public void Clear(MenuStat menuStat) {
 		foreach (MenuStatBehavior menuStatBehav in menuItems) {

@@ -138,6 +138,27 @@ public class SubMenuBehavior : MonoBehaviour {
 		GameObject.Find ("Overlay - Full Phrase List").GetComponent<Canvas> ().enabled = false;
 	}
 
+	// hide warnings window
+	public void HideWarnings()
+	{
+		Canvas warningsCanvas = GameObject.Find ("Overlay - Warnings").GetComponent<Canvas> ();
+		if (warningsCanvas.enabled == true) 
+		{
+			warningsCanvas.enabled = false;
+		}
+
+	}
+
+	// open warnings window
+	public void ShowWarnigs()
+	{
+		Canvas warningsCanvas = GameObject.Find ("Overlay - Warnings").GetComponent<Canvas> ();
+		if (warningsCanvas.enabled == false) 
+		{
+			warningsCanvas.enabled = true;
+		}	
+	}
+
 	public bool CheckStatOnPad(MenuStat menuStat){
 		foreach (MenuStatBehavior menuBehavior in menuItems) {
 			if (menuBehavior.menuStat == menuStat) {
