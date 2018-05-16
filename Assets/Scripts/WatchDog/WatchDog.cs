@@ -47,31 +47,42 @@ public class WatchDog : MonoBehaviour{
 		//----------------------------------------
 		foreach (DataRange range in dataRanges)
 		{
-			
-			if(telemetry_suit.Request(range.reference).value != "") // if telemetry value exists
+			try
 			{
-				// componsate for time syntax
-				if(range.reference == "t_water" || range.reference == "t_oxygen" || range.reference == "t_battery"){
-					current_val = Time2Value(telemetry_suit.Request("t_water").value);
-				}else{
-					current_val = telemetry_suit.Request (range.reference).value; // define telemetry value 
-				}
+				if(telemetry_suit.Request(range.reference).value != "") // if telemetry value exists
+				{
+					// componsate for time syntax
+					if(range.reference == "t_water" || range.reference == "t_oxygen" || range.reference == "t_battery"){
+						current_val = Time2Value(telemetry_suit.Request("t_water").value);
+					}else{
+						current_val = telemetry_suit.Request (range.reference).value; // define telemetry value 
+					}
 
-				// check if warning is triggered
-				CheckSuitWarnings(range, current_val);
+					// check if warning is triggered
+					CheckSuitWarnings(range, current_val);
+				}
+			}catch
+			{
+				Debug.Log("Not connected to suit data server, please confirm IP address is correct");
 			}
 		}
 		//----------------------------------------
 		// switch data ---------------------------
 		//----------------------------------------
-		foreach(SwitchStats nominal in switchNom)
+		try
 		{
-			if (telemetry_switch.Request (nominal.reference).value != "") // if telemetry value exists
+			foreach(SwitchStats nominal in switchNom)
 			{
-				current_switch = telemetry_switch.Request (nominal.reference).value; // define telemetry value 
-				// check if switch is not nominal
-				CheckSwitchWarnings (nominal, current_switch);
+				if (telemetry_switch.Request (nominal.reference).value != "") // if telemetry value exists
+				{
+					current_switch = telemetry_switch.Request (nominal.reference).value; // define telemetry value 
+					// check if switch is not nominal
+					CheckSwitchWarnings (nominal, current_switch);
+				}
 			}
+		}catch
+		{
+			Debug.Log("Not connected to switch data server, please confirm IP address is correct");
 		}
 	}
 

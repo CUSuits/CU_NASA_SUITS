@@ -34,8 +34,15 @@ public class MenuStatBehavior : MonoBehaviour {
         {
             newData = "";
         } else { 
-        telemetry_data = json.suitData;
-        newData = telemetry_data.Request(requestParam).value;
+        	telemetry_data = json.suitData;
+			try
+			{
+        		newData = telemetry_data.Request(requestParam).value;
+			}catch
+			{
+				Debug.Log ("Data request failure, ensure you are connected server");
+				return "";
+			}
         };
         return newData;
     }
