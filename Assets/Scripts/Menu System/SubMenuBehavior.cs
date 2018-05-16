@@ -136,6 +136,7 @@ public class SubMenuBehavior : MonoBehaviour {
 		GameObject.Find ("Overlay - Task").GetComponent<Canvas> ().enabled = false;
 		GameObject.Find ("Overlay - Heart Rate").GetComponent<Canvas> ().enabled = false;
 		GameObject.Find ("Overlay - Full Phrase List").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Overlay - Instruction List").GetComponent<Canvas> ().enabled = false;
 	}
 
 	// hide warnings window
@@ -159,6 +160,27 @@ public class SubMenuBehavior : MonoBehaviour {
 		}	
 	}
 
+	// show task list
+	public void ShowInsctructions()
+	{
+		Canvas warningsCanvas = GameObject.Find ("Overlay - Inscruction List").GetComponent<Canvas> ();
+		if (warningsCanvas.enabled == false) 
+		{
+			warningsCanvas.enabled = true;
+		}	
+	}
+
+	// hide task list
+	public void HideInstructions()
+	{
+		Canvas warningsCanvas = GameObject.Find ("Overlay - Inscruction List").GetComponent<Canvas> ();
+		if (warningsCanvas.enabled == true) 
+		{
+			warningsCanvas.enabled = false;
+		}
+
+	}
+
 	public bool CheckStatOnPad(MenuStat menuStat){
 		foreach (MenuStatBehavior menuBehavior in menuItems) {
 			if (menuBehavior.menuStat == menuStat) {
@@ -166,6 +188,8 @@ public class SubMenuBehavior : MonoBehaviour {
 			}
 		}
 		return false;
+
+
 	}
 
 }

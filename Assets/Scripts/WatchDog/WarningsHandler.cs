@@ -7,7 +7,7 @@ public class WarningsHandler : SubMenuBehavior {
 	public MenuWarningStatBehavior warningPrefab;
 
 	public void PushWarningStat(MenuStat menuStat) {
-
+		// if already being displayed, just update value
 		foreach (MenuStatBehavior menuStatBehav in menuItems) {
 			if (menuStatBehav.menuStat == menuStat) {
 				Text textObj = menuStatBehav.gameObject.GetComponent<Text>();
@@ -21,13 +21,13 @@ public class WarningsHandler : SubMenuBehavior {
 		}
 
 		canvas.enabled = true;
-
 		//Create new stat and turn it bold,red,
 		MenuStatBehavior createdEmergencyMenuStat = CreateMenuStat(menuStat);
 		Text emergencyText = createdEmergencyMenuStat.gameObject.GetComponent<Text>();
 		emergencyText.color = Color.red;
 		emergencyText.fontSize = 20;
 		emergencyText.fontStyle = FontStyle.Bold;
+
 	}
 
 	protected MenuStatBehavior CreateSwitchStat(SwitchStat switchStat) {

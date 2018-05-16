@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
   m_Name: ReroutePower
   m_EditorClassIdentifier: 
+  nameOfInstruction: Reroute Power
   StepList:
   - {fileID: 11400000, guid: b0976d3d6b2f49343824a8df9e81b1f3, type: 2}
   - {fileID: 11400000, guid: 8fdf121adb612d642b5caf14dcf43192, type: 2}
