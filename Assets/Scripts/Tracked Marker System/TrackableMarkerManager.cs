@@ -47,8 +47,10 @@ public class TrackableMarkerManager : InstUpdate {
         //Turn on renderer for all recognized objects
         foreach (string obj in recogObjs) {
             Debug.Log(obj);
-            if (recognizedMarkerDict.ContainsKey(obj))
-                recognizedMarkerDict[obj].ShowRenderGameObject(true);
+            if (recognizedMarkerDict.ContainsKey(obj)) {
+                if (recognizedMarkerDict[obj].GetComponent<TrackableMarker>().GetTrackableState() == TrackableBehaviour.Status.DETECTED || recognizedMarkerDict[obj].GetComponent<TrackableMarker>().GetTrackableState() == TrackableBehaviour.Status.TRACKED)
+                    recognizedMarkerDict[obj].ShowRenderGameObject(true);
+            } 
         }
 
         NewTrackedTargets(step.recognizedObjectsStr);

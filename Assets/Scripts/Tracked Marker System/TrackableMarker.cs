@@ -18,7 +18,7 @@ public class TrackableMarker : MonoBehaviour, ITrackableEventHandler {
 
     protected TrackableBehaviour mTrackableBehaviour;
     //public GameObject renderGameObject;
-    public TrackableMarkerManager trackManager;
+    private TrackableMarkerManager trackManager;
 
 
     #endregion // PRIVATE_MEMBER_VARIABLES
