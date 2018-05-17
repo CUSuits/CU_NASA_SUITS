@@ -3326,6 +3326,8 @@ MonoBehaviour:
     KeyCode: 0
   - Keyword: Open procedure list
     KeyCode: 0
+  - Keyword: Close procedure list
+    KeyCode: 0
   recognitionConfidenceLevel: 1
 --- !u!1 &392332760
 GameObject:
@@ -18948,6 +18950,40 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2140055675}
           m_MethodName: ShowCanvas
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Open procedure list
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2140055675}
+          m_MethodName: ShowCanvas
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Close procedure list
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2140055675}
+          m_MethodName: HideCanvas
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
