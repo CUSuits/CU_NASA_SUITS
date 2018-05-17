@@ -136,7 +136,7 @@ public class SubMenuBehavior : MonoBehaviour {
 		GameObject.Find ("Overlay - Task").GetComponent<Canvas> ().enabled = false;
 		GameObject.Find ("Overlay - Heart Rate").GetComponent<Canvas> ().enabled = false;
 		GameObject.Find ("Overlay - Full Phrase List").GetComponent<Canvas> ().enabled = false;
-		GameObject.Find ("Overlay - Instruction List").GetComponent<Canvas> ().enabled = false;
+		GameObject.Find ("Overlay - Warnings").GetComponent<Canvas> ().enabled = false;
 	}
 
 	// hide warnings window
