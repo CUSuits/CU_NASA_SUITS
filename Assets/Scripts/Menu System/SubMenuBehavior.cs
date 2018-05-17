@@ -168,7 +168,7 @@ public class SubMenuBehavior : MonoBehaviour {
 		{
 			warningsCanvas.enabled = true;
 		}	
-	}	
+	}
 
 	// hide task list
 	public void HideInstructions()
