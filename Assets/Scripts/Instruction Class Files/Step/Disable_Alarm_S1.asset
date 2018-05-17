@@ -25,3 +25,16 @@ MonoBehaviour:
   recognizedObjectsStr:
   - task list
   - box key
+  - fuse puller
+  - 110v plug
+  - 220v plug
+  - green bus
+  - white bus
+  - black bus
+  - estop
+  - estop key
+  - fuse disconnect
+  - power switch
+  - wrench
+  - fuse
+  - batt pack
