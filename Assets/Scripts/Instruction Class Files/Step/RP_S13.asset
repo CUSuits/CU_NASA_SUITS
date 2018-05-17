@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S13
   m_EditorClassIdentifier: 
+  stepNumber: 13
   taskListInfo: In STORAGE, locate the GRAY 220 Volt PLUG.
   taskListImg: {fileID: 0}
   prevStepStr: '"Remove the BATTERY PACK tether from the TETHER CABLE. WARNING: All

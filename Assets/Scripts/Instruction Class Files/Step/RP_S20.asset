@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S20
   m_EditorClassIdentifier: 
+  stepNumber: 20
   taskListInfo: Conduct a Gentle PULL TEST on each cable.
   taskListImg: {fileID: 0}
   prevStepStr: Make sure the METAL LEADS are not sticking out the BACK of the BUSS

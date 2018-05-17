@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S30
   m_EditorClassIdentifier: 
+  stepNumber: 30
   taskListInfo: Can you please confirm YES or NO that the SYSTEM GO indicator light
     is GREEN?
   taskListImg: {fileID: 21300000, guid: 44bd8447159772f4d89a54ffc6c4bbfe, type: 3}

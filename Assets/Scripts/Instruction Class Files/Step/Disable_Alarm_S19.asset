@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S19
   m_EditorClassIdentifier: 
+  stepNumber: 19
   taskListInfo: '"Remove the FUSE ACCESS PANEL tether from the TETHER CABLE and stow
     inside. WARNING: All tethers are under spring tension and can retract quickly."'
   taskListImg: {fileID: 0}

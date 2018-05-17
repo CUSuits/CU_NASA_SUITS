@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S15
   m_EditorClassIdentifier: 
+  stepNumber: 15
   taskListInfo: Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE
     BUSSES, each with 2 openings.
   taskListImg: {fileID: 0}

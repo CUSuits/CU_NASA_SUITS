@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S3
   m_EditorClassIdentifier: 
+  stepNumber: 3
   taskListInfo: '"Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS
     DOOR in an OPEN position. WARNING: Door can accidentally close. "'
   taskListImg: {fileID: 21300000, guid: 88287496fbf148a48a6178ae2b74e047, type: 3}

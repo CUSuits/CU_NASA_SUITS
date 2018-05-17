@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S16
   m_EditorClassIdentifier: 
+  stepNumber: 16
   taskListInfo: '"Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE. CAUTION:
     Rock the ALARM FUSE with the FUSE PULLER when pulling up."'
   taskListImg: {fileID: 21300000, guid: b8244e4e9fd1a3d48ba74c357a5a96db, type: 3}

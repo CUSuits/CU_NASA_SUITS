@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S7
   m_EditorClassIdentifier: 
+  stepNumber: 7
   taskListInfo: Remove the BLUE CARABINEER from the FUSIBLE DISCONNECT box and transfer
     it to STORAGE.
   taskListImg: {fileID: 21300000, guid: 2acaf98ec01aa364282a824abad23f7a, type: 3}

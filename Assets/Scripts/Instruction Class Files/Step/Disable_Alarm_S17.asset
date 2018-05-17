@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S17
   m_EditorClassIdentifier: 
+  stepNumber: 17
   taskListInfo: Return the ALARM FUSE and the FUSE PULLER to STORAGE.
   taskListImg: {fileID: 0}
   prevStepStr: '"Use the BLUE FUSE PULLER to remove ONLY the ALARM FUSE. CAUTION:

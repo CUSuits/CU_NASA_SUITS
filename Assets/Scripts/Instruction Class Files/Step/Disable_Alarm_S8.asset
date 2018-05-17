@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S8
   m_EditorClassIdentifier: 
+  stepNumber: 8
   taskListInfo: '"Open the FUSIBLE DISCONNECT box and secure the lid in the open position.
     CAUTION: Pull the locking tab toward STORAGE with the index finger while lifting
     the cover with the thumb."'

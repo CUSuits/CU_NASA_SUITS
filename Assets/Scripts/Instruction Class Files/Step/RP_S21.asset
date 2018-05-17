@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S21
   m_EditorClassIdentifier: 
+  stepNumber: 21
   taskListInfo: '"In STORAGE, locate the 110 VOLT PLUG and install it into POWER IN.
     CAUTION: Lift cover with one hand while installing PLUG into the outlet with the
     other. The lid is spring-loaded."'

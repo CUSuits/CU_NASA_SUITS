@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S24
   m_EditorClassIdentifier: 
+  stepNumber: 24
   taskListInfo: "\"Remove the BLUE CARABINEER\u2019s tether from the TETHER CABLE.
     WARNING: All tethers are under spring tension and can retract quickly.\""
   taskListImg: {fileID: 0}

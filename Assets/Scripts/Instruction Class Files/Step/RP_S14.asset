@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S14
   m_EditorClassIdentifier: 
+  stepNumber: 14
   taskListInfo: 'Install it into the POWER OUT. CAUTION: Outlet and plug mate are
     stiff, ensure the full engagement of the plug into the outlet.'
   taskListImg: {fileID: 0}

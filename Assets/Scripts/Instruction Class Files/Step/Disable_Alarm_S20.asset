@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S20
   m_EditorClassIdentifier: 
+  stepNumber: 20
   taskListInfo: "\"In STORAGE, locate the DISCONNECT and reinstall it into the FUSIBLE
     DISCONNECT box. CAUTION: The DISCONNECT must read \u201CON\u201D in the upper
     right corner to restore conductivity.\""

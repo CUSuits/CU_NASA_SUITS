@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S12
   m_EditorClassIdentifier: 
+  stepNumber: 12
   taskListInfo: '"Remove the FUSE ACCESS PANEL by pulling straight up."'
   taskListImg: {fileID: 21300000, guid: f3207e184937e044d9b508b7ddffad44, type: 3}
   prevStepStr: Tether the FUSE ACCESS PANEL to the TETHER CABLE.

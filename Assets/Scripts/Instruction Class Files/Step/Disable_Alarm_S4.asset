@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S4
   m_EditorClassIdentifier: 
+  stepNumber: 4
   taskListInfo: 'On your belt, use the BLUE CARABINEER to securely tether to the TETHER
     CABLE inside the STORAGE. CAUTION: Notice the TETHER CABLE is adjustable'
   taskListImg: {fileID: 21300000, guid: f358c7c072835a24aa84bc8997c5415c, type: 3}

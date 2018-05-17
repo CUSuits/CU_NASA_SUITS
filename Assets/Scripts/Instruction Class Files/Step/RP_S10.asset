@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S10
   m_EditorClassIdentifier: 
+  stepNumber: 10
   taskListInfo: '"Insert the BATTERY PACK leads back into same colored ports. CAUTION:
     Depress the red and black plastic hammers on the side of the AUX. POWER INPUT
     and push leads straight into their ports."'

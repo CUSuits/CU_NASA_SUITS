@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S27
   m_EditorClassIdentifier: 
+  stepNumber: 27
   taskListInfo: Insert the KEY into the E-STOP and TURN to the RIGHT and the button
     will pop up.
   taskListImg: {fileID: 0}

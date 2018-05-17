@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S6
   m_EditorClassIdentifier: 
+  stepNumber: 6
   taskListInfo: Place the BATTERY PACK into STORAGE.
   taskListImg: {fileID: 0}
   prevStepStr: '"Locate the ON/OFF switch on the back of the BATTERY PACK and switch

@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S12
   m_EditorClassIdentifier: 
+  stepNumber: 12
   taskListInfo: '"Remove the BATTERY PACK tether from the TETHER CABLE. WARNING: All
     tethers are under spring tension and can retract quickly."'
   taskListImg: {fileID: 21300000, guid: 62ff4540fad65aa40831353da6a5ffc3, type: 3}

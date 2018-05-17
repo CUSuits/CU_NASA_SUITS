@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S2
   m_EditorClassIdentifier: 
+  stepNumber: 2
   taskListInfo: Carefully return keys to the side of the EVA kit.
   taskListImg: {fileID: 0}
   prevStepStr: '"On the RIGHT side of the EVA Kit, locate and use the PANEL ACCESS

@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S29
   m_EditorClassIdentifier: 
+  stepNumber: 29
   taskListInfo: "Locate the AUX. POWER SWITCH on the POWER IN box and switch it to
     the \u201CON\u201D position."
   taskListImg: {fileID: 0}

@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S23
   m_EditorClassIdentifier: 
+  stepNumber: 23
   taskListInfo: '"In STORAGE, use the BLUE CARABINEER to clip and lock the FUSIBLE
     DISCONNECT box cover."'
   taskListImg: {fileID: 21300000, guid: 883b0d02c74baa74abbb775b2c9ebcda, type: 3}

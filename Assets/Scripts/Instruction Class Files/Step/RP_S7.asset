@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S7
   m_EditorClassIdentifier: 
+  stepNumber: 7
   taskListInfo: '"In STORAGE, find the replacement BATTERY PACK."'
   taskListImg: {fileID: 0}
   prevStepStr: Place the BATTERY PACK into STORAGE.

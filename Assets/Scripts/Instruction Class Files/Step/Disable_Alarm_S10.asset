@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S10
   m_EditorClassIdentifier: 
+  stepNumber: 10
   taskListInfo: 'Remove the DISCONNECT and place it in STORAGE. CAUTION: Pull up with
     the index and middle fingers while pushing down on the FUSE ACCESS PANEL with
     the thumb.'

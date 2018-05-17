@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S2
   m_EditorClassIdentifier: 
+  stepNumber: 2
   taskListInfo: '"Locate BATTERY PACK and tether to TETHER CABLE."'
   taskListImg: {fileID: 0}
   prevStepStr: Locate the Aux. Power Input

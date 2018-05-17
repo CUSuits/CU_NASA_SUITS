@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: RP_S16
   m_EditorClassIdentifier: 
+  stepNumber: 16
   taskListInfo: '"Insert the WHITE 220 VOLT LEAD into the LEFT WHITE BUSS opening
     and GENTLY TIGHTEN the thumbscrew. CAUTION: DO NOT over tighten the thumbscrew."'
   taskListImg: {fileID: 21300000, guid: ac8ba4ed9fe01b34dba4c790d392892b, type: 3}

@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: Disable_Alarm_S15
   m_EditorClassIdentifier: 
+  stepNumber: 15
   taskListInfo: In Storage, locate the BLUE FUSE PULLER.
   taskListImg: {fileID: 0}
   prevStepStr: Tether the ALARM FUSE to the TETHER CABLE.
