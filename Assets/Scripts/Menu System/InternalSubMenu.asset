@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78cfcc1922ec334397e9fe227fbc2ba, type: 3}
   m_Name: InternalSubMenu
   m_EditorClassIdentifier: 
-  subMenuTitle: Int
+  subMenuTitle: Internal
   subMenuItems:
   - {fileID: 11400000, guid: 1d8e4a255dabe2e44be3f0afddc9b944, type: 2}
   - {fileID: 11400000, guid: 04865c6f5c5c9e44fb654b2a4569e36f, type: 2}

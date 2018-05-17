@@ -11,7 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde745117a17a8542b919284617f9eff, type: 3}
   m_Name: BatteryTime
   m_EditorClassIdentifier: 
-  name: Batt Time
+  name: Batt. time
   dataRequestName: t_battery
   readoutName: battery time remaining
   readOutUnits: na
+  units: 

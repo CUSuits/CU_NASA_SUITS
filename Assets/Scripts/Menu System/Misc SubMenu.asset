@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78cfcc1922ec334397e9fe227fbc2ba, type: 3}
   m_Name: Misc SubMenu
   m_EditorClassIdentifier: 
-  subMenuTitle: Misc
+  subMenuTitle: Miscellaneous
   subMenuItems:
   - {fileID: 11400000, guid: 2ee3d50b61e37cd4eb966a3c336e7ed9, type: 2}
   - {fileID: 11400000, guid: 2ec0a9be0808d7e44ab8f15aae7b6768, type: 2}

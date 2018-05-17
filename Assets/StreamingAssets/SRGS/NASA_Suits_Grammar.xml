@@ -102,6 +102,7 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
   </rule>
 
   <!-- Names of all stat values Opened, Closed, Pushed, Read -->
+  <!-- <item> what you say <tag> out = "stat object"; </tag> </item>-->
   <rule id="Stat">
     <one-of>
       <item> miscellaneous <tag> out = "misc"; </tag> </item>
@@ -142,6 +143,9 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       <item> o2 time <tag> out = "t_oxygen"; </tag> </item>
       <item> secondary oxygen <tag> out = "sop"; </tag> </item>
       <item> sop <tag> out = "sop"; </tag> </item>
+      <item> s o p <tag> out = "sop"; </tag> </item>
+      <item> s o p pressure <tag> out = "p_sop"; </tag> </item>
+      <item> s o p rate <tag> out = "rate_sop"; </tag> </item>
       <item> secondary oxygen pressure <tag> out = "p_sop"; </tag> </item>
       <item> secondary oxygen rate <tag> out = "rate_sop"; </tag> </item>
       <item> secondary o2 pressure <tag> out = "p_sop"; </tag> </item>
@@ -151,6 +155,7 @@ xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
       <item> default <tag> out = "def_def"; </tag> </item>
       <item> submenu list <tag> out = "def_def"; </tag> </item>
       <item> menu list <tag> out = "menulist_def"; </tag> </item>
+      <item> heart rate <tag> out = "heart_bpm"; </tag> </item>
     </one-of>
   </rule>
 

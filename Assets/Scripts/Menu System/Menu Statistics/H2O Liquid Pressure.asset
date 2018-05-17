@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde745117a17a8542b919284617f9eff, type: 3}
   m_Name: H2O Liquid Pressure
   m_EditorClassIdentifier: 
-  name: H2O liq_press
+  name: H2O liq press
   dataRequestName: p_h2o_l
   readoutName: water liquid pressure
   readOutUnits: p s i a

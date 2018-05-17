@@ -159,27 +159,7 @@ public class SubMenuBehavior : MonoBehaviour {
 			warningsCanvas.enabled = true;
 		}
 	}
-
-	// show task list
-	public void ShowInstructions()
-	{
-		Canvas warningsCanvas = GameObject.Find ("Overlay - Inscruction List").GetComponent<Canvas> ();
-		if (warningsCanvas.enabled == false)
-		{
-			warningsCanvas.enabled = true;
-		}
-	}
-
-	// hide task list
-	public void HideInstructions()
-	{
-		Canvas warningsCanvas = GameObject.Find ("Overlay - Inscruction List").GetComponent<Canvas> ();
-		if (warningsCanvas.enabled == true)
-		{
-			warningsCanvas.enabled = false;
-		}
-
-	}
+		
 
 	public bool CheckStatOnPad(MenuStat menuStat){
 		foreach (MenuStatBehavior menuBehavior in menuItems) {

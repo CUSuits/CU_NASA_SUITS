@@ -53,7 +53,7 @@ public class WatchDog : MonoBehaviour{
 				{
 					// componsate for time syntax
 					if(range.reference == "t_water" || range.reference == "t_oxygen" || range.reference == "t_battery"){
-						current_val = Time2Value(telemetry_suit.Request("t_water").value);
+						current_val = Time2Value(telemetry_suit.Request(range.reference).value);
 					}else{
 						current_val = telemetry_suit.Request (range.reference).value; // define telemetry value 
 					}

@@ -175,7 +175,7 @@ public class GrammarManager : MonoBehaviour {
                     MenuStat menuStat = menuStatManager.subMenuDictionary[sm.values[0]];
                     padSubMenu.Clear(menuStat);
                 } catch {
-                    PleaseRepeatCommand();
+                    //PleaseRepeatCommand();
                 }
             } else {
                 PleaseRepeatCommand();

@@ -57,9 +57,7 @@ public class SubMenuPadBehavior : SubMenuBehavior {
         }
 
     }
-
-
-
+		
     public void ClearAll() {
         int numMenuToClear = menuItems.Count;
         for (int i = 0; i < numMenuToClear; i++) {

@@ -11,6 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde745117a17a8542b919284617f9eff, type: 3}
   m_Name: Int
   m_EditorClassIdentifier: 
-  name: Int.
+  name: Internal
   dataRequestName: --
   readoutName: --
+  readOutUnits: 
+  units: 
