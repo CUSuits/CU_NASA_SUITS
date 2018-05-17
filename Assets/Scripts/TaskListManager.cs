@@ -36,25 +36,30 @@ public class TaskListManager : InstUpdate, IUpdateText {
         }
 
         if (step.nextStepStr != "") {
-            nextStepStr.text = step.nextStepStr;
+			nextStepStr.text = Convert.ToString(step.stepNumber + 1) + ". " + step.nextStepStr;
         } else {
             nextStepStr.text = "";
         }
 
 
         if (step.prevStepStr != "") {
-            prevStepStr.text = step.prevStepStr;
+			if ((step.stepNumber -1) > 0) {
+				prevStepStr.text = Convert.ToString (step.stepNumber - 1) + ". " + step.prevStepStr;
+			} else {
+				prevStepStr.text = step.prevStepStr;
+			}
         } else {
             prevStepStr.text = "";
         }
 
 
-        UpdateText(step.taskListInfo);
+		//UpdateText(step.taskListInfo);
         UpdateImage(step.taskListImg);
+		textField.text = Convert.ToString(step.stepNumber) + ". " + step.taskListInfo;
     }
 
-    public void UpdateText(string newText) {
-        textField.text = newText;
+	public void UpdateText(string newText) {
+		textField.text = newText;
     }
 
     public void UpdateImage(Sprite newSprite) {

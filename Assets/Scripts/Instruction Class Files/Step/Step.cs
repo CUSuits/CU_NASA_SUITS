@@ -8,6 +8,7 @@ using System;
 public class Step : ScriptableObject {
 
     [Header("Info on Task List")]
+	public int stepNumber;
     public string taskListInfo;
     public Sprite taskListImg;
     public string prevStepStr;
