@@ -51,12 +51,12 @@ public class SubMenuBehavior : MonoBehaviour {
 
     public void InitializeSubMenu(SubMenu subMenu) {
         _subMenu = subMenu;
-        
+
         UpdateTitle(subMenu.subMenuTitle);
 
         int numMenuStats = subMenu.subMenuItems.Count;
         int numMenuItems = menuItems.Count;
-       
+
         if(numMenuStats < numMenuItems) {
             //Delete extra MenuItems
             for (int i = 0; i < (numMenuItems - numMenuStats); i++) {
@@ -65,7 +65,7 @@ public class SubMenuBehavior : MonoBehaviour {
 
                 // Destroy object.
                 Destroy(menuItemToBeDeleted.gameObject);
-            }      
+            }
         }
         else if (numMenuItems == numMenuStats) {
             //Just update the  MenuItems with MenuStats
@@ -75,7 +75,7 @@ public class SubMenuBehavior : MonoBehaviour {
                 CreateMenuStat();
             }
         }
-        //Update MenuItems with Menu Stats   
+        //Update MenuItems with Menu Stats
         UpdateMenuStats();
     }
 
@@ -91,7 +91,7 @@ public class SubMenuBehavior : MonoBehaviour {
 
     void UpdateMenuStat(MenuStat menuStat, MenuStatBehavior menuStatBehavior) {
         menuStatBehavior.InitializeMenuStat(menuStat);
-    } 
+    }
 
     protected void CreateMenuStat() {
         MenuStatBehavior newMenuStat = Instantiate(menuPrefab, MenuStatHolder.transform);
@@ -101,13 +101,13 @@ public class SubMenuBehavior : MonoBehaviour {
     protected MenuStatBehavior CreateMenuStat(MenuStat menuStat) {
         MenuStatBehavior newMenuStat = Instantiate(menuPrefab, MenuStatHolder.transform);
         //Move new stat to the top of the menu
-        newMenuStat.transform.SetAsFirstSibling(); 
+        newMenuStat.transform.SetAsFirstSibling();
         menuItems.Insert(0, newMenuStat);
         //menuItems.Add(newMenuStat);
         newMenuStat.InitializeMenuStat(menuStat);
         return newMenuStat;
     }
-    
+
     public void Create() {
         InitializeSubMenu(_subMenu);
     }
@@ -143,7 +143,7 @@ public class SubMenuBehavior : MonoBehaviour {
 	public void HideWarnings()
 	{
 		Canvas warningsCanvas = GameObject.Find ("Overlay - Warnings").GetComponent<Canvas> ();
-		if (warningsCanvas.enabled == true) 
+		if (warningsCanvas.enabled == true)
 		{
 			warningsCanvas.enabled = false;
 		}
@@ -151,30 +151,30 @@ public class SubMenuBehavior : MonoBehaviour {
 	}
 
 	// open warnings window
-	public void ShowWarnigs()
+	public void ShowWarnings()
 	{
 		Canvas warningsCanvas = GameObject.Find ("Overlay - Warnings").GetComponent<Canvas> ();
-		if (warningsCanvas.enabled == false) 
+		if (warningsCanvas.enabled == false)
 		{
 			warningsCanvas.enabled = true;
-		}	
+		}
 	}
 
 	// show task list
-	public void ShowInsctructions()
+	public void ShowInstructions()
 	{
 		Canvas warningsCanvas = GameObject.Find ("Overlay - Inscruction List").GetComponent<Canvas> ();
-		if (warningsCanvas.enabled == false) 
+		if (warningsCanvas.enabled == false)
 		{
 			warningsCanvas.enabled = true;
-		}	
+		}
 	}
 
 	// hide task list
 	public void HideInstructions()
 	{
 		Canvas warningsCanvas = GameObject.Find ("Overlay - Inscruction List").GetComponent<Canvas> ();
-		if (warningsCanvas.enabled == true) 
+		if (warningsCanvas.enabled == true)
 		{
 			warningsCanvas.enabled = false;
 		}
