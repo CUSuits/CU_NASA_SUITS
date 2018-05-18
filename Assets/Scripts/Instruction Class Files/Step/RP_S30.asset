@@ -18,7 +18,7 @@ MonoBehaviour:
   prevStepStr: "Locate the AUX. POWER SWITCH on the POWER IN box and switch it to
     the \u201CON\u201D position."
   prevStepImg: {fileID: 0}
-  nextStepStr: --
+  nextStepStr: END OF PROCEDURE
   nextStepImg: {fileID: 0}
   prevHUDStr: 
   hudStr: 

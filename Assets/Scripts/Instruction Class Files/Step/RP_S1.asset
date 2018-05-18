@@ -14,7 +14,7 @@ MonoBehaviour:
   stepNumber: 1
   taskListInfo: Locate the Aux. Power Input
   taskListImg: {fileID: 0}
-  prevStepStr: --
+  prevStepStr: START OF PROCEDURE
   prevStepImg: {fileID: 0}
   nextStepStr: '"Locate BATTERY PACK and tether to TETHER CABLE."'
   nextStepImg: {fileID: 0}

@@ -16,7 +16,7 @@ MonoBehaviour:
     KEY to unlock the PANEL ACCESS DOOR LOCKS. CAUTION: The keys are on a tension-spring
     cable.'
   taskListImg: {fileID: 21300000, guid: 33b0f33ffcb8e8141bac6cdde0991f68, type: 3}
-  prevStepStr: Start of Procedure
+  prevStepStr: START OF PROCEDURE
   prevStepImg: {fileID: 0}
   nextStepStr: Carefully return keys to the side of the EVA kit.
   nextStepImg: {fileID: 0}
