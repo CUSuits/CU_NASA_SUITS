@@ -9,15 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
-  m_Name: ProcedureList3
+  m_Name: ProcedureList0
   m_EditorClassIdentifier: 
+  stepNumber: 0
   taskListInfo: 
   taskListImg: {fileID: 0}
   prevStepStr: 
   prevStepImg: {fileID: 0}
   nextStepStr: 
   nextStepImg: {fileID: 0}
-  prevHUDStr: 2. Diabling Alarm
-  hudStr: 3. This is where another procedure would go
-  nextHUDStr: 4. SO MANY PROCEDURES!!!
+  prevHUDStr: 
+  hudStr: 1. Rerouting 220V Power
+  nextHUDStr: 2. Disabling Fuse Alarm
   recognizedObjectsStr: []

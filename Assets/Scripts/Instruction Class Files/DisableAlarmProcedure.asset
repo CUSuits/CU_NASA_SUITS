@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
   m_Name: DisableAlarmProcedure
   m_EditorClassIdentifier: 
-  nameOfInstruction: Disable Alarm
+  nameOfInstruction: Disabling Fuse Alarm
   StepList:
   - {fileID: 11400000, guid: f89c91e5d5df96f41aa81bd7af7ed771, type: 2}
   - {fileID: 11400000, guid: 9560aaa8ee5a3e242917849089cf725c, type: 2}

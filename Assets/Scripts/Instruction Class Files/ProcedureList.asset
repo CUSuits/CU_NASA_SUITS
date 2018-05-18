@@ -15,4 +15,3 @@ MonoBehaviour:
   StepList:
   - {fileID: 11400000, guid: e50e7d467b02fab4aa053287fc711d14, type: 2}
   - {fileID: 11400000, guid: d87ffcecdf710374dbf3818f63d73fef, type: 2}
-  - {fileID: 11400000, guid: ff5e1b6c26e2e9445b2c71805457cd78, type: 2}

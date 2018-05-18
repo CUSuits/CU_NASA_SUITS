@@ -11,13 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
   m_Name: ProcedureList2
   m_EditorClassIdentifier: 
-  taskListInfo: 2. Disabling Alarm
+  stepNumber: 0
+  taskListInfo: 
   taskListImg: {fileID: 0}
-  prevStepStr: 1. Rerouting 220V Power
+  prevStepStr: 
   prevStepImg: {fileID: 0}
-  nextStepStr: 3. This is where another procedure would go!
+  nextStepStr: 
   nextStepImg: {fileID: 0}
-  prevHUDStr: 1. Rerouting 220V Power
-  hudStr: 2. Disabling Alarm
-  nextHUDStr: 3. This is where another procedure would go!
+  prevHUDStr: 2. Disabling Fuse Alarm
+  hudStr: 3. This is where another procedure would go!
+  nextHUDStr: 4. SO MANY PROCEDURES!!!
   recognizedObjectsStr: []
