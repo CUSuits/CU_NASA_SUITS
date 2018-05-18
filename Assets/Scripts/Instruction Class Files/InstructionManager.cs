@@ -4,6 +4,9 @@ using UnityEngine;
 using System;
 using UnityEngine.Events;
 using HoloToolkit.Unity;
+using UnityEngine.UI;
+
+
 [System.Serializable]
 public class StepEvent : UnityEvent<Step> {
 }
@@ -22,7 +25,16 @@ public class InstructionManager : MonoBehaviour {
     public TextToSpeech textToSpeechService;
     public bool isReadingOut;
 
-    //Method to publish that Instruction/Step has updated....
+
+	void UpdateTaskTitle(int instructionIndex)
+	{
+		int totalSteps = InstructionList [instructionIndex].StepList.Count;
+		string title = InstructionList [instructionIndex].nameOfInstruction + " -- Steps: " + Convert.ToString(totalSteps);
+		GameObject.Find ("Tasklist Title").GetComponent<Text> ().text = title;
+		Debug.Log ("Current Instruction Title: " + title);
+	}
+
+	//Method to publish that Instruction/Step has updated....
     void Awake () {
         if (eventDictionary == null) {
             eventDictionary = new Dictionary<string, StepEvent>();
@@ -78,6 +90,8 @@ public class InstructionManager : MonoBehaviour {
         //Load new to current
         currentInstruction = InstructionList[instructionIndex];
 
+		UpdateTaskTitle (instructionIndex);
+
         //set index to 0
         currentStep = 0;
         Debug.Log(currentInstruction.StepList[currentStep].hudStr);
@@ -124,6 +138,7 @@ public class InstructionManager : MonoBehaviour {
             ++currentStep;
             TriggerEvent("InstUpdate");
             ReadOutStep();
+
         }
         catch (Exception e) {
             Debug.LogException(e, this);
@@ -136,6 +151,7 @@ public class InstructionManager : MonoBehaviour {
             --currentStep;
             TriggerEvent("InstUpdate");
             ReadOutStep();
+
         } catch (Exception e) {
             Debug.LogException(e, this);
         }
