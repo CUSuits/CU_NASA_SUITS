@@ -127,6 +127,20 @@ public class InstructionManager : MonoBehaviour {
             }
             TriggerEvent("InstUpdate");
             ReadOutStep();
+
+			// update title 
+			int c = 0;
+
+			foreach(Instruction inst in InstructionList){
+				if(currentInstruction == inst)
+				{
+					UpdateTaskTitle(c);
+					Debug.Log(c);
+				}
+				c++;
+			}
+
+
         } catch (Exception e) {
             Debug.LogException(e, this);
         }
