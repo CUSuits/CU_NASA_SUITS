@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78cfcc1922ec334397e9fe227fbc2ba, type: 3}
   m_Name: Heart Rate Isolated
   m_EditorClassIdentifier: 
-  subMenuTitle: Heart Rate
+  subMenuTitle: 
   subMenuItems:
   - {fileID: 11400000, guid: eec1b232106020d44acd45c87f45f310, type: 2}
