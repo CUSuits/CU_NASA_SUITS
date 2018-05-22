@@ -20,9 +20,9 @@ MonoBehaviour:
   nextStepStr: '"In STORAGE, use the BLUE CARABINEER to clip and lock the FUSIBLE
     DISCONNECT box cover."'
   nextStepImg: {fileID: 21300000, guid: 883b0d02c74baa74abbb775b2c9ebcda, type: 3}
-  prevHUDStr: 'Reinstall BD '
-  hudStr: 'Close, Lock FB   '
-  nextHUDStr: --
+  prevHUDStr: '20-21) Reinstall BD '
+  hudStr: '22-24) Close, Lock FB   '
+  nextHUDStr: END of task
   recognizedObjectsStr:
   - task list
   - cuff list

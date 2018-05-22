@@ -20,9 +20,9 @@ MonoBehaviour:
   nextStepStr: '"Attach the replacement BATTERY PACK onto the AUX. POWER INPUT by
     the Velcro."'
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: '5-6) Turn-off, Store BP '
+  hudStr: 7-10) Turn-on, Attach Replacement BP
+  nextHUDStr: 11) Gentle pull test
   recognizedObjectsStr:
   - task list
   - batt pack

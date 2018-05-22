@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: '"Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS
     DOOR in an OPEN position. WARNING: Door can accidentally close. "'
   nextStepImg: {fileID: 21300000, guid: 88287496fbf148a48a6178ae2b74e047, type: 3}
-  prevHUDStr: Unlock PAD
-  hudStr: Return key
-  nextHUDStr: Secure PAD
+  prevHUDStr: 1) Unlock PAD
+  hudStr: 2) Return key
+  nextHUDStr: 3) Secure PAD
   recognizedObjectsStr:
   - task list
   - cuff list

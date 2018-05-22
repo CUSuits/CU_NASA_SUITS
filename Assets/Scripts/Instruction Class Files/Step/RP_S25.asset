@@ -19,9 +19,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 21300000, guid: b931a6d369990bb4099cb184af06d405, type: 3}
   nextStepStr: In STORAGE, locate the E-STOP KEY.
   nextStepImg: {fileID: 21300000, guid: 2f338509c2a1a25408fbb0a02208f7ea, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 24) Bl 110 Volt Lead to R Bl Buss
+  hudStr: 25) Gentle pull test
+  nextHUDStr: '26-27) E-Stop Key into E-stop, Turn to Enable '
   recognizedObjectsStr:
   - task list
   - cuff list

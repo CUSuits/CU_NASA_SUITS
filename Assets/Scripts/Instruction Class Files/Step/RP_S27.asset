@@ -19,9 +19,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 21300000, guid: 2f338509c2a1a25408fbb0a02208f7ea, type: 3}
   nextStepStr: Remove the KEY and place it in STORAGE.
   nextStepImg: {fileID: 21300000, guid: b7c57d4ad7ec22e4680734a5806da1d6, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 25) Gentle pull test
+  hudStr: '26-27) E-Stop Key into E-stop, Turn to Enable '
+  nextHUDStr: 28) Remove, Store E-Stop Key
   recognizedObjectsStr:
   - task list
   - estop

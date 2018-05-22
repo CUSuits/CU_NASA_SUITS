@@ -33,6 +33,11 @@ public class SubMenuBehavior : MonoBehaviour {
         } else if (subMenu != _subMenu) {
             InitializeSubMenu(subMenu);
             canvas.enabled = true;
+            GameObject.Find ("Master - Internal").GetComponent<Canvas> ().enabled = false;
+            GameObject.Find ("Master - Misc").GetComponent<Canvas> ().enabled = false;
+            GameObject.Find ("Master - SOP").GetComponent<Canvas> ().enabled = false;
+            GameObject.Find ("Master - Sub").GetComponent<Canvas> ().enabled = false;
+            GameObject.Find ("Master - H2O").GetComponent<Canvas> ().enabled = false;
         }
     }
 
@@ -159,7 +164,7 @@ public class SubMenuBehavior : MonoBehaviour {
 			warningsCanvas.enabled = true;
 		}
 	}
-		
+
 
 	public bool CheckStatOnPad(MenuStat menuStat){
 		foreach (MenuStatBehavior menuBehavior in menuItems) {

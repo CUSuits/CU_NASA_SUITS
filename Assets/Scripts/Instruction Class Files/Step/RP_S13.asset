@@ -20,9 +20,9 @@ MonoBehaviour:
   nextStepStr: 'Install it into the POWER OUT. CAUTION: Outlet and plug mate are stiff,
     ensure the full engagement of the plug into the outlet.'
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 12) Remove BP, tether to TC
+  hudStr: 13-14) 220 Volt Plug to PO
+  nextHUDStr: 15) Locate BUSS BAR
   recognizedObjectsStr:
   - task list
   - cuff list

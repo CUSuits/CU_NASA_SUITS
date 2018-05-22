@@ -22,9 +22,9 @@ MonoBehaviour:
   nextStepStr: '"Remove the DISCONNECT tether from the TETHER CABLE. WARNING: All
     tethers are under spring tension and can retract quickly."'
   nextStepImg: {fileID: 0}
-  prevHUDStr: 'Reinstall FAP.  '
-  hudStr: 'Reinstall BD '
-  nextHUDStr: 'Close, Lock FB   '
+  prevHUDStr: '18-19) Reinstall FAP.  '
+  hudStr: '20-21) Reinstall BD '
+  nextHUDStr: '22-24) Close, Lock FB   '
   recognizedObjectsStr:
   - task list
   - cuff list

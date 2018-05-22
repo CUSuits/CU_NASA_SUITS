@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: '"Insert the WHITE 220 VOLT LEAD into the LEFT WHITE BUSS opening and
     GENTLY TIGHTEN the thumbscrew. CAUTION: DO NOT over tighten the thumbscrew."'
   nextStepImg: {fileID: 21300000, guid: ac8ba4ed9fe01b34dba4c790d392892b, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: '13-14) 220 Volt Plug to PO '
+  hudStr: 15) Locate BUSS BAR
+  nextHUDStr: 16) Wh 220 Volt Lead to L Wh Buss
   recognizedObjectsStr:
   - task list
   - cuff list

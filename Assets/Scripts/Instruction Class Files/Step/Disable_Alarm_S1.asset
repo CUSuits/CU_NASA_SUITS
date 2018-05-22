@@ -20,9 +20,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: Carefully return keys to the side of the EVA kit.
   nextStepImg: {fileID: 0}
-  prevHUDStr: Start of Procedure
-  hudStr: Unlock PAD
-  nextHUDStr: Return key
+  prevHUDStr: START of task
+  hudStr: 1) Unlock PAD
+  nextHUDStr: 2) Return key
   recognizedObjectsStr:
   - task list
   - box key

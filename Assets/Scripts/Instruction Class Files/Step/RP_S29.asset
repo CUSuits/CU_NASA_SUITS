@@ -20,9 +20,9 @@ MonoBehaviour:
   nextStepStr: Can you please confirm YES or NO that the SYSTEM GO indicator light
     is GREEN?
   nextStepImg: {fileID: 21300000, guid: 44bd8447159772f4d89a54ffc6c4bbfe, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 28) Remove, Store E-Stop Key
+  hudStr: 29) APS to on
+  nextHUDStr: 30) Confirm Y/N system go is green
   recognizedObjectsStr:
   - task list
   - power switch

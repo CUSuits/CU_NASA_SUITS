@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: '"Insert the BLACK 110 VOLT PLUG LEAD into the RIGHT BLACK BUS opening.
     CAUTION: DO NOT over tighten the thumbscrew."'
   nextStepImg: {fileID: 21300000, guid: b931a6d369990bb4099cb184af06d405, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 22) Wh 110 Volt Lead to R Wh Buss
+  hudStr: 23) Gr 110 Volt Lead to R Gr Buss
+  nextHUDStr: 24) Bl 110 Volt Lead to R Bl Buss
   recognizedObjectsStr:
   - task list
   - green bus

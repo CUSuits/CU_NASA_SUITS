@@ -20,9 +20,9 @@ MonoBehaviour:
   nextStepStr: '"Remove the FUSE ACCESS PANEL tether from the TETHER CABLE and stow
     inside. WARNING: All tethers are under spring tension and can retract quickly."'
   nextStepImg: {fileID: 0}
-  prevHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
-  hudStr: 'Reinstall FAP.  '
-  nextHUDStr: 'Reinstall BD '
+  prevHUDStr: '14-17) Tether, Remove, Store AF to TC using BFP   '
+  hudStr: '18-19) Reinstall FAP.  '
+  nextHUDStr: '20-21) Reinstall BD '
   recognizedObjectsStr:
   - task list
   - cuff list

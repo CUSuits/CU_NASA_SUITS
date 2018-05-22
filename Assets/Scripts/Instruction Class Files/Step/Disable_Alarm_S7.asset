@@ -22,9 +22,9 @@ MonoBehaviour:
     CAUTION: Pull the locking tab toward STORAGE with the index finger while lifting
     the cover with the thumb."'
   nextStepImg: {fileID: 21300000, guid: 46971455c2ad6e04b9408b80dd3476c6, type: 3}
-  prevHUDStr: Press E-stop to disable
-  hudStr: 'Tether, Remove, Store BC '
-  nextHUDStr: Open FB
+  prevHUDStr: 5) Press E-stop to disable
+  hudStr: '6-7) Tether, Remove, Store BC '
+  nextHUDStr: 8) Open FB
   recognizedObjectsStr:
   - task list
   - fuse disconnect

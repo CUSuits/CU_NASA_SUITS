@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: '"Locate the ON/OFF switch on the back of the BATTERY PACK and switch
     it to the OFF position. "'
   nextStepImg: {fileID: 21300000, guid: 5601b207e8e28d549a1d9e3c21bf1f58, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 1) Locate API
+  hudStr: 2-4) Tether, Remove BP
+  nextHUDStr: 5-6) Turn-off, Store BP
   recognizedObjectsStr:
   - task list
   - batt pack

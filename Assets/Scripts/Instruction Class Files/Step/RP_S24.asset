@@ -20,9 +20,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 21300000, guid: cae5dc4eab918904e9d54ff2e8a7d1c5, type: 3}
   nextStepStr: Conduct a Gentle PULL TEST on each cable.
   nextStepImg: {fileID: 21300000, guid: 4975c35b618da0d44982e6043d66631b, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 23) Gr 110 Volt Lead to R Gr Buss
+  hudStr: 24) Bl 110 Volt Lead to R Bl Buss
+  nextHUDStr: 25) Gentle pull test
   recognizedObjectsStr:
   - task list
   - black bus

@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: Make sure the METAL LEADS are not sticking out the BACK of the BUSS
     BAR.
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 17) Gr 220 Volt Lead to L Gr Buss
+  hudStr: 18) Bl 220 Volt Lead to L Bl Buss
+  nextHUDStr: 19) Verify leads flush w/ back Buss
   recognizedObjectsStr:
   - task list
   - black bus

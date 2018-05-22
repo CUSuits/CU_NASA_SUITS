@@ -20,9 +20,9 @@ MonoBehaviour:
   nextStepStr: "Locate the AUX. POWER SWITCH on the POWER IN box and switch it to
     the \u201CON\u201D position."
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: '26-27) E-Stop Key into E-stop, Turn to Enable '
+  hudStr: 28) Remove, Store E-Stop Key
+  nextHUDStr: 29) APS to on
   recognizedObjectsStr:
   - task list
   - cuff list

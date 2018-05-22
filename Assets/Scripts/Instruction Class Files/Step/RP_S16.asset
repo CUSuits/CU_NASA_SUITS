@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: '"Insert the GREEN 220 VOLT LEAD into the LEFT GREEN BUS opening. CAUTION:
     DO NOT over tighten the thumbscrew."'
   nextStepImg: {fileID: 21300000, guid: 4128ee450e6a9eb488cb06dc33fb95d8, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 15) Locate BUSS BAR
+  hudStr: 16) Wh 220 Volt Lead to L Wh Buss
+  nextHUDStr: 17) Gr 220 Volt Lead to L Gr Buss
   recognizedObjectsStr:
   - task list
   - white bus

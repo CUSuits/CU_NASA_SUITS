@@ -19,6 +19,6 @@ MonoBehaviour:
   nextStepStr: 
   nextStepImg: {fileID: 0}
   prevHUDStr: 
-  hudStr: 1. Rerouting 220V Power
-  nextHUDStr: 2. Disabling Fuse Alarm
+  hudStr: 1. Disabling Fuse Alarm
+  nextHUDStr: 2. Rerouting 220V Power
   recognizedObjectsStr: []

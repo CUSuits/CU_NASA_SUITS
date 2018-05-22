@@ -19,9 +19,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: In STORAGE, locate the GRAY 220 Volt PLUG.
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 11) Gentle pull test
+  hudStr: 12) Remove BP, tether to TC
+  nextHUDStr: 13-14) 220 Volt Plug to PO
   recognizedObjectsStr:
   - task list
   - cuff list

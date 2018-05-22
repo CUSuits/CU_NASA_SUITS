@@ -20,9 +20,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: Remove BATTERY PACK from AUX. POWER INPUT.
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 1) Locate API
+  hudStr: 2-4) Tether, Remove BP
+  nextHUDStr: '5-6) Turn-off, Store BP '
   recognizedObjectsStr:
   - task list
   - batt pack

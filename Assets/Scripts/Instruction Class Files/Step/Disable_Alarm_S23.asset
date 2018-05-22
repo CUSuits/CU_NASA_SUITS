@@ -20,9 +20,9 @@ MonoBehaviour:
   nextStepStr: "\"Remove the BLUE CARABINEER\u2019s tether from the TETHER CABLE.
     WARNING: All tethers are under spring tension and can retract quickly.\""
   nextStepImg: {fileID: 0}
-  prevHUDStr: 'Reinstall BD '
-  hudStr: 'Close, Lock FB   '
-  nextHUDStr: --
+  prevHUDStr: '20-21) Reinstall BD '
+  hudStr: '22-24) Close, Lock FB   '
+  nextHUDStr: END of task
   recognizedObjectsStr:
   - task list
   - cuff list

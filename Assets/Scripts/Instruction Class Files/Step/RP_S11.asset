@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: '"Remove the BATTERY PACK tether from the TETHER CABLE. WARNING: All
     tethers are under spring tension and can retract quickly."'
   nextStepImg: {fileID: 21300000, guid: 62ff4540fad65aa40831353da6a5ffc3, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 7-10) Turn-on, Attach Replacement BP
+  hudStr: 11) Gentle pull test
+  nextHUDStr: 12) Remove BP, tether to TC
   recognizedObjectsStr:
   - task list
   - cuff list

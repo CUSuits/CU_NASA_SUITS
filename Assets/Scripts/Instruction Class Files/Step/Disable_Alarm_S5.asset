@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: Locate the FUSIBLE DISCONNECT box and tether the BLUE CARABINEER to
     the TETHER CABLE.
   nextStepImg: {fileID: 0}
-  prevHUDStr: Tether self to TC
-  hudStr: Press E-stop to disable
-  nextHUDStr: 'Tether, Remove, Store BC '
+  prevHUDStr: 4) Tether self to TC
+  hudStr: 5) Press E-stop to disable
+  nextHUDStr: '6-7) Tether, Remove, Store BC '
   recognizedObjectsStr:
   - task list
   - estop

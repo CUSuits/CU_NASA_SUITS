@@ -18,7 +18,7 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: 
   nextStepImg: {fileID: 0}
-  prevHUDStr: 1. Rerouting 220V Power
-  hudStr: 2. Disabling Fuse Alarm
-  nextHUDStr: 3. This is where another procedure would go!
+  prevHUDStr: 1. Disabling Fuse Alarm
+  hudStr: 2. Rerouting 220V Power
+  nextHUDStr: 3. Future Procedures
   recognizedObjectsStr: []

@@ -20,9 +20,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: END OF PROCEDURE
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 29) APS to on
+  hudStr: 30) Confirm Y/N system go is green
+  nextHUDStr: END of task
   recognizedObjectsStr:
   - task list
   - cuff list

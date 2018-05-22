@@ -20,9 +20,9 @@ MonoBehaviour:
   nextStepStr: 'On your belt, use the BLUE CARABINEER to securely tether to the TETHER
     CABLE inside the STORAGE. CAUTION: Notice the TETHER CABLE is adjustable'
   nextStepImg: {fileID: 21300000, guid: f358c7c072835a24aa84bc8997c5415c, type: 3}
-  prevHUDStr: Return key
-  hudStr: Secure PAD
-  nextHUDStr: Tether self to TC
+  prevHUDStr: 2) Return key
+  hudStr: 3) Secure PAD
+  nextHUDStr: 4) Tether self to TC
   recognizedObjectsStr:
   - task list
   - cuff list

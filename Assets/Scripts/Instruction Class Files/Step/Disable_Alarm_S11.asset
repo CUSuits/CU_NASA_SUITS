@@ -20,9 +20,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 21300000, guid: 1b9dcf951f54ee3408f0c8242876b239, type: 3}
   nextStepStr: '"Remove the FUSE ACCESS PANEL by pulling straight up."'
   nextStepImg: {fileID: 21300000, guid: f3207e184937e044d9b508b7ddffad44, type: 3}
-  prevHUDStr: 'Tether, Remove, Store BD to TC '
-  hudStr: 'Tether, Remove, Store FAP to TC  '
-  nextHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
+  prevHUDStr: '9-10) Tether, Remove, Store BD to TC '
+  hudStr: '11-13) Tether, Remove, Store FAP to TC  '
+  nextHUDStr: '14-17) Tether, Remove, Store AF to TC using BFP   '
   recognizedObjectsStr:
   - task list
   - cuff list

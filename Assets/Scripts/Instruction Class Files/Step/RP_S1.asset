@@ -18,9 +18,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: '"Locate BATTERY PACK and tether to TETHER CABLE."'
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: START of task
+  hudStr: 1) Locate API
+  nextHUDStr: 2-4) Tether, Remove BP
   recognizedObjectsStr:
   - task list
   - cuff list

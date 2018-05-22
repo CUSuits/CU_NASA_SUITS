@@ -21,9 +21,9 @@ MonoBehaviour:
   nextStepStr: '"Insert the WHITE 110 VOLT PLUG LEAD into the RIGHT WHITE BUS opening.
     CAUTION: DO NOT over tighten the thumbscrew."'
   nextStepImg: {fileID: 21300000, guid: 81ba7f8bbd20e5d48bc5d96e437c7938, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 20) Gentle pull test
+  hudStr: 21) 110 Volt Plug to PI
+  nextHUDStr: 22) Wh 110 Volt Lead to R Wh Buss
   recognizedObjectsStr:
   - task list
   - cuff list

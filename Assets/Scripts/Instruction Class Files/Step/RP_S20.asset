@@ -21,9 +21,9 @@ MonoBehaviour:
     CAUTION: Lift cover with one hand while installing PLUG into the outlet with the
     other. The lid is spring-loaded."'
   nextStepImg: {fileID: 21300000, guid: 70ba84ce09456684ba0767f2772b32fa, type: 3}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 19) Verify leads flush w/ back Buss
+  hudStr: 20) Gentle pull test
+  nextHUDStr: 21) 110 Volt Plug to PI
   recognizedObjectsStr:
   - task list
   - cuff list

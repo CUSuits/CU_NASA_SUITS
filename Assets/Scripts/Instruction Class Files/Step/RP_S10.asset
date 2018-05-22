@@ -21,9 +21,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: Conduct a GENTLE PULL TEST on the wires.
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: '5-6) Turn-off, Store BP '
+  hudStr: 7-10) Turn-on, Attach Replacement BP
+  nextHUDStr: 11) Gentle pull test
   recognizedObjectsStr:
   - task list
   - batt pack

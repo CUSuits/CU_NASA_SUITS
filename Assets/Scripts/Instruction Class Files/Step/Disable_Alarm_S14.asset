@@ -18,9 +18,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: In Storage, locate the BLUE FUSE PULLER.
   nextStepImg: {fileID: 0}
-  prevHUDStr: 'Tether, Remove, Store FAP to TC  '
-  hudStr: 'Tether, Remove, Store AF to TC using BFP   '
-  nextHUDStr: 'Reinstall FAP.  '
+  prevHUDStr: '11-13) Tether, Remove, Store FAP to TC  '
+  hudStr: '14-17) Tether, Remove, Store AF to TC using BFP   '
+  nextHUDStr: '18-19) Reinstall FAP.  '
   recognizedObjectsStr:
   - task list
   - fuse puller

@@ -20,9 +20,9 @@ MonoBehaviour:
   prevStepImg: {fileID: 0}
   nextStepStr: Tether the FUSE ACCESS PANEL to the TETHER CABLE.
   nextStepImg: {fileID: 0}
-  prevHUDStr: Open FB
-  hudStr: 'Tether, Remove, Store BD to TC '
-  nextHUDStr: 'Tether, Remove, Store FAP to TC  '
+  prevHUDStr: 8) Open FB
+  hudStr: '9-10) Tether, Remove, Store BD to TC '
+  nextHUDStr: '11-13) Tether, Remove, Store FAP to TC  '
   recognizedObjectsStr:
   - task list
   - cuff list

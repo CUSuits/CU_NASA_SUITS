@@ -19,9 +19,9 @@ MonoBehaviour:
   nextStepStr: Insert the KEY into the E-STOP and TURN to the RIGHT and the button
     will pop up.
   nextStepImg: {fileID: 0}
-  prevHUDStr: 
-  hudStr: 
-  nextHUDStr: 
+  prevHUDStr: 25) Gentle pull test
+  hudStr: '26-27) E-Stop Key into E-stop, Turn to Enable '
+  nextHUDStr: 28) Remove, Store E-Stop Key
   recognizedObjectsStr:
   - task list
   - estop
