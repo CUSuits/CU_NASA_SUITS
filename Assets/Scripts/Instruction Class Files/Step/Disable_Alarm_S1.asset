@@ -36,6 +36,6 @@ MonoBehaviour:
   - estop key
   - fuse disconnect
   - power switch
-  - wrench
-  - fuse
   - batt pack
+  - fuse
+  - cuff list

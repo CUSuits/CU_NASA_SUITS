@@ -32,6 +32,8 @@ public class InstructionManager : MonoBehaviour {
 		string title = InstructionList [instructionIndex].nameOfInstruction + " -- Steps: " + Convert.ToString(totalSteps);
 		GameObject.Find ("Tasklist Title").GetComponent<Text> ().text = title;
 		Debug.Log ("Current Instruction Title: " + title);
+    GameObject.Find ("Tasklist Title_cuff").GetComponent<Text> ().text = title;
+		Debug.Log ("Current Instruction Title: " + title);
 	}
 
 	//Method to publish that Instruction/Step has updated....
@@ -128,7 +130,7 @@ public class InstructionManager : MonoBehaviour {
             TriggerEvent("InstUpdate");
             ReadOutStep();
 
-			// update title 
+			// update title
 			int c = 0;
 
 			foreach(Instruction inst in InstructionList){
@@ -172,7 +174,7 @@ public class InstructionManager : MonoBehaviour {
     }
 
     public void SetIsReadOut(bool state) {
-        if (state) { 
+        if (state) {
             textToSpeechService.StartSpeaking("Enabling step readout");
         } else {
             textToSpeechService.StartSpeaking("Disabling step readout");

@@ -26,3 +26,4 @@ MonoBehaviour:
   nextHUDStr: Secure PAD
   recognizedObjectsStr:
   - task list
+  - cuff list
