@@ -24,3 +24,4 @@ MonoBehaviour:
   nextHUDStr: 
   recognizedObjectsStr:
   - task list
+  - cuff list

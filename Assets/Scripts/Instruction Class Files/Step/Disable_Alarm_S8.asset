@@ -26,3 +26,4 @@ MonoBehaviour:
   nextHUDStr: 'Tether, Remove, Store BD to TC '
   recognizedObjectsStr:
   - task list
+  - cuff list

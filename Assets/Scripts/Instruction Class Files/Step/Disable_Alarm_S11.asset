@@ -25,3 +25,4 @@ MonoBehaviour:
   nextHUDStr: 'Tether, Remove, Store AF to TC using BFP   '
   recognizedObjectsStr:
   - task list
+  - cuff list

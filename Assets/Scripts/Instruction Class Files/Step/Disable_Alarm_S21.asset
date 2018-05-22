@@ -26,3 +26,4 @@ MonoBehaviour:
   nextHUDStr: 'Close, Lock FB   '
   recognizedObjectsStr:
   - task list
+  - cuff list

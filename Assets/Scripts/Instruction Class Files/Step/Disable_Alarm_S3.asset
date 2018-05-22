@@ -25,3 +25,4 @@ MonoBehaviour:
   nextHUDStr: Tether self to TC
   recognizedObjectsStr:
   - task list
+  - cuff list

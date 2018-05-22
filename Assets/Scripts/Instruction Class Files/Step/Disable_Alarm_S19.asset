@@ -27,3 +27,4 @@ MonoBehaviour:
   nextHUDStr: 'Reinstall BD '
   recognizedObjectsStr:
   - task list
+  - cuff list

@@ -27,3 +27,4 @@ MonoBehaviour:
   nextHUDStr: 'Tether, Remove, Store FAP to TC  '
   recognizedObjectsStr:
   - task list
+  - cuff list

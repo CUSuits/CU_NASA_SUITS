@@ -26,3 +26,4 @@ MonoBehaviour:
   nextHUDStr: Press E-stop to disable
   recognizedObjectsStr:
   - task list
+  - cuff list
