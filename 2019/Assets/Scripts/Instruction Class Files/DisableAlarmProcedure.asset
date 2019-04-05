@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: DisableAlarmProcedure
+  m_EditorClassIdentifier: 
+  nameOfInstruction: Disabling Fuse Alarm
+  StepList:
+  - {fileID: 11400000, guid: f89c91e5d5df96f41aa81bd7af7ed771, type: 2}
+  - {fileID: 11400000, guid: 9560aaa8ee5a3e242917849089cf725c, type: 2}
+  - {fileID: 11400000, guid: df57e285476b64f43934be67fc6986ca, type: 2}
+  - {fileID: 11400000, guid: 43ea2e198d5277d4b8162e3e0482ca63, type: 2}
+  - {fileID: 11400000, guid: 20e2bfec252d9af43adee6dc1775976f, type: 2}
+  - {fileID: 11400000, guid: 404d1f48636fbcf45b66f0ebd6f38a64, type: 2}
+  - {fileID: 11400000, guid: 87a64dcef63757e4387e338c0670f51a, type: 2}
+  - {fileID: 11400000, guid: d89ee6705287bf24283ac724d779099d, type: 2}
+  - {fileID: 11400000, guid: 79558aaa57b805c4cbdca46809ca4385, type: 2}
+  - {fileID: 11400000, guid: d5d2fe622de4edf4686fe35e3d23f371, type: 2}
+  - {fileID: 11400000, guid: e404ed63628bfd345adf9c5bbee51527, type: 2}
+  - {fileID: 11400000, guid: 61c3282a29eac17459a4607b1e6ad64f, type: 2}
+  - {fileID: 11400000, guid: a815f128fea7bf44ebb93ec38eba9532, type: 2}
+  - {fileID: 11400000, guid: dec9c543f33c8604ba586156496f8986, type: 2}
+  - {fileID: 11400000, guid: b431f30bbae8bd44ab31f293664b83cb, type: 2}
+  - {fileID: 11400000, guid: 12eb4ceb1d765034d92ed6a18388ddb9, type: 2}
+  - {fileID: 11400000, guid: 2fd981d811b25154ab904b07a1585672, type: 2}
+  - {fileID: 11400000, guid: a1603cdae6e1ed4488c9e1d409fdde0d, type: 2}
+  - {fileID: 11400000, guid: 1eae4f8975f382a478f0d7508424abb6, type: 2}
+  - {fileID: 11400000, guid: 15184fac587a8cd4fbfbd0ffb00843a9, type: 2}
+  - {fileID: 11400000, guid: c4c85c14dbf282a4f9b0bf4e2daed59d, type: 2}
+  - {fileID: 11400000, guid: 7012a5581a1f0e740a1afcb26b771b28, type: 2}
+  - {fileID: 11400000, guid: 05b301728f41c6c4bac7d9c4b646474c, type: 2}
+  - {fileID: 11400000, guid: 0e7608168b163e941bd62b036715f354, type: 2}

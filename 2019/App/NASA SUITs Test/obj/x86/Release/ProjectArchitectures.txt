@@ -1,0 +1,2 @@
+C:\Users\Benha\OneDrive\Desktop\NASA_SUITs\unity_code\NASA SUITs Test\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\Benha\OneDrive\Desktop\NASA_SUITs\unity_code\NASA SUITs Test\App\NASA SUITs Test\NASA SUITs Test.csproj;x86

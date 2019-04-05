@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: RP_S10
+  m_EditorClassIdentifier: 
+  stepNumber: 10
+  taskListInfo: '"Insert the BATTERY PACK leads back into same colored ports. CAUTION:
+    Depress the red and black plastic hammers on the side of the AUX. POWER INPUT
+    and push leads straight into their ports."'
+  taskListImg: {fileID: 0}
+  prevStepStr: '"Attach the replacement BATTERY PACK onto the AUX. POWER INPUT by
+    the Velcro."'
+  prevStepImg: {fileID: 0}
+  nextStepStr: Conduct a GENTLE PULL TEST on the wires.
+  nextStepImg: {fileID: 0}
+  prevHUDStr: '5-6) Turn-off, Store BP '
+  hudStr: 7-10) Turn-on, Attach Replacement BP
+  nextHUDStr: 11) Gentle pull test
+  recognizedObjectsStr:
+  - task list
+  - batt pack
+  - cuff list

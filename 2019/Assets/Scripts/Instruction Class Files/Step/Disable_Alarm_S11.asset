@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: Disable_Alarm_S11
+  m_EditorClassIdentifier: 
+  stepNumber: 11
+  taskListInfo: Tether the FUSE ACCESS PANEL to the TETHER CABLE.
+  taskListImg: {fileID: 0}
+  prevStepStr: 'Remove the DISCONNECT and place it in STORAGE. CAUTION: Pull up with
+    the index and middle fingers while pushing down on the FUSE ACCESS PANEL with
+    the thumb.'
+  prevStepImg: {fileID: 21300000, guid: 1b9dcf951f54ee3408f0c8242876b239, type: 3}
+  nextStepStr: '"Remove the FUSE ACCESS PANEL by pulling straight up."'
+  nextStepImg: {fileID: 21300000, guid: f3207e184937e044d9b508b7ddffad44, type: 3}
+  prevHUDStr: '9-10) Tether, Remove, Store BD to TC '
+  hudStr: '11-13) Tether, Remove, Store FAP to TC  '
+  nextHUDStr: '14-17) Tether, Remove, Store AF to TC using BFP   '
+  recognizedObjectsStr:
+  - task list
+  - cuff list

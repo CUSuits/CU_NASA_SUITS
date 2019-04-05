@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: RP_S28
+  m_EditorClassIdentifier: 
+  stepNumber: 28
+  taskListInfo: Remove the KEY and place it in STORAGE.
+  taskListImg: {fileID: 21300000, guid: b7c57d4ad7ec22e4680734a5806da1d6, type: 3}
+  prevStepStr: Insert the KEY into the E-STOP and TURN to the RIGHT and the button
+    will pop up.
+  prevStepImg: {fileID: 0}
+  nextStepStr: "Locate the AUX. POWER SWITCH on the POWER IN box and switch it to
+    the \u201CON\u201D position."
+  nextStepImg: {fileID: 0}
+  prevHUDStr: '26-27) E-Stop Key into E-stop, Turn to Enable '
+  hudStr: 28) Remove, Store E-Stop Key
+  nextHUDStr: 29) APS to on
+  recognizedObjectsStr:
+  - task list
+  - cuff list

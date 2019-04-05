@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: RP_S12
+  m_EditorClassIdentifier: 
+  stepNumber: 12
+  taskListInfo: '"Remove the BATTERY PACK tether from the TETHER CABLE. WARNING: All
+    tethers are under spring tension and can retract quickly."'
+  taskListImg: {fileID: 21300000, guid: 62ff4540fad65aa40831353da6a5ffc3, type: 3}
+  prevStepStr: Conduct a GENTLE PULL TEST on the wires.
+  prevStepImg: {fileID: 0}
+  nextStepStr: In STORAGE, locate the GRAY 220 Volt PLUG.
+  nextStepImg: {fileID: 0}
+  prevHUDStr: 11) Gentle pull test
+  hudStr: 12) Remove BP, tether to TC
+  nextHUDStr: 13-14) 220 Volt Plug to PO
+  recognizedObjectsStr:
+  - task list
+  - cuff list

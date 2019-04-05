@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: RP_S3
+  m_EditorClassIdentifier: 
+  stepNumber: 3
+  taskListInfo: '"Undo the BATTERY PACK LEADS from the AUX. POWER INPUT. CAUTION:
+    Depress the red and black plastic hammers on the side of the AUX. POWER INPUT
+    and pull the leads straight up."'
+  taskListImg: {fileID: 21300000, guid: b81a381e231e8f4428729430ea7533a4, type: 3}
+  prevStepStr: '"Locate BATTERY PACK and tether to TETHER CABLE."'
+  prevStepImg: {fileID: 0}
+  nextStepStr: Remove BATTERY PACK from AUX. POWER INPUT.
+  nextStepImg: {fileID: 0}
+  prevHUDStr: 1) Locate API
+  hudStr: 2-4) Tether, Remove BP
+  nextHUDStr: '5-6) Turn-off, Store BP '
+  recognizedObjectsStr:
+  - task list
+  - batt pack
+  - cuff list

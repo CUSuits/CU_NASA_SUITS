@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/_Scenes/Old Test Scenes/Main_Vuforia_test.unity
+    guid: f821f2b0d001ef74794617443e92d2c6
+  - enabled: 0
+    path: Assets/_Scenes/Old Test Scenes/Main_wo_SpeechRecog.unity
+    guid: d19ea56b3522e314faab9f0b6d7269be
+  - enabled: 0
+    path: Assets/_Scenes/Old Test Scenes/Main_current.unity
+    guid: 411f8dcfdafa99645b357e212d2a9fd2
+  - enabled: 0
+    path: Assets/_Scenes/Old Test Scenes/Main_current_mastertest.unity
+    guid: 2144968d3cb2d3e478a89674450e84b7
+  - enabled: 1
+    path: Assets/_Scenes/1_Main_current.unity
+    guid: 449a427d713924e41ad4a314345449c5
+  - enabled: 0
+    path: Assets/_Scenes/Old Test Scenes/1_Main_current_Text2Speech.unity
+    guid: ef383bb1f29540d4589345d90b6686fe
+  - enabled: 0
+    path: Assets/_Scenes/spatial mapping.unity
+    guid: cfa1e30bda267594dbe868a6a050e775
+  - enabled: 0
+    path: Assets/_Scenes/Test2019.unity
+    guid: 72ebe045aec80384880c0fe9b68e145c
+  - enabled: 0
+    path: Assets/EGOEXO.unity
+    guid: 71a7a3c3334c55c45a3e8d793d0f87ec
+  - enabled: 0
+    path: Assets/_Scenes/childcamera.unity
+    guid: 9110bfda81240cc498e1541f3c99a55e

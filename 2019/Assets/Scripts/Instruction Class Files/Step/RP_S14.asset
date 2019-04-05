@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: RP_S14
+  m_EditorClassIdentifier: 
+  stepNumber: 14
+  taskListInfo: 'Install it into the POWER OUT. CAUTION: Outlet and plug mate are
+    stiff, ensure the full engagement of the plug into the outlet.'
+  taskListImg: {fileID: 0}
+  prevStepStr: In STORAGE, locate the GRAY 220 Volt PLUG.
+  prevStepImg: {fileID: 0}
+  nextStepStr: Locate the metal BUSS BAR and verify there are BLACK, GREEN & WHITE
+    BUSSES, each with 2 openings.
+  nextStepImg: {fileID: 0}
+  prevHUDStr: 12) Remove BP, tether to TC
+  hudStr: 13-14) 220 Volt Plug to PO
+  nextHUDStr: 15) Locate BUSS BAR
+  recognizedObjectsStr:
+  - task list
+  - cuff list

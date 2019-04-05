@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: Disable_Alarm_S2
+  m_EditorClassIdentifier: 
+  stepNumber: 2
+  taskListInfo: Carefully return keys to the side of the EVA kit.
+  taskListImg: {fileID: 0}
+  prevStepStr: '"On the RIGHT side of the EVA Kit, locate and use the PANEL ACCESS
+    KEY to unlock the PANEL ACCESS DOOR LOCKS. CAUTION: The keys are on a tension-spring
+    cable."'
+  prevStepImg: {fileID: 21300000, guid: 33b0f33ffcb8e8141bac6cdde0991f68, type: 3}
+  nextStepStr: '"Insert your fingers in the CENTER OPENING and secure the PANEL ACCESS
+    DOOR in an OPEN position. WARNING: Door can accidentally close. "'
+  nextStepImg: {fileID: 21300000, guid: 88287496fbf148a48a6178ae2b74e047, type: 3}
+  prevHUDStr: 1) Unlock PAD
+  hudStr: 2) Return key
+  nextHUDStr: 3) Secure PAD
+  recognizedObjectsStr:
+  - task list
+  - cuff list

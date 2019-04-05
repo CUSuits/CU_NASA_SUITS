@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: RP_S17
+  m_EditorClassIdentifier: 
+  stepNumber: 17
+  taskListInfo: '"Insert the GREEN 220 VOLT LEAD into the LEFT GREEN BUS opening.
+    CAUTION: DO NOT over tighten the thumbscrew."'
+  taskListImg: {fileID: 21300000, guid: 4128ee450e6a9eb488cb06dc33fb95d8, type: 3}
+  prevStepStr: '"Insert the WHITE 220 VOLT LEAD into the LEFT WHITE BUSS opening and
+    GENTLY TIGHTEN the thumbscrew. CAUTION: DO NOT over tighten the thumbscrew."'
+  prevStepImg: {fileID: 21300000, guid: ac8ba4ed9fe01b34dba4c790d392892b, type: 3}
+  nextStepStr: '"Insert the BLACK 220 VOLT LEAD into the LEFT BLACK BUS opening. CAUTION:
+    DO NOT over tighten the thumbscrew."'
+  nextStepImg: {fileID: 21300000, guid: 935678dbabb8d704d82c697378780791, type: 3}
+  prevHUDStr: 16) Wh 220 Volt Lead to L Wh Buss
+  hudStr: 17) Gr 220 Volt Lead to L Gr Buss
+  nextHUDStr: 18) Bl 220 Volt Lead to L Bl Buss
+  recognizedObjectsStr:
+  - task list
+  - green bus
+  - cuff list

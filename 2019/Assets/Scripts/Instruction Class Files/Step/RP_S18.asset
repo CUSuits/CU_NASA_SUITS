@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: RP_S18
+  m_EditorClassIdentifier: 
+  stepNumber: 18
+  taskListInfo: '"Insert the BLACK 220 VOLT LEAD into the LEFT BLACK BUS opening.
+    CAUTION: DO NOT over tighten the thumbscrew."'
+  taskListImg: {fileID: 21300000, guid: 935678dbabb8d704d82c697378780791, type: 3}
+  prevStepStr: '"Insert the GREEN 220 VOLT LEAD into the LEFT GREEN BUS opening. CAUTION:
+    DO NOT over tighten the thumbscrew."'
+  prevStepImg: {fileID: 21300000, guid: 4128ee450e6a9eb488cb06dc33fb95d8, type: 3}
+  nextStepStr: Make sure the METAL LEADS are not sticking out the BACK of the BUSS
+    BAR.
+  nextStepImg: {fileID: 0}
+  prevHUDStr: 17) Gr 220 Volt Lead to L Gr Buss
+  hudStr: 18) Bl 220 Volt Lead to L Bl Buss
+  nextHUDStr: 19) Verify leads flush w/ back Buss
+  recognizedObjectsStr:
+  - task list
+  - black bus
+  - cuff list

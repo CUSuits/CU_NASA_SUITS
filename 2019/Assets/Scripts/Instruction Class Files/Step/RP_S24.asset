@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: RP_S24
+  m_EditorClassIdentifier: 
+  stepNumber: 24
+  taskListInfo: '"Insert the BLACK 110 VOLT PLUG LEAD into the RIGHT BLACK BUS opening.
+    CAUTION: DO NOT over tighten the thumbscrew."'
+  taskListImg: {fileID: 21300000, guid: b931a6d369990bb4099cb184af06d405, type: 3}
+  prevStepStr: '"Insert the GREEN 110 VOLT PLUG LEAD into the RIGHT GREEN BUS opening.
+    CAUTION: DO NOT over tighten the thumbscrew."'
+  prevStepImg: {fileID: 21300000, guid: cae5dc4eab918904e9d54ff2e8a7d1c5, type: 3}
+  nextStepStr: Conduct a Gentle PULL TEST on each cable.
+  nextStepImg: {fileID: 21300000, guid: 4975c35b618da0d44982e6043d66631b, type: 3}
+  prevHUDStr: 23) Gr 110 Volt Lead to R Gr Buss
+  hudStr: 24) Bl 110 Volt Lead to R Bl Buss
+  nextHUDStr: 25) Gentle pull test
+  recognizedObjectsStr:
+  - task list
+  - black bus
+  - cuff list

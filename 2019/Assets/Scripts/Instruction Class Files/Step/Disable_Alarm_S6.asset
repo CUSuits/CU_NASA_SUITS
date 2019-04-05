@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: Disable_Alarm_S6
+  m_EditorClassIdentifier: 
+  stepNumber: 6
+  taskListInfo: Locate the FUSIBLE DISCONNECT box and tether the BLUE CARABINEER to
+    the TETHER CABLE.
+  taskListImg: {fileID: 0}
+  prevStepStr: Locate the E-STOP button and gently press down to temporarily disable
+    the alarm.
+  prevStepImg: {fileID: 21300000, guid: 18eed34dd14e11a40b08c0b2a2697343, type: 3}
+  nextStepStr: Remove the BLUE CARABINEER from the FUSIBLE DISCONNECT box and transfer
+    it to STORAGE.
+  nextStepImg: {fileID: 21300000, guid: 2acaf98ec01aa364282a824abad23f7a, type: 3}
+  prevHUDStr: 5) Press E-stop to disable
+  hudStr: '6-7) Tether, Remove, Store BC '
+  nextHUDStr: 8) Open FB
+  recognizedObjectsStr:
+  - task list
+  - fuse disconnect
+  - cuff list

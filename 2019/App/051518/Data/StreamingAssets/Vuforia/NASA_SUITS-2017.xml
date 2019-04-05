@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="screwdriver3x3" size="0.076200 0.076200" />
+    <ImageTarget name="screwdriver2x2" size="0.050800 0.050800" />
+    <ImageTarget name="wrench3x3" size="0.076200 0.076200" />
+    <ImageTarget name="wrench2x2" size="0.050800 0.050800" />
+    <ImageTarget name="hammer3x3" size="0.076200 0.076200" />
+    <ImageTarget name="hammer2x2" size="0.050800 0.050800" />
+    <ImageTarget name="cuff_vu" size="0.050000 0.050735" />
+    <ImageTarget name="fusebox_vu" size="0.038000 0.032763" />
+    <ImageTarget name="Fusebox" size="0.025000 0.022299" />
+    <ImageTarget name="Cuff" size="0.025000 0.022340" />
+    <ImageTarget name="VumarkImage" size="0.120000 0.107005" />
+    <ImageTarget name="NASA_Suits_EVA-Checklist" size="0.134700 0.200448" />
+  </Tracking>
+</QCARConfig>
