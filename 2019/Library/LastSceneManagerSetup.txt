@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/1_Main_current.unity
+- path: C:/Users/BioastroLab Laptop1/Downloads/MPPainting/Assets/Demo.unity
   isLoaded: 1
   isActive: 1
