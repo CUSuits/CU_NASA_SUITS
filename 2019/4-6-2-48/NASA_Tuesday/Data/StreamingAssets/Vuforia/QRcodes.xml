@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="FuseDisconnect" size="0.063500 0.063500" />
+    <ImageTarget name="Wrench25" size="0.063500 0.063500" />
+    <ImageTarget name="WhiteBus25" size="0.063500 0.063500" />
+    <ImageTarget name="PowerSwitch25" size="0.063500 0.063500" />
+    <ImageTarget name="GreenBus25" size="0.063500 0.063500" />
+    <ImageTarget name="FusePuller25" size="0.063500 0.063500" />
+    <ImageTarget name="Fuse25" size="0.063500 0.063500" />
+    <ImageTarget name="EstopKey25" size="0.063500 0.063500" />
+    <ImageTarget name="Estop25" size="0.063500 0.063500" />
+    <ImageTarget name="BoxKey25" size="0.063500 0.063500" />
+    <ImageTarget name="BlackBus25" size="0.063500 0.063500" />
+    <ImageTarget name="BatteryPack25" size="0.063500 0.063500" />
+    <ImageTarget name="250Vplug25" size="0.063500 0.063500" />
+    <ImageTarget name="110Vplug25" size="0.063500 0.063500" />
+  </Tracking>
+</QCARConfig>

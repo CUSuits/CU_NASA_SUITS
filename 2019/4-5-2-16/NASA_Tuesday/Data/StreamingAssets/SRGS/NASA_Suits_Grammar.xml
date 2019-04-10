@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="toplevel"
+xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="toplevel" scope="public">
+    <one-of>
+      <item> <ruleref uri="#OpenCommand"/> <tag> out.Submenu = rules.OpenCommand; </tag> </item>
+      <item> <ruleref uri="#CloseCommand"/> <tag> out.Submenu = rules.CloseCommand; </tag> </item>
+      <item> <ruleref uri="#PushCommand"/> <tag> out.Stat = rules.PushCommand; </tag> </item>
+      <item> <ruleref uri="#ReadCommand"/> <tag> out.Stat = rules.ReadCommand; </tag> </item>
+      <item> <ruleref uri="#ClearCommand"/> <tag> out.Stat = rules.ClearCommand; </tag> </item>
+    </one-of>
+  </rule>
+
+  <rule id="OpenCommand" scope="public">
+    <example> open int  </example>
+    <example> show misc </example>
+    <example> display sop </example>
+
+    <one-of>
+      <item> open </item>
+      <item> show </item>
+      <item> display </item>
+    </one-of>
+
+
+    <one-of>
+      <item>
+        <ruleref uri="#Submenu"/>
+        <tag> out.submenu = rules.Submenu; </tag>
+      </item>
+      <item>
+        <ruleref uri="#Stat"/>
+        <tag> out.stat = rules.Stat; </tag>
+
+      </item>
+    </one-of>
+  </rule>
+
+
+  <rule id="CloseCommand" scope="public">
+
+    <example> close misc  </example>
+    <example> hide sop </example>
+
+    <one-of>
+      <item> close </item>
+      <item> hide </item>
+    </one-of>
+    <one-of>
+      <item>
+        <ruleref uri="#Submenu"/>
+        <tag> out.submenu = rules.Submenu; </tag>
+      </item>
+      <item>
+        <ruleref uri="#Stat"/>
+        <tag> out.stat = rules.Stat; </tag>
+
+      </item>
+    </one-of>
+  </rule>
+
+  <rule id="PushCommand" scope="public">
+    <example> Push suit pressure  </example>
+
+    <item>
+      push
+      <item>
+          <ruleref uri="#Stat"/>
+          <tag> out.stat = rules.Stat; </tag>
+      </item>
+    </item>
+  </rule>
+
+  <rule id="ReadCommand" scope="public">
+    <example> Read suit pressure  </example>
+    <example> What is my suit pressure  </example>
+
+    <item>
+      <one-of>
+        <item> what is my </item>
+        <item> what is the  </item>
+        <item> read </item>
+        <item> read out </item>
+      </one-of>
+      <item>
+          <ruleref uri="#Stat"/>
+          <tag> out.stat = rules.Stat; </tag>
+      </item>
+    </item>
+  </rule>
+
+  <rule id="ClearCommand" scope="public">
+    <example> Clear suit pressure  </example>
+
+    <item>
+      clear
+      <item>
+          <ruleref uri="#Stat"/>
+          <tag> out.stat = rules.Stat; </tag>
+      </item>
+    </item>
+  </rule>
+
+  <!-- Names of all stat values Opened, Closed, Pushed, Read -->
+  <!-- <item> what you say <tag> out = "stat object"; </tag> </item>-->
+  <rule id="Stat">
+    <one-of>
+      <item> miscellaneous <tag> out = "misc"; </tag> </item>
+      <item> misc <tag> out = "misc"; </tag> </item>
+      <item> battery capacity <tag> out = "cap_battery"; </tag> </item>
+      <item> battery <tag> out = "cap_battery"; </tag> </item>
+      <item> fan tachometer <tag> out = "v_fan"; </tag> </item>
+      <item> fan speed <tag> out = "v_fan"; </tag> </item>
+      <item> water <tag> out = "h2o"; </tag> </item>
+      <item> h2o <tag> out = "h2o"; </tag> </item>
+      <item> water gas <tag> out = "p_h2o_g"; </tag> </item>
+      <item> water gas pressure <tag> out = "p_h2o_g"; </tag> </item>
+      <item> water vapor pressure <tag> out = "p_h2o_g"; </tag> </item>
+      <item> h2o gas pressure <tag> out = "p_h2o_g"; </tag> </item>
+      <item> h2o vapor pressure <tag> out = "p_h2o_g"; </tag> </item>
+      <item> water liquid <tag> out = "p_h2o_l"; </tag> </item>
+      <item> water liquid pressure <tag> out = "p_h2o_l"; </tag> </item>
+      <item> h2o liquid <tag> out = "p_h2o_l"; </tag> </item>
+      <item> h2o liquid pressure <tag> out = "p_h2o_l"; </tag> </item>
+      <item> internal <tag> out = "int"; </tag> </item>
+      <item> int <tag> out = "int"; </tag> </item>
+      <item> oxygen pressure <tag> out = "p_o2"; </tag> </item>
+      <item> oxygen rate <tag> out = "rate_o2"; </tag> </item>
+      <item> o2 pressure <tag> out = "p_o2"; </tag> </item>
+      <item> o2 rate <tag> out = "rate_o2"; </tag> </item>
+      <item> sublimator <tag> out = "sub"; </tag> </item>
+      <item> sublimator pressure <tag> out = "p_sub"; </tag> </item>
+      <item> sublimator temperature <tag> out = "t_sub"; </tag> </item>
+      <item> sub pressure <tag> out = "p_sub"; </tag> </item>
+      <item> sub temperature <tag> out = "t_sub"; </tag> </item>
+      <item> battery time <tag> out = "t_battery"; </tag> </item>
+      <item> water time <tag> out = "t_water"; </tag> </item>
+      <item> h2o time <tag> out = "t_water"; </tag> </item>
+      <item> suit pressure <tag> out = "p_suit"; </tag> </item>
+      <item> internal pressure <tag> out = "p_suit"; </tag> </item>
+      <item> internal suit pressure <tag> out = "p_suit"; </tag> </item>
+      <item> oxygen time <tag> out = "t_oxygen"; </tag> </item>
+      <item> o2 time <tag> out = "t_oxygen"; </tag> </item>
+      <item> secondary oxygen <tag> out = "sop"; </tag> </item>
+      <item> sop <tag> out = "sop"; </tag> </item>
+      <item> s o p <tag> out = "sop"; </tag> </item>
+      <item> s o p pressure <tag> out = "p_sop"; </tag> </item>
+      <item> s o p rate <tag> out = "rate_sop"; </tag> </item>
+      <item> secondary oxygen pressure <tag> out = "p_sop"; </tag> </item>
+      <item> secondary oxygen rate <tag> out = "rate_sop"; </tag> </item>
+      <item> secondary o2 pressure <tag> out = "p_sop"; </tag> </item>
+      <item> secondary o2 rate <tag> out = "rate_sop"; </tag> </item>
+      <item> sop pressure <tag> out = "p_sop"; </tag> </item>
+      <item> sop rate <tag> out = "rate_sop"; </tag> </item>
+      <item> default <tag> out = "def_def"; </tag> </item>
+      <item> submenu list <tag> out = "def_def"; </tag> </item>
+      <item> menu list <tag> out = "menulist_def"; </tag> </item>
+      <item> heart rate <tag> out = "heart_bpm"; </tag> </item>
+    </one-of>
+  </rule>
+
+
+
+  <!-- Names of all submenus to be Opened,Closed -->
+    <rule id="Submenu">
+        <one-of>
+          <item> int <tag> out = "Int"; </tag> </item>
+          <item> misc <tag> out = "Misc"; </tag> </item>
+          <item> sub <tag> out = "Sub"; </tag> </item>
+          <item> sop <tag> out = "SOP"; </tag> </item>
+          <item> h20 <tag> out = "H20"; </tag> </item>
+          <item> default <tag> out = "Default"; </tag> </item>
+          <item> keywords <tag> out = "Keywords"; </tag> </item>
+        </one-of>
+    </rule>
+</grammar>

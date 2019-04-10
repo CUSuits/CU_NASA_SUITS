@@ -7,6 +7,7 @@ public class PinUnpin : MonoBehaviour {
     public GameObject parentOfuIB;
     public GazeCommands Instance { get; private set; }
     public GameObject FocusedObject { get; private set; }
+    public Vector3 newPosition;
     
     // Use this for initialization
     void Start ()
@@ -24,6 +25,8 @@ public class PinUnpin : MonoBehaviour {
         if (Physics.Raycast(headPosition, gazeDirection, out hitInfo, 20.0f,Physics.DefaultRaycastLayers))
         {
             FocusedObject = hitInfo.collider.gameObject;
+            newPosition = FocusedObject.transform.position;
+
             //this.transform.position = hitInfo.point;
         }
     }
@@ -34,20 +37,18 @@ public class PinUnpin : MonoBehaviour {
             FocusedObject.transform.parent = parentOfuIB.transform;
         }
     }
+  
     public void Unpin()
     {
         if (FocusedObject)
         {
-            FocusedObject.transform.parent = null;
+            FocusedObject.transform.SetParent(null);
+            FocusedObject.transform.position = newPosition;
         }
-        
+
     }
     public void UnpinAll()
     {
-
-    }
-    public void PinAll()
-    {
-
+        parentOfuIB.transform.DetachChildren();
     }
 }
