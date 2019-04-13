@@ -19,7 +19,7 @@ public class GazeCommands : MonoBehaviour{
     public static GazeCommands Instance { get; private set; }
     public GameObject FocusedObject { get; private set; }
     GestureRecognizer recognizer;
-    
+    private WorldAnchorManager WAM;
     
     // Use this for initialization
     void Start () {
@@ -81,5 +81,6 @@ public class GazeCommands : MonoBehaviour{
     {
         tagalong.enabled = false;
     }
+   
 }
 

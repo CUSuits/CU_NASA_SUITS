@@ -479,7 +479,7 @@ namespace HoloToolkit.Unity
         /// </summary>
         /// <param name="gameObjectToAnchor">The GameObject to attach the anchor to.</param>
         /// <param name="anchorName">The name to give to the anchor.</param>
-        private void CreateAnchor(GameObject gameObjectToAnchor, string anchorName)
+        public void CreateAnchor(GameObject gameObjectToAnchor, string anchorName)
         {
             var anchor = gameObjectToAnchor.EnsureComponent<WorldAnchor>();
             anchor.name = anchorName;

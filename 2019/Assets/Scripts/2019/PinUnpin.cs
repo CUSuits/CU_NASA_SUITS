@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using HoloToolkit.Unity;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,7 +9,10 @@ public class PinUnpin : MonoBehaviour {
     public GazeCommands Instance { get; private set; }
     public GameObject FocusedObject { get; private set; }
     public Vector3 newPosition;
-    
+    public Billboard billboard;
+    public Tagalong tagAlong;
+    public DirectionIndicator directionIndicator;
+   
     // Use this for initialization
     void Start ()
     {
@@ -50,5 +54,28 @@ public class PinUnpin : MonoBehaviour {
     public void UnpinAll()
     {
         parentOfuIB.transform.DetachChildren();
+    }
+    public void ActivateAnchor()
+    {
+        FocusedObject.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
+    }
+    public void AddDirectionalAnchor()
+    {
+
+    }
+    public void FaceMe()
+    {
+       billboard = FocusedObject.GetComponent<Billboard>();
+        billboard.enabled = true;
+    }
+    public void FollowMe()
+    {
+        tagAlong = FocusedObject.GetComponent<Tagalong>();
+        tagAlong.enabled = true;
+    }
+    public void NavigationCursor()
+    {
+        directionIndicator = FocusedObject.GetComponent<DirectionIndicator>();
+        directionIndicator.enabled = true;
     }
 }
