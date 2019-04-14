@@ -4202,7 +4202,7 @@ MonoBehaviour:
     KeyCode: 0
   - Keyword: Minerva
     KeyCode: 0
-  - Keyword: Echo
+  - Keyword: Hey Echo
     KeyCode: 0
   recognitionConfidenceLevel: 1
 --- !u!1 &377253067
@@ -4349,6 +4349,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 386919105}
+  - component: {fileID: 386919107}
+  - component: {fileID: 386919106}
   m_Layer: 0
   m_Name: EchoManager
   m_TagString: Untagged
@@ -4369,6 +4371,51 @@ Transform:
   m_Father: {fileID: 1579986197}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &386919106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 386919104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87190b3a47237145a47a3baad09ec8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gmeObj: []
+  cnvs: {fileID: 0}
+  speechInputHandler: {fileID: 0}
+--- !u!114 &386919107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 386919104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Keywords:
+  - Keyword: Echo
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 386919106}
+          m_MethodName: ActivateSpeech
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  IsGlobalListener: 1
+  PersistentKeywords: 0
 --- !u!1 &426667813
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,7 +6600,12 @@ Prefab:
     - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
         type: 2}
       propertyPath: Keywords.Array.size
-      value: 20
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
+        type: 2}
+      propertyPath: Keywords.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
         type: 2}
@@ -6766,9 +6818,44 @@ Prefab:
       propertyPath: m_TagString
       value: HeyAlexa
       objectReference: {fileID: 0}
+    - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
+        type: 2}
+      propertyPath: CanvasComponent
+      value: 
+      objectReference: {fileID: 722613139}
+    - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
+        type: 2}
+      propertyPath: IsGlobalListener
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
+        type: 2}
+      propertyPath: Keywords.Array.data[0].Keyword
+      value: Hey Echo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
+        type: 2}
+      propertyPath: Keywords.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 386919106}
+    - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
+        type: 2}
+      propertyPath: Keywords.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateSpeech
+      objectReference: {fileID: 0}
+    - target: {fileID: 114975462016890542, guid: 5b2a119d064b7da45acb55033c07e7ff,
+        type: 2}
+      propertyPath: Keywords.Array.data[0].Response.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b2a119d064b7da45acb55033c07e7ff, type: 2}
   m_IsPrefabParent: 0
+--- !u!223 &722613139 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223954187383935944, guid: 5b2a119d064b7da45acb55033c07e7ff,
+    type: 2}
+  m_PrefabInternal: {fileID: 722613138}
 --- !u!1 &722773700 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1313978535408332, guid: 11208d3c424d4264e8253726c3b3e47d,
