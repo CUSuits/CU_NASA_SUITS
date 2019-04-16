@@ -561,7 +561,7 @@ PlayerSettings:
     Metro: 2
   incrementalIl2cppBuild: {}
   additionalIl2CppArgs: 
-  scriptingRuntimeVersion: 0
+  scriptingRuntimeVersion: 1
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
@@ -590,7 +590,7 @@ PlayerSettings:
     WindowsStoreApps:
       AllJoyn: False
       BlockedChatMessages: False
-      Bluetooth: False
+      Bluetooth: True
       Chat: False
       CodeGeneration: False
       EnterpriseAuthentication: False
