@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: 1.4 Preperation for Donning
+  m_EditorClassIdentifier: 
+  nameOfInstruction: 1.4 Preperation for Donning
+  StepList:
+  - {fileID: 11400000, guid: ad4895566d1908c4ea949816c85fe1d0, type: 2}
+  - {fileID: 11400000, guid: d92f32b41de31f24eb19db8491b63aa1, type: 2}
+  - {fileID: 11400000, guid: 6d0db4e8e4fc6c446a4385d65b35d5cc, type: 2}
+  - {fileID: 11400000, guid: c45431ce5845a7c4ca64776b87354b63, type: 2}
+  - {fileID: 11400000, guid: 27755f8a359261d46b822192e2387a91, type: 2}
+  - {fileID: 11400000, guid: ac9b37f065d2f3b4999f0e4a5f124141, type: 2}
+  - {fileID: 11400000, guid: b5d7b8cc0bf55244a8607ee839522a3b, type: 2}
+  - {fileID: 11400000, guid: fc19154ef02b2a24a8982d2e52bbf841, type: 2}
+  - {fileID: 11400000, guid: 36155c9c91cef704c8b08eb96c2fae15, type: 2}
+  - {fileID: 11400000, guid: e797c606dbce258408f764b1dd9feda2, type: 2}
+  - {fileID: 11400000, guid: c3d6beee42a6072499de5df3827db177, type: 2}
+  - {fileID: 11400000, guid: 6010c87bf0aade842811262356fc74ae, type: 2}
+  - {fileID: 11400000, guid: 4a5546fcb612b8e449ebe37fe866729b, type: 2}

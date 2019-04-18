@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: 2.0 Translation Procedure
+  m_EditorClassIdentifier: 
+  nameOfInstruction: 2.0 Translation Procedure
+  StepList:
+  - {fileID: 11400000, guid: 00bf3ac0052959d468987e9b40491399, type: 2}

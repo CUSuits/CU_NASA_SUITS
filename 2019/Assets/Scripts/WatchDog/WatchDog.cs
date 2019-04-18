@@ -63,7 +63,7 @@ public class WatchDog : MonoBehaviour{
 				}
 			}catch
 			{
-				Debug.Log("Not connected to suit data server, please confirm IP address is correct");
+				//Debug.Log("Not connected to suit data server, please confirm IP address is correct");
 			}
 		}
 		//----------------------------------------
@@ -125,7 +125,7 @@ public class WatchDog : MonoBehaviour{
 			SwitchStat newSwitchStat = null;
 			// push menu stat to pad...
 			try {
-				//padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[nominal.reference]);
+				padManager.PushEmergencyStat(menuStatDictionary.subMenuDictionary[nominal.reference]);
 				newSwitchStat = switchStatDictionary.switchDictionary [nominal.reference]; 
 			} catch {
 				Debug.LogError ("cant find switch stat from DataRange reference name: " + nominal.reference);

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: 3.2.1-2 Fasten
+  m_EditorClassIdentifier: 
+  nameOfInstruction: 3.2.1-2 Fasten
+  StepList:
+  - {fileID: 11400000, guid: 4804d2375f7c312458673144b1ee1688, type: 2}
+  - {fileID: 11400000, guid: b7282f43324ea9147a9df2c931515ee6, type: 2}

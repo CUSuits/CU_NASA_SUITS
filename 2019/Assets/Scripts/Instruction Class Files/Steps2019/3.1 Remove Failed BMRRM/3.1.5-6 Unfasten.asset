@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: 3.1.5-6 Unfasten
+  m_EditorClassIdentifier: 
+  nameOfInstruction: 
+  StepList:
+  - {fileID: 11400000, guid: a6fd60ad3f762c94fa107c6dbf940cf7, type: 2}
+  - {fileID: 11400000, guid: b31ef44f80099734c96b8797ac02160d, type: 2}

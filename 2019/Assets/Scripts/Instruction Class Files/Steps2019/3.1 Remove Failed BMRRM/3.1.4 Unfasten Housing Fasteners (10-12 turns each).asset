@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: 3.1.4 Unfasten Housing Fasteners (10-12 turns each)
+  m_EditorClassIdentifier: 
+  nameOfInstruction: 3.1.4 Unfasten Housing Fasteners (10-12 turns each)
+  StepList:
+  - {fileID: 11400000, guid: afe8480ae9300ad47bcbae6801173227, type: 2}
+  - {fileID: 11400000, guid: 90580207c43976a43b2219e589b17abd, type: 2}
+  - {fileID: 11400000, guid: 2ddf5b3107d5418449534674839878c5, type: 2}
+  - {fileID: 11400000, guid: 033d1038a58971747808c269a80c1943, type: 2}

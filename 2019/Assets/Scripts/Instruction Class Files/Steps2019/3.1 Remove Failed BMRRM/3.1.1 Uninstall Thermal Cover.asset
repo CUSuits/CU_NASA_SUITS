@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: 3.1.1 Uninstall Thermal Cover
+  m_EditorClassIdentifier: 
+  nameOfInstruction: 3.1.1 Uninstall Thermal Cover
+  StepList:
+  - {fileID: 11400000, guid: deee92529274bb0489c59def7aea9e49, type: 2}
+  - {fileID: 11400000, guid: 26454872fb7d35645a477489973c1952, type: 2}
+  - {fileID: 11400000, guid: 08c30f2992651e64a8993291e4d76a33, type: 2}
+  - {fileID: 11400000, guid: 227b7f04a3ba577469aa1bbe065e5518, type: 2}
+  - {fileID: 11400000, guid: 43bf9642b1955be4eb234d378e9db91d, type: 2}
+  - {fileID: 11400000, guid: c783eb72d0bc7144da79af6762017e7a, type: 2}
+  - {fileID: 11400000, guid: 966c808bb8534564e9a83e5b4d51144b, type: 2}

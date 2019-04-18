@@ -1,0 +1,4 @@
+C:\Users\BioastroLab Laptop1\Documents\GitHub\CU_NASA_SUITS\2019\4172019\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\BioastroLab Laptop1\Documents\GitHub\CU_NASA_SUITS\2019\4172019\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\BioastroLab Laptop1\Documents\GitHub\CU_NASA_SUITS\2019\4172019\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;x86
+C:\Users\BioastroLab Laptop1\Documents\GitHub\CU_NASA_SUITS\2019\4172019\NASA_Tuesday\NASA_Tuesday.csproj;x86

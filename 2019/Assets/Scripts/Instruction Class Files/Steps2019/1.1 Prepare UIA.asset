@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: 1.1 Prepare UIA
+  m_EditorClassIdentifier: 
+  nameOfInstruction: 1.1 Prepare UIA
+  StepList:
+  - {fileID: 11400000, guid: 67b0940031c6a2449a771745ff64520c, type: 2}
+  - {fileID: 11400000, guid: 707ce5caf954106459a7a0a47dc744f9, type: 2}
+  - {fileID: 11400000, guid: 662d85ab523e4254799ff5288840360c, type: 2}
+  - {fileID: 11400000, guid: d2a462bf295403640a8f41c11ef519ac, type: 2}
+  - {fileID: 11400000, guid: 4be66add907c77a46887fee9739c9eeb, type: 2}
+  - {fileID: 11400000, guid: 5525685a7267eca48b4bf3b7304c4358, type: 2}
+  - {fileID: 11400000, guid: ce20064abe51e064395b5c5dec2a4620, type: 2}

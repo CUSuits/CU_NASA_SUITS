@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: 1.4_S0
+  m_EditorClassIdentifier: 
+  stepNumber: 0
+  taskListInfo: Check that UIA POWER EV-1 is set to OFF
+  taskListImg: {fileID: 21300000, guid: 466635e823a8711428e0055b83f0571f, type: 3}
+  prevStepStr: 
+  prevStepImg: {fileID: 0}
+  nextStepStr: Check that UIA POWER EV-1 EMU LED is OFF
+  nextStepImg: {fileID: 0}
+  warning: 
+  caution: 
+  prevHUDStr: 
+  hudStr: Check UIA POWER EV-1 is OFF
+  nextHUDStr: Check UIA POWER EV-1 EMU LED is OFF
+  recognizedObjectsStr: []

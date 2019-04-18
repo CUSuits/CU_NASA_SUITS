@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f1931a0f0102ed4b9816ec248ab6fb4, type: 3}
+  m_Name: 3.2.3 Fasten Housing Fasteners (10-12 turns each)
+  m_EditorClassIdentifier: 
+  nameOfInstruction: 3.2.3 Fasten Housing Fasteners (10-12 turns each)
+  StepList:
+  - {fileID: 11400000, guid: d1c658f7758b3b447b99b8e75c3ebfaa, type: 2}
+  - {fileID: 11400000, guid: 18ce9ce241280a449a9b83a540470775, type: 2}
+  - {fileID: 11400000, guid: 081bb0c78de23a84e8769f7ef7154be7, type: 2}
+  - {fileID: 11400000, guid: 31c236a937673d744975d1514cbc9ed6, type: 2}

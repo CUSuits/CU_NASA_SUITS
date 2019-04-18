@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: 3.2.5_S2
+  m_EditorClassIdentifier: 
+  stepNumber: 2
+  taskListInfo: Mate connector J2 (Secondary POWER)
+  taskListImg: {fileID: 21300000, guid: 32e92f1e68a2f1843a2d067af52a3c91, type: 3}
+  prevStepStr: Mate connector J3 (1553 Ch. A)
+  prevStepImg: {fileID: 0}
+  nextStepStr: Mate connector J1 (Primary POWER)
+  nextStepImg: {fileID: 0}
+  warning: 
+  caution: 
+  prevHUDStr: Mate connector J3 (1553 Ch. A)
+  hudStr: Mate connector J2 (Secondary POWER)
+  nextHUDStr: Mate connector J1 (Primary POWER)
+  recognizedObjectsStr: []

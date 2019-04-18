@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99b2930a644a4244a3579fdb83bdf8e, type: 3}
+  m_Name: 3.1.3_S2
+  m_EditorClassIdentifier: 
+  stepNumber: 2
+  taskListInfo: Drive H4 fastener to "SAW LATCH" position
+  taskListImg: {fileID: 21300000, guid: 29efcfb85df59a5488c0aacf7789847b, type: 3}
+  prevStepStr: Drive H3 fastener to "SAW LATCH" position
+  prevStepImg: {fileID: 0}
+  nextStepStr: 
+  nextStepImg: {fileID: 0}
+  warning: 
+  caution: 
+  prevHUDStr: Drive H3 fastener to "SAW LATCH" position
+  hudStr: Drive H4 fastener to "SAW LATCH" position
+  nextHUDStr: 
+  recognizedObjectsStr: []
