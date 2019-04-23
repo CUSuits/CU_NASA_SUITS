@@ -9,7 +9,7 @@ public class EMGNew : MonoBehaviour
     private string EMGValString;
     private string particleURI;
     public InstructionManager instructionManager;
- public GameObject gameObject;
+    public GameObject gameObject;
 
     IEnumerator GetEMGValue()
     {
